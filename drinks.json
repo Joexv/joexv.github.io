@@ -1,3 +1,5 @@
+{"Names":["Sweet Caramel Kick", "Candy Cane Frappuccino"]}
+
 {
  “drinks” : [
  {
@@ -10,4 +12,6 @@
  “Name” : “Candy Cane Frappuccino”,
  “Picture”:”http://www.starpropertiesindia.com/blog/wp-content/uploads/2016/08/kochi1.jpg”,
  “Description”:”Vanilla Frappuccino, Two pumps of peppermint syrup, Extra cream, Caramel drizzle”,
-},
+}
+ ]
+}
