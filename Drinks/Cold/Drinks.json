@@ -1,15 +1,1 @@
-{
-    “drinks” : [
-        {
-            “Name” : “Sweet Caramel Kick”,
-            “Picture”:”http://www.starpropertiesindia.com/blog/wp-   content/uploads/2016/08/kochi1.jpg”,
-            “Description”:” Caramel Frappuccino with two extra pumps frappuccino, caramel around cup and drizzled on top.”,
-        },
-        
-        {
-            “Name” : “Candy Cane Frappuccino”,
-            “Picture”:”http://www.starpropertiesindia.com/blog/wp-content/uploads/2016/08/kochi1.jpg”,
-            “Description”:”Vanilla Frappuccino, Two pumps of peppermint syrup, Extra cream, Caramel drizzle”,
-        },
-        ]
-}
+{"Names":["I'm Cold", "Candy Cane Frappuccino"]}
