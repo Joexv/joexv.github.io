@@ -3,8 +3,8 @@ Creme Version:
 - Add Strawberry Sauce/Puree
 - Add java chips
 - Top with whipped cream and mocha drizzle
-- Coffee Version:
 
+Coffee Version:
 - Cafe Vanilla Frappuccino
 - Add Strawberry Sauce/Puree
 - Add java chips
