@@ -1,125 +1,127 @@
-# SwipeRPG
-Or "Tower Diver" to Windows users. Mobile might be named SwipeRPG too.
-[br]
-## Current Mechanics:
-[br]
-## Class System
-The classes in the game are very simple, there are three classes,[br]
-Warrior[br]
-Ranger[br]
-Mage[br]
-[br]
-Advantages are as folows:
-Warrior > Ranger > Mage > Warrior
-Having a class advantage gives a 1/5 Power boost during battle calculations.
-[br]
-Warriors find more Enemys, but find more Weapons and starts with a high HP.
-Rangers find more gold, and has a moderate HP.
-Mages find less curses and more potions, but has the lowest HP of all three classes.
+<p># SwipeRPG<br />
+Or &quot;Tower Diver&quot; to Windows users. Mobile might be named SwipeRPG too.</p>
 
-## Damage:
-Enemy Base Power = EBP
-Enemy Power = EP
-Player Power = PP
+<p>
+## Current Mechanics:</p>
 
-EP = EBP * Current_Floor * Enemy_Type(Normal:1, Enhanced:2, Boss:4).
+<p>## Class System<br />
+The classes in the game are very simple, there are three classes,<br />
+Warrior<br />
+Ranger<br />
+Mage</p>
 
-When Player_HP is below half, lose 1/4 Power.
+<p>Advantages are as folows:<br />
+Warrior > Ranger > Mage > Warrior<br />
+Having a class advantage gives a 1/5 Power boost during battle calculations.</p>
 
-If player/enemy has a class advantage over the other, gain 1/5 power.
+<p>Warriors find more Enemys, but find more Weapons and starts with a high HP.<br />
+Rangers find more gold, and has a moderate HP.<br />
+Mages find less curses and more potions, but has the lowest HP of all three classes.</p>
 
-If playing in Easy Mode half enemy power.
+<p>## Damage:<br />
+Enemy Base Power = EBP<br />
+Enemy Power = EP<br />
+Player Power = PP</p>
 
-Damage = ((EBP/4) + (PP-EP)))/10  -- PP and EP swapped depending on which is larger obvi ;)
+<p>EP = EBP * Current_Floor * Enemy_Type(Normal:1, Enhanced:2, Boss:4).</p>
 
-If PP is less than EP, Damage is boosted by 1/4
+<p>When Player_HP is below half, lose 1/4 Power.</p>
 
-If EP is 4 times stronger, instant kill player.
+<p>If player/enemy has a class advantage over the other, gain 1/5 power.</p>
 
-If PP is 3 times stronger, no damage is dealt to the player.
+<p>If playing in Easy Mode half enemy power.</p>
 
-If battle is won, gain random amount of gold with a maximum, of 200 * Current_Floor, and gain 10% Max HP.
+<p>Damage = ((EBP/4) + (PP-EP)))/10 -- PP and EP swapped depending on which is larger obvi ;)</p>
 
-## Initial Event Chances
-As of writing the current chances are as follows:
+<p>If PP is less than EP, Damage is boosted by 1/4</p>
 
-CurseChance = 5
+<p>If EP is 4 times stronger, instant kill player.</p>
 
-EnemyChance = 15
+<p>If PP is 3 times stronger, no damage is dealt to the player.</p>
 
-FindItemChance = 30
+<p>If battle is won, gain random amount of gold with a maximum, of 200 * Current_Floor, and gain 10% Max HP.</p>
 
-MerchantChance = 10
+<p>## Initial Event Chances<br />
+As of writing the current chances are as follows:</p>
 
-ElevatorChance = 3
+<p>CurseChance = 5</p>
 
-Fall = 3
+<p>EnemyChance = 15</p>
 
-CorpseChance = 9
+<p>FindItemChance = 30</p>
 
-CampChance = 5
+<p>MerchantChance = 10</p>
 
-BossChance = 4
+<p>ElevatorChance = 3</p>
 
+<p>Fall = 3</p>
 
-These chances are added up and rolled on a percent basage.
-If the player has been given the Predict Chances skill(ESP), 
-the player can expend a potion in order to see what percent each
-event has of being rolled.
+<p>CorpseChance = 9</p>
 
-The chances will NEVER go below 1, 
-so no matter how many Buffs/Debuffs the player has, 
-you will always have a chance of experiancing every event in the game.
+<p>CampChance = 5</p>
 
-These base chances can be changed at anytime by editing the Settings.ini file, 
-but no new events can be added just by adding a new line.
+<p>BossChance = 4</p>
 
-## Monsters
-Monsters are stored in the Monsters.ini file and new monsters can be added to the game very easily.
-the format of the ini file is as follows:
+<p>
+These chances are added up and rolled on a percent basage.<br />
+If the player has been given the Predict Chances skill(ESP), <br />
+the player can expend a potion in order to see what percent each<br />
+event has of being rolled.</p>
 
-[Monsters]
+<p>The chances will NEVER go below 1, <br />
+so no matter how many Buffs/Debuffs the player has, <br />
+you will always have a chance of experiancing every event in the game.</p>
 
-Total = (Total Amount of Monsters in Game)
+<p>These base chances can be changed at anytime by editing the Settings.ini file, <br />
+but no new events can be added just by adding a new line.</p>
 
-1 = MonsterName, BasePower, Class
+<p>## Monsters<br />
+Monsters are stored in the Monsters.ini file and new monsters can be added to the game very easily.<br />
+the format of the ini file is as follows:</p>
 
-2 = MonsterName, BasePower, Class
+<p>[Monsters]</p>
 
-3 = MonsterName, BasePower, Class
+<p>Total = (Total Amount of Monsters in Game)</p>
 
-etc.
+<p>1 = MonsterName, BasePower, Class</p>
 
+<p>2 = MonsterName, BasePower, Class</p>
 
-If your total is more than the amount of monsters in your file you WILL experiance a crash. Make sure that if you edit this file you properly count.
-All monsters in the file are pulled at random. One being a higher number than another has no effect on chances to find the monster. In order to make some monsters more common simply duplicate them, although this isn't recommended, things will get very repetative.
+<p>3 = MonsterName, BasePower, Class</p>
 
-## Character Creation
-The character creation is simple, but can affect your first few floors greatly.
-You can name your character anything you want, simply cosmetic as of now it is not recorded or anything.
-Class: You can pick on of the three classes and get their respective bonuses.
-Easy Mode: Makes the game significantly easier. Increases, Elevator chances, Item chances, and decreases chances of Falling through floors. It will also half enemy power during damage calculations.
+<p>etc.</p>
 
-## Initial Stats:
-You begin creation with 50 Power, 100 Gold, and 10 Potions.
-You have 10 points to raise any of the three stats that you want. You can also decrease stats to raise another.
-Power increase/decreases by 5,
-Gold by 10,
-and Potions by 1.
+<p>
+If your total is more than the amount of monsters in your file you WILL experiance a crash. Make sure that if you edit this file you properly count.<br />
+All monsters in the file are pulled at random. One being a higher number than another has no effect on chances to find the monster. In order to make some monsters more common simply duplicate them, although this isn't recommended, things will get very repetative.</p>
 
-If you run out of points you can reset all changes by simply pressing reset.
+<p>## Character Creation<br />
+The character creation is simple, but can affect your first few floors greatly.<br />
+You can name your character anything you want, simply cosmetic as of now it is not recorded or anything.<br />
+Class: You can pick on of the three classes and get their respective bonuses.<br />
+Easy Mode: Makes the game significantly easier. Increases, Elevator chances, Item chances, and decreases chances of Falling through floors. It will also half enemy power during damage calculations.</p>
 
-## Leaving/Returning to the Game
-You can close the game at anytime without any loss of stats. The game saves automatically.
-When you first enter the game you are greeting with two options, 
-Open the door on the right
-Open the door on the left
+<p>## Initial Stats:<br />
+You begin creation with 50 Power, 100 Gold, and 10 Potions.<br />
+You have 10 points to raise any of the three stats that you want. You can also decrease stats to raise another.<br />
+Power increase/decreases by 5,<br />
+Gold by 10,<br />
+and Potions by 1.</p>
 
-Both increase chances of bad things happening to your character, but they are minor increases.
-Each option does a different chance increase.
-This is done because, like stated above, you can close at anytime, including to avoid extremely powerful enemys that you cannot fight. So each time this is done, you slowly lose your chances of getting good events. Over time, this could potentially kill your character.
+<p>If you run out of points you can reset all changes by simply pressing reset.</p>
 
-## Exploring Floors
-On each floor there are 5 rooms, with 1 event per room.
-Once you have explored all 5 rooms you then move onto the next floor.
-Higher floors = Stronger weapons, more gold, and more potions, but you will experiance stronger enemies, and after your first 4 floors you will begin to find Boss class monsters, which are 4 times strong than regular enemies.
+<p>## Leaving/Returning to the Game<br />
+You can close the game at anytime without any loss of stats. The game saves automatically.<br />
+When you first enter the game you are greeting with two options, <br />
+Open the door on the right<br />
+Open the door on the left</p>
+
+<p>Both increase chances of bad things happening to your character, but they are minor increases.<br />
+Each option does a different chance increase.<br />
+This is done because, like stated above, you can close at anytime, including to avoid extremely powerful enemys that you cannot fight. So each time this is done, you slowly lose your chances of getting good events. Over time, this could potentially kill your character.</p>
+
+<p>## Exploring Floors<br />
+On each floor there are 5 rooms, with 1 event per room.<br />
+Once you have explored all 5 rooms you then move onto the next floor.<br />
+Higher floors = Stronger weapons, more gold, and more potions, but you will experiance stronger enemies, and after your first 4 floors you will begin to find Boss class monsters, which are 4 times strong than regular enemies.<br />
+</p>
