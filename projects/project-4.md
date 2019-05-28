@@ -22,7 +22,7 @@ I spent a few of my teen age years working on various ROM hacks and making tools
 Doing this was my first entry into programming as a whole, even though I had an interest in programming, I never really had a way to get into it.
 Through out the time that I worked on Pokemon ROM Hacks I learned, Assembly, C, and C#. Making new tools in C#. Some of my more useful tools are linked below.
   
-I made various Hacks too. The ones made public are listed below.  
+I made various Hacks too. The ones made public are listed below. Most of these have been updated since my last post on the forums, but there are no public links to these updated versions as of right now.  
 [Holiday Hacks: Various mini hacks with varying stories and themes](https://www.pokecommunity.com/showthread.php?t=339585) - Complete  
 [Blackened Night: My first Pokemon ROM hack](https://www.pokecommunity.com/showthread.php?t=302424) - Unfinished  
 [A New Dawn: Standalone sequel to Blackened Night](https://www.pokecommunity.com/showthread.php?t=359943) - Unfinished  
