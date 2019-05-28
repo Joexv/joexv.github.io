@@ -1,0 +1,179 @@
+{
+  "basics": {
+    "name": "Joe Oliveira",
+    "label": "In House IT",
+    "picture": "https://joexv.github.io/images/NotMolly.png",
+    "email": "tech@fx420.com",
+    "phone": "",
+    "website": "https://joexv.github.io",
+    "summary": "I am an aspiring developer, who just wants to have fun and to eat lunch.\nI develop small programs and apps all the time.\n\nSome of my work is displayed under my Projects page, linked below.\n\nI am always working on new stuff, and am currently working on learning Unity to make my very own game.\n\nMy preferred languages are C# and Swift.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Roseburg",
+      "countryCode": "USA",
+      "region": "Oregon"
+    },
+    "profiles": [
+      {
+        "network": "github",
+        "username": "Joexv",
+        "url": "http://github.com/joexv"
+      },
+      {
+        "network": "twitter",
+        "username": "ManMadeOfGouda",
+        "url": "http://twitter.com/manmadeofgouda"
+      }
+    ]
+  },
+  "interests": [
+    {
+      "name": "Food",
+      "keywords": []
+    },
+    {
+      "name": "RPGs",
+      "keywords": []
+    },
+    {
+      "name": "Making my life easier",
+      "keywords": []
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "level": "",
+      "keywords": [
+        "C#",
+        "Assembly",
+        "Swift",
+        "Python",
+        "C",
+        "C++",
+        "Objective-C"
+      ]
+    },
+    {
+      "name": "Toolsets/OS",
+      "level": "",
+      "keywords": [
+        "MacOS",
+        "Ubuntu",
+        "Git/GitHub",
+        "Windows"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Homeschooled",
+      "area": "Computer Science",
+      "studyType": "HS Diploma",
+      "startDate": "2012-09-05",
+      "endDate": "2013-06-14",
+      "gpa": "3.95",
+      "courses": [
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "FX420",
+      "position": "CTO / In House IT Boi",
+      "website": "fx420.com",
+      "startDate": "2018",
+      "endDate": "Present",
+      "summary": "No one really knows what I do here. But I sit in an office and make things work good.",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "HPD Computer Repair",
+      "position": "Manager - Lead Technician",
+      "website": "",
+      "startDate": "2015",
+      "endDate": "Present",
+      "summary": "",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Fujitsu America",
+      "position": "Field Engineer",
+      "website": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Simply Mac - Apple Dealer",
+      "position": "Sales Manager",
+      "website": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Boost Mobile",
+      "position": "Regional Manager",
+      "website": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Metro PCS",
+      "position": "Regional Manager",
+      "website": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Boy Scouts Of America",
+      "website": "",
+      "position": "Camp Counsler and various other positions",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+      ]
+    },
+    {
+      "organization": "Operation Christmas Child",
+      "website": "",
+      "position": "Regular Worker",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "No awards yet, but I'm always hopeful :)",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    }
+  ],
+  "references": [
+    {
+      "name": "Available upon request",
+      "reference": ""
+    }
+  ]
+}

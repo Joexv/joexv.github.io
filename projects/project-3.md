@@ -1,0 +1,43 @@
+---
+layout: project
+type: project
+image: images/MayDay.jpg
+title: MayDay Button
+permalink: projects/cotton
+# All dates must be YYYY-MM-DD format!
+date: 2014-04-12
+labels:
+  - C#
+  - IT Resources
+  - Printers Suck
+summary: A toolkit for end users to fix their mistakes
+---
+
+Coworkers being frustrating, asking you to restart their printers every five minutes?
+Well mine were. So I came up with a simple solution. One button to solve all issues.
+
+If you're like me and hate it when you get asked to do the same degrading task every five minutes, by coworkers who couldn't care less
+about your time. Then the MayDay-Button is for you.
+
+The MayDay Button is setup to allow end users to run the typical commands you as their IT guy might have to run if you are troubleshooting.
+For example: you have a recipte printer plugged into your POS that is always acting up. One day it decides it doesn't want to print after a jam, or maybe
+it just hates you. The MayDay button will automatically reset all printer related tasks, spools, and does it's best to notify the end user that, 
+'Hey. Maybe, it's out of paper. And when you replaced it you never closed its popup telling you, that you were out of paper.'
+In doing so it aims to help teach the user to not rely solely on calling you when you are out with your family enjoying a nice day off.
+Go enjoy yourself! Let the MayDay button do the boring work for you!
+
+Featuring an always on-screen button that simply says "MAYDAY!", even the most simple of minds can use it!
+Three big configurable buttons. 
+Have a different POS program that always freezes like mine? Easy to swap over. Just a few changes in the source!
+Don't use Adobe? Lucky duck. Change it to what ever PDF program you do use!
+
+The MayDay Button boasts many other features for you as an IT nerd.
+Run preconfigured commands through a local TCP connection right frrom your office! Never worry about getting up again!
+See someone doing something stupid? Send a notification straight to their register with just the click of a button!
+Get SMS messages right to your phone notifying you of important events on the register, such as 'Battery is low', 'HDD/SSD is dying', 'Someone tried to close the MayDayButton!', and many more.
+Open up a private slack chat right on the register in order to communicate with the user if you're off site.
+
+<hr>
+
+Source: <a href="https://github.com/Joexv/MayDay-Button"><i class="large github icon "></i>MayDayButton</a>
+
