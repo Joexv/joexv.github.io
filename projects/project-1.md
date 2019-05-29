@@ -10,7 +10,7 @@ labels:
   - Swift
   - IOS
   - RPG
-summary: Our first mobile game. A fun simple rougelike textbased RPG
+summary: Our first mobile game. A fun simple roguelike textbased RPG
 ---
 
 In a world filled with corrupt kings, door to door toaster salesmen, and lots of squirrels, there lies one thing that everyone loves. Torture. And what better way to torture adventurers who don't do your bidding? Throw them into a giant Tower and make them fight through hordes of goblins and demons to earn their freedom back.
