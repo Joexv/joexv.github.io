@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>OWOer.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>44AEC3D01346133526759DC95776803DCE708A60</string>
+				<key>dateExpires</key>
+				<string>4/29/20</string>
+				<key>type</key>
+				<string>iOS Development</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>44AEC3D01346133526759DC95776803DCE708A60</string>
+						<key>dateExpires</key>
+						<string>4/29/20</string>
+						<key>type</key>
+						<string>iOS Development</string>
+					</dict>
+					<key>name</key>
+					<string>IQKeyboardManagerSwift.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>6BB42LR4PM</string>
+						<key>name</key>
+						<string>Joseph Oliveira</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>6BB42LR4PM.com.AltApps.OWOer</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>6BB42LR4PM</string>
+				<key>get-task-allow</key>
+				<true/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>6BB42LR4PM.com.AltApps.OWOer</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>OWOer.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>6f55b061-d66b-4cb1-9aaa-8cb65b0bee73</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: *</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>6BB42LR4PM</string>
+				<key>name</key>
+				<string>Joseph Oliveira</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
