@@ -6,7 +6,7 @@
     "email": "tech@fx420.com",
     "phone": "",
     "website": "https://joexv.github.io",
-    "summary": "I am an aspiring developer, who just wants to have fun and to eat lunch.  I develop small programs and apps all the time.  Some of my work is displayed under my Projects page, linked below.  I am always working on new stuff, and am currently working on learning Unity to remake my Dad's first game.  My preferred languages are C# and Swift.",
+    "summary": "Talented System Administrator focused on performance optimization and technical improvements with an understanding of cost-effective decision making and usability.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -27,20 +27,6 @@
       }
     ]
   },
-  "interests": [
-    {
-      "name": "Food",
-      "keywords": []
-    },
-    {
-      "name": "RPGs",
-      "keywords": []
-    },
-    {
-      "name": "Making my life easier",
-      "keywords": []
-    }
-  ],
   "skills": [
     {
       "name": "Languages",
@@ -85,7 +71,7 @@
       "website": "fx420.com",
       "startDate": "2018",
       "endDate": "Present",
-      "summary": "No one really knows what I do here. But I sit in an office and make things work good.",
+      "summary": "Installed, created, and upgraded internal and third-party software. Configured, tested and maintained network equipment. Established network specifications and analyzed workflow, access, information and security requirements. Implemented, developed and tested installation and update of file servers, print servers and application servers in all departments. Implemented corrective plans of action for network performance issues including availability, utilization, and latency.",
       "highlights": [
       ]
     },
@@ -95,7 +81,7 @@
       "website": "",
       "startDate": "2015",
       "endDate": "Present",
-      "summary": "",
+      "summary": "Disassembled computers to perform diagnostics and check for repair needs. Maintained company computers by performing updates and repairs. Refurbished used computers and technological equipment, saving companies money. Wrote reports on computer statuses and maintenance jobs. Explained diagnostic findings to customers and outlined repair or service options.",
       "highlights": [
       ]
     },
@@ -105,7 +91,7 @@
       "website": "",
       "startDate": "",
       "endDate": "",
-      "summary": "",
+      "summary": "Identified any key changes to project that could affect cost, completion date and customer relationship. Removed and replaced malfunctioning components to correct hardware problems. Broke down and evaluated user problems using test scripts, personal expertise and probing questions. Explained technical information in clear terms to non-technical individuals to promote better understanding.",
       "highlights": [
       ]
     },
