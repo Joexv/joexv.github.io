@@ -50,4 +50,11 @@ Not enough cheese,
 Too much cheese,
 They got greedy AF,
 They played it too safe. Ended up forever alone.,
-sudo commit sudoku
+sudo commit sudoku,
+'Skewered' by a big boi with a bow,
+They died from peer pressure,
+They stared at some jailer for too long,
+They tried (and failed) to parry Gwyn,
+They were eaten alive by an abnormally large box,
+Their hitbox grew three sizes in an instant,
+Some cheesy guy on the internet gave them bad advice
