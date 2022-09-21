@@ -1,13 +1,12 @@
 {
   "basics": {
     "name": "Joe Oliveira",
-    "label": "In House IT",
+    "label": "",
     "picture": "https://joexv.github.io/images/Cheesy.png",
     "email": "joeoliveira89+github@gmail.com",
     "phone": "",
     "website": "https://joexv.github.io",
-    "summary": "Just a cheesy boi looking to make some cheese in the world.",
-    "summary_2": "Talented System Administrator focused on performance optimization and technical improvements with an understanding of cost-effective decision making and usability.",
+    "summary": "Just a cheesy boi looking to make some cheese in the world.\nIT Specialist and .Net Developer focused on technical improvements with an understanding of cost-effective decision making. I also make things sometimes!",
     "location": {
       "address": "",
       "postalCode": "",
@@ -56,73 +55,63 @@
   "education": [
     {
       "institution": "Homeschooled",
-      "area": "Computer Science",
+      "area": "Computer Science & Business Marketing",
       "studyType": "HS Diploma",
       "startDate": "2012-09-05",
       "endDate": "2013-06-14",
-      "gpa": "3.95",
+      "gpa": "4.0",
       "courses": [
       ]
     }
   ],
   "work": [
     {
-      "company": "FX420",
-      "position": "CTO / In House IT Boi",
-      "website": "fx420.com",
-      "startDate": "2018",
-      "endDate": "Present",
-      "summary": "Installed, created, and upgraded internal and third-party software. Configured, tested and maintained network equipment. Established network specifications and analyzed workflow, access, information and security requirements. Implemented, developed and tested installation and update of file servers, print servers and application servers in all departments. Implemented corrective plans of action for network performance issues including availability, utilization, and latency.",
-      "highlights": [
-      ]
-    },
-    {
       "company": "HPD Computer Repair",
-      "position": "Manager - Lead Technician",
+      "position": "Part Owner / Desktop Technician",
       "website": "",
-      "startDate": "2015",
+      "startDate": "2015-02",
       "endDate": "Present",
-      "summary": "Disassembled computers to perform diagnostics and check for repair needs. Maintained company computers by performing updates and repairs. Refurbished used computers and technological equipment, saving companies money. Wrote reports on computer statuses and maintenance jobs. Explained diagnostic findings to customers and outlined repair or service options.",
+      "summary": "Responsible for all levels of the business. Maintained store front while repairing customer devices following the break-fix methods in a timely manner. Handled multiple small business IT needs including but not limited to, Office 365, Active Directory, POS, server and work station setup and repairs.",
       "highlights": [
       ]
     },
     {
-      "company": "Fujitsu America",
+      "company": "FX420",
+      "position": "Contracted System Administrator / IT Engineer",
+      "website": "fx420.com",
+      "startDate": "2018-11",
+      "endDate": "2019-11",
+      "summary": "Created, managed and maintained web site and shop for the business, generating thousands of sales weekly. Installed security system for video monitoring meeting all of OLCC’s guidelines and requirements. Assisted in development of the POS software Flowhub (primarily C# & Javascript).",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Fujitsu",
       "position": "Field Engineer",
       "website": "",
-      "startDate": "",
-      "endDate": "",
-      "summary": "Identified any key changes to project that could affect cost, completion date and customer relationship. Removed and replaced malfunctioning components to correct hardware problems. Broke down and evaluated user problems using test scripts, personal expertise and probing questions. Explained technical information in clear terms to non-technical individuals to promote better understanding.",
+      "startDate": "2017-02",
+      "endDate": "2017-08",
+      "summary": "Following break-fix repair servers, POS systems, self-checkout units and more for over 50 different business locations across Oregon. On-Call 24/7 for emergency repairs. Maintained company vehicle and parts shed keeping them clean, organized and in the case of the vehicle, stayed up to date on repairs. Developed system to help engineers organize their schedule and tickets and seeded the implementation across Oregon. Kept up and exceeded required repair and time metrics.",
       "highlights": [
       ]
     },
     {
-      "company": "Simply Mac - Apple Dealer",
-      "position": "Sales Manager",
+      "company": "Simply Mac Apple premier Partner",
+      "position": "Sales Manager / Genius Bar",
       "website": "",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
+      "startDate": "2017-09",
+      "endDate": "2018-08",
+      "summary": "Strategized and implemented new sales techniques and trainings in order to increase sales metrics. Worked to maintain and exceed a company-wide requirement of 75% of devices being repaired within 24 hours. Managed tickets through Apple GSM & GSX. Held the top position for sales company wide for most of my time with the company.",
       "highlights": [
       ]
     },
     {
-      "company": "Boost Mobile",
+      "company": "SCommunications - Boost Mobile & Metro PCS",
       "position": "Regional Manager",
       "website": "",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
-      "highlights": [
-      ]
-    },
-    {
-      "company": "Metro PCS",
-      "position": "Regional Manager",
-      "website": "",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
+      "startDate": "2015-12",
+      "endDate": "2017-02",
+      "summary": "Direct manager of over 70 employees and 30 different locations across Oregon, Washington and California. Implemented sales metrics and training in order to maximize company profits. Setup new locations expanding the franchise. Reported directly to the franchise owner regarding everything about the business. Handled all of the inventory, marketing and hiring for all locations.",
       "highlights": [
       ]
     }
@@ -131,20 +120,20 @@
     {
       "organization": "Boy Scouts Of America",
       "website": "",
-      "position": "Camp Counsler and various other positions",
+      "position": "Camp Counsler and Climbing Tower Instructor",
       "startDate": "",
       "endDate": "",
-      "summary": "",
+      "summary": "Assisted troops during their stay at the Summer camp and taught climbing lessons and safety at the on site climbing tower.",
       "highlights": [
       ]
     },
     {
       "organization": "Operation Christmas Child",
       "website": "",
-      "position": "Regular Worker",
+      "position": "Warehouse Worker",
       "startDate": "",
       "endDate": "",
-      "summary": "",
+      "summary": "During multiple Christmas Seasons I have helped box, load and ship thousands of boxes to under privileged kids so they can have a wonderful Christmas.",
       "highlights": [
       ]
     }
