@@ -12,7 +12,7 @@ labels:
   - Screenly OSE
   - ImageMagik
   - Excel
-summary: Two incredibly useful programs for making menus
+summary: Two incredibly useful programs for making FX420's menus
 ---
 The MenuCreators are two tools, to easily edit, convert, and upload Excel spreadsheets to Screenly OSE digital signage.
 Created for use by FX420, but the projects are open source and available to anyone! Can be used locally or remotely via command line tools.
