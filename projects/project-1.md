@@ -5,7 +5,7 @@ image: images/AuraScreen.png
 title: AuraScreen
 permalink: projects/Aura
 # All dates must be YYYY-MM-DD format!
-date: 2022-1-01
+date: 2022-01-01
 labels:
   - Windows
   - Accessibility
