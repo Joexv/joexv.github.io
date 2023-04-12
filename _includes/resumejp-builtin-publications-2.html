@@ -26,7 +26,7 @@
 </div>
 
 <div class="sixteen wide column no-bottom">
-  {% for entry in site.data.bio.publications %}
+  {% for entry in site.data.resumejp.publications %}
     {% if entry.type == "thesis" %}
     <p class="ui no-bottom">
       <b>{{ entry.name }}</b>{% if entry.author and entry.author != "" %}, {{ entry.author }}{% endif %}, <em>{{ entry.publisher }}</em>, {{ entry.releaseDate }}
@@ -47,7 +47,7 @@
   </div>
 
   <div class="sixteen wide column no-bottom">
-  {% for entry in site.data.bio.publications %}
+  {% for entry in site.data.resumejp.publications %}
     {% if entry.type == "journal" %}
       <p class="ui no-bottom">
         <b>{{ entry.name }}</b>{% if entry.author and entry.author != "" %}, {{ entry.author }}{% endif %}, <em>{{ entry.publisher }}</em>, {{ entry.releaseDate }}
@@ -68,7 +68,7 @@
 </div>
 
 <div class="sixteen wide column no-bottom">
-  {% for entry in site.data.bio.publications %}
+  {% for entry in site.data.resumejp.publications %}
     {% if entry.type == "conference" %}
       <p class="ui no-bottom">
         <b>{{ entry.name }}</b>{% if entry.author and entry.author != "" %}, {{ entry.author }}{% endif %}, <em>{{ entry.publisher }}</em>, {{ entry.releaseDate }}
@@ -89,7 +89,7 @@
 </div>
 
 <div class="sixteen wide column no-bottom">
-  {% for entry in site.data.bio.publications %}
+  {% for entry in site.data.resumejp.publications %}
     {% if entry.type == "workshop" %}
        <p class="ui no-bottom">
        <b>{{ entry.name }}</b>{% if entry.author and entry.author != "" %}, {{ entry.author }}{% endif %}, <em>{{ entry.publisher }}</em>, {{ entry.releaseDate }}
@@ -110,7 +110,7 @@
 </div>
 
 <div class="sixteen wide column no-bottom">
-  {% for entry in site.data.bio.publications %}
+  {% for entry in site.data.resumejp.publications %}
     {% if entry.type == "techreport" %}
       <p class="ui no-bottom">
       <b>{{ entry.name }}</b>{% if entry.author and entry.author != "" %}, {{ entry.author }}{% endif %}, <em>{{ entry.publisher }}</em>, {{ entry.releaseDate }}

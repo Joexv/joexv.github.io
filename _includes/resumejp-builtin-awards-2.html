@@ -17,7 +17,7 @@
   </div>
 
   <div class="sixteen wide column no-bottom">
-    {% for entry in site.data.bio.awards %}
+    {% for entry in site.data.resumejp.awards %}
       {% if entry.type == "grant" %}
         <p class="ui no-bottom">
           <b>{{ entry.title }}</b>, {{ entry.awarder }}{% if entry.date %}, {{ entry.date }}{% endif %}
@@ -35,7 +35,7 @@
   </div>
 
   <div class="sixteen wide column no-bottom">
-    {% for entry in site.data.bio.awards %}
+    {% for entry in site.data.resumejp.awards %}
       {% if entry.type != "grant" %}
         <p class="ui no-bottom">
           <b>{{ entry.title }}</b>, {{ entry.awarder }}, {{ entry.date }}
