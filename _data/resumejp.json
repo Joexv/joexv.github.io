@@ -1,0 +1,179 @@
+{
+  "basics": {
+    "name": "Test",
+    "label": "New Page Who Dis?",
+    "picture": "https://joexv.github.io/images/Cheesy.png",
+    "email": "joeoliveira89+github@gmail.com",
+    "phone": "",
+    "website": "https://joexv.github.io",
+    "summary": "Just a cheesy boi looking to make some cheese in the world.\nIT Specialist and .Net Developer focused on technical improvements with an understanding of cost-effective decision making. I also make things sometimes!",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Roseburg",
+      "countryCode": "USA",
+      "region": "Oregon"
+    },
+    "profiles": [
+      {
+        "network": "github",
+        "username": "Joexv",
+        "url": "http://github.com/joexv"
+      },
+      {
+        "network": "twitter",
+        "username": "ManMadeOfGouda",
+        "url": "http://twitter.com/manmadeofgouda"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "Development Languages",
+      "level": "",
+      "keywords": [
+        "C#",
+        "Assembly",
+        "Swift",
+        "Python",
+        "C",
+        "C++",
+        "Objective-C",
+        "HTML",
+        "Ruby",
+        "Javascript",
+        "Java"
+      ]
+    },
+    {
+      "name": "Toolsets/Skills",
+      "level": "",
+      "keywords": [
+        "Windows",
+        "MacOS",
+        "Linux",
+        "Version Control (Git)",
+        "Office 365",
+        "Ticketing Software",
+        "iOS & Android Development",
+        "Azure",
+        "AWS",
+        "AutoCAD",
+        "Blender",
+        "Unity",
+        "Game Maker",
+        "Well Versed Documentation"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "FullSail University",
+      "area": "Game Design",
+      "studyType": "Bachelors",
+      "startDate": "2022-12-05",
+      "endDate": "-",
+      "gpa": "-",
+      "courses": [
+      ]
+    },
+    {
+      "institution": "Homeschooled",
+      "area": "Computer Science & Business Marketing",
+      "studyType": "HS Diploma",
+      "startDate": "2012-09-05",
+      "endDate": "2013-06-14",
+      "gpa": "4.0",
+      "courses": [
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "HPD Computer Repair",
+      "position": "Part Owner / Desktop Technician",
+      "website": "",
+      "startDate": "2015-02",
+      "endDate": "Present",
+      "summary": "Responsible for all levels of the business. Maintained store front while repairing customer devices following the break-fix methods in a timely manner. Handled multiple small business IT needs including but not limited to, Office 365, Active Directory, POS, server and work station setup and repairs.",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "FX420",
+      "position": "Contracted System Administrator / IT Engineer",
+      "website": "",
+      "startDate": "2018-11",
+      "endDate": "2019-11",
+      "summary": "Created, managed and maintained web site and shop for the business, generating thousands of sales weekly. Installed security system for video monitoring meeting all of OLCC’s guidelines and requirements. Assisted in development of the POS software Flowhub (primarily C# & Javascript).",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Fujitsu",
+      "position": "Field Engineer",
+      "website": "",
+      "startDate": "2017-02",
+      "endDate": "2017-08",
+      "summary": "Following break-fix repair servers, POS systems, self-checkout units and more for over 50 different business locations across Oregon. On-Call 24/7 for emergency repairs. Maintained company vehicle and parts shed keeping them clean, organized and in the case of the vehicle, stayed up to date on repairs. Developed system to help engineers organize their schedule and tickets and seeded the implementation across Oregon. Kept up and exceeded required repair and time metrics.",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Simply Mac Apple Premier Partner",
+      "position": "Sales Manager / Genius Bar",
+      "website": "",
+      "startDate": "2017-09",
+      "endDate": "2018-08",
+      "summary": "Strategized and implemented new sales techniques and trainings in order to increase sales metrics. Worked to maintain and exceed a company-wide requirement of 75% of devices being repaired within 24 hours. Managed tickets through Apple GSM & GSX. Held the top position for sales company wide for most of my time with the company.",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "SCommunications - Boost Mobile & Metro PCS",
+      "position": "Regional Manager",
+      "website": "",
+      "startDate": "2015-12",
+      "endDate": "2017-02",
+      "summary": "Direct manager of over 70 employees and 30 different locations across Oregon, Washington and California. Implemented sales metrics and training in order to maximize company profits. Setup new locations expanding the franchise. Reported directly to the franchise owner regarding everything about the business. Handled all of the inventory, marketing and hiring for all locations.",
+      "highlights": [
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Boy Scouts Of America",
+      "website": "",
+      "position": "Camp Counsler and Climbing Tower Instructor",
+      "startDate": "",
+      "endDate": "",
+      "summary": "Assisted troops during their stay at the Summer camp and taught climbing lessons and safety at the on site climbing tower.",
+      "highlights": [
+      ]
+    },
+    {
+      "organization": "Operation Christmas Child",
+      "website": "",
+      "position": "Warehouse Worker",
+      "startDate": "",
+      "endDate": "",
+      "summary": "During multiple Christmas Seasons I have helped box, load and ship thousands of boxes to under privileged kids so they can have a wonderful Christmas.",
+      "highlights": [
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "No awards yet, but I'm always hopeful :)",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    }
+  ],
+  "references": [
+    {
+      "name": "Available upon request",
+      "reference": ""
+    }
+  ]
+}
