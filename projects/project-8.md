@@ -13,10 +13,10 @@ labels:
   - API
   - TS
   - Link Grabber
-summary: This is absically an over glorified TS grabber.
+summary: This is basically an over glorified TS grabber.
 ---
 Helps automate downloading from YogaAnytime.com
-This is absically an over glorified TS grabber.
+This is basically an over glorified TS grabber.
 Made on request
 
 Source: [Github:YogaAnytimeDownloader](https://github.com/Joexv/YogaAnytimeDownloader)

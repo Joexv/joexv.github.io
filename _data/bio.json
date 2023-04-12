@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Joe Oliveira",
-    "label": "Test",
+    "label": "New Page Who Dis?",
     "picture": "https://joexv.github.io/images/Cheesy.png",
     "email": "joeoliveira89+github@gmail.com",
     "phone": "",
@@ -29,7 +29,7 @@
   },
   "skills": [
     {
-      "name": "Languages",
+      "name": "Development Languages",
       "level": "",
       "keywords": [
         "C#",
@@ -38,21 +38,45 @@
         "Python",
         "C",
         "C++",
-        "Objective-C"
+        "Objective-C",
+        "HTML",
+        "Ruby",
+        "Javascript",
+        "Java"
       ]
     },
     {
-      "name": "Toolsets/OS",
+      "name": "Toolsets/Skills",
       "level": "",
       "keywords": [
+        "Windows",
         "MacOS",
-        "Ubuntu",
-        "Git/GitHub",
-        "Windows"
+        "Linux",
+        "Version Control (Git)",
+        "Office 365",
+        "Ticketing Software",
+        "iOS & Android Development",
+        "Azure",
+        "AWS",
+        "AutoCAD",
+        "Blender",
+        "Unity",
+        "Game Maker",
+        "Well Versed Documentation"
       ]
     }
   ],
   "education": [
+    {
+      "institution": "FullSail University",
+      "area": "Game Design",
+      "studyType": "Bachelors",
+      "startDate": "2022-12-05",
+      "endDate": "-",
+      "gpa": "-",
+      "courses": [
+      ]
+    },
     {
       "institution": "Homeschooled",
       "area": "Computer Science & Business Marketing",
@@ -78,7 +102,7 @@
     {
       "company": "FX420",
       "position": "Contracted System Administrator / IT Engineer",
-      "website": "fx420.com",
+      "website": "",
       "startDate": "2018-11",
       "endDate": "2019-11",
       "summary": "Created, managed and maintained web site and shop for the business, generating thousands of sales weekly. Installed security system for video monitoring meeting all of OLCC’s guidelines and requirements. Assisted in development of the POS software Flowhub (primarily C# & Javascript).",
@@ -96,7 +120,7 @@
       ]
     },
     {
-      "company": "Simply Mac Apple premier Partner",
+      "company": "Simply Mac Apple Premier Partner",
       "position": "Sales Manager / Genius Bar",
       "website": "",
       "startDate": "2017-09",
