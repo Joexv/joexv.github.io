@@ -28,11 +28,11 @@ With more styles being worked on and added, you will be able to convert your tex
 
 Featuring a simple easy to use UI for both the main app, a keyboard, and the additional iMessage extension, you can be sure that even if you've never asked 'uwu what's this?' before, you will be able to do it a thousand times with no problems! Disclaimer: Don't ask that a thousand times. Ask it two thousand times. Up those numbers ya degenerate.
 
-#Why A simple text changer for IOS 10+ Inspired by Nepeta's UWU tweak, that will change how notifications look. But instead of notifications, this allows you to write in different text styles without a Jailbreak
+Why? A simple text changer for IOS 10+ Inspired by Nepeta's UWU tweak, that will change how notifications look. But instead of notifications, this allows you to write in different text styles without a Jailbreak
 
 Most fuctions are stored in the file TextFunctions.swift Both the main application and iMessage application use this class for converting text, but use their own class for button functions and the like
 
-Source: [Github:OwOer](https://github.com/Joexv/OWOer)
+Source: [OwOer](https://github.com/Joexv/OWOer)
 Download : [Apple App Store](https://apps.apple.com/us/app/owoer/id1466836303)
 
 

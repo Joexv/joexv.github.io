@@ -26,7 +26,7 @@ Disclaimer
 
 By making this program I am not promoting piracy or stealing of content from Headspace. They truely believe in what they create and that should be supported for making a service that helps many many people every day.
 
-Source: [Github:HeadRipper](https://github.com/Joexv/HeadRipper)
+Source: [HeadRipper](https://github.com/Joexv/HeadRipper)
 
 
 

@@ -19,7 +19,7 @@ Helps automate downloading from YogaAnytime.com
 This is basically an over glorified TS grabber.
 Made on request
 
-Source: [Github:YogaAnytimeDownloader](https://github.com/Joexv/YogaAnytimeDownloader)
+Source: [YogaAnytimeDownloader](https://github.com/Joexv/YogaAnytimeDownloader)
 
 
 
