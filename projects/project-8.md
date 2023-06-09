@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/Customer.jpg
+image: images/yoga.png
 title: Yoga AnyTime Downloader
 permalink: projects/YAD
 # All dates must be YYYY-MM-DD format!

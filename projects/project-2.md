@@ -15,7 +15,7 @@ labels:
 summary: The Official FlorkOfCows Sticker Pack!
 ---
 
-<img class="ui medium right floated rounded image" src="../images/vacay-home-page.png">
+<img class="ui medium right floated rounded image" src="../images/Flork.png">
 
 The only official FlorkOfCows sticker pack!
 

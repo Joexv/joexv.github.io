@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: https://icon.horse/icon/icon.horse
+image: images/iconhorse.png
 title: ICO Enumerator 5000
 permalink: projects/ICO_Enumerator5000
 # All dates must be YYYY-MM-DD format!

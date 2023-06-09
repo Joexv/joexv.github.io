@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/Customer.jpg
+image: images/headripper.gif
 title: Headripper
 permalink: projects/Headripper
 # All dates must be YYYY-MM-DD format!

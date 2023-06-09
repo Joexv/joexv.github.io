@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/Customer.jpg
+image: images/inventory.png
 title: Inventory Manager
 permalink: projects/IM
 # All dates must be YYYY-MM-DD format!
