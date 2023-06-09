@@ -28,38 +28,50 @@
       }
     ]
   },
+  "interests":[
+    {"name": "Exploring the outdoors"},
+    {"name": "Rock Climbing"},
+    {"name": "Feeling the music"},
+    {"name": "Cooking and baking"},
+    {"name": "Playing and creating games"},
+    {"name": "Movie buff"},
+    {"name": "Foodie"}
+  ],
   "skills": [
     {
       "name": "Development Languages",
       "level": "",
       "keywords": [
-        "C#",
+        "C#/.NET",
         "Assembly",
         "Swift",
+        "Objective-C",
         "Python",
+        "REST API",
         "C",
         "C++",
-        "Objective-C",
-        "HTML",
+        "HTML/CSS",
         "Ruby",
         "Javascript",
         "Java"
       ]
     },
     {
-      "name": "Toolsets/Skills",
+      "name": "NOTABLE SOFTWARE/UTLITIES",
       "level": "",
       "keywords": [
-        "Windows",
-        "MacOS",
-        "Linux",
+        "Windows/Linux/MacOS",
         "Version Control (Git)",
-        "Office 365",
-        "Ticketing Software",
+        "Microsoft Office Suite/Office 365",
+        "Ticketing Systems",
         "iOS & Android Development",
         "Azure",
         "AWS",
-        "AutoCAD",
+        "Active Directory",
+        "Docker",
+        "Virtualization",
+        "Ticketing Systems",
+        "SQL/LiteSQL/MongoDB",
         "Blender",
         "Unity",
         "Game Maker",

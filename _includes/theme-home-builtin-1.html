@@ -18,8 +18,9 @@
 
       <div class="center aligned content">
         <span class="header">{{ site.data.bio.basics.name }}</span>
+        <span class="header">{{ site.data.bio.basics.jpname }}</span>
         <div class="center aligned content">
-          <span class="description">{{ site.data.bio.basics.label }}</span>
+          <span class="description">{{ site.data.bio.basics.label }}</span><br>
         </div>
         <div class="left aligned description">
           {{ site.data.bio.basics.summary }}
@@ -38,18 +39,18 @@
         {% include home-network-links.html %}
       </div>
       <div class="center aligned content">
-        <a href="{{ site.baseurl}}/projects/">
-          <button class="ui basic button">Projects ({{ num_projects }})</button>
-        </a>
-        <!-- <a href="{{ site.baseurl}}/essays/">
-         <button class="ui basic button">Essays ({{ num_essays }})</button>
-        </a> -->
-        <a href="{{ site.baseurl}}/bio/">
-          <button class="ui basic button">{{ site.bio-page-label }}</button>
-        </a>
-        <a href="{{ site.baseurl}}/resumejp/">
-          <button class="ui basic button">{{ site.bio-page-label2 }}</button>
-        </a>
+             <a href="{{ site.baseurl}}/projects/">
+              <button class="ui basic button" style="width: 40%;">Projects ({{ num_projects }})</button>
+            </a>
+             <a href="{{ site.baseurl}}/bio/">
+              <button class="ui basic button" style="width: 40%;">{{ site.bio-page-label }}</button>
+            </a>
+             <a href="{{ site.baseurl}}/resumejp/">
+              <button class="ui basic button" style="width: 40%;">{{ site.jp-resume-label }}</button>
+            </a>
+             <a href="{{ site.baseurl}}/Shokumukeirekisho/">
+              <button class="ui basic button" style="width: 40%;">{{ site.shoku-label }}</button>
+            </a>
       </div>
     </div>
   </div>
