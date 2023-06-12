@@ -2,7 +2,35 @@
 layout: projects
 ---
 
-<div style="margin-top: 20px; margin-bottom: 20px" class="ui text container">
- <h1>{{ page.title }}</h1>
- {{ content }}
+<div style="margin: 20px 20px 200px 200px; background-color: rgb(255, 255, 255) !important; padding: 25px; box-shadow: 10px 4px 4px rgba(34,34,34,0.6);" class="ui text container">
+
+{% if page.screenshots %}
+<h1>{{ page.title }}</h1>
+{{ content }}
+</br>
+<head>
+    <link rel="stylesheet" href="..\css\gallery.css">
+</head>
+<section class="gallery">
+    {% for screenshot in page.screenshots %}
+    <div class="gallery__item">
+        {% if forloop.first == true %} 
+        <input type="radio" id="{{ screenshot | slice: 12, 99 }}" checked name="gallery" class="gallery__selector" />
+        {% else %}
+        <input type="radio" id="{{ screenshot | slice: 12, 99 }}" name="gallery" class="gallery__selector" />
+        {% endif %}
+
+        <img class="gallery__img" src="{{ screenshot }}" alt="Main"/>
+          <label for="{{ screenshot | slice: 12, 99 }}" class="gallery__thumb">
+              <img src="{{ screenshot }}" alt="Thumb"/>
+          </label>
+    </div>
+    {% endfor %}
+</section>
+
+{% else %}
+<h1>{{ page.title }}</h1>
+<img class="ui medium right floated rounded image" src="../{{ page.image }}">
+{{ content }}
+{% endif %}
 </div>

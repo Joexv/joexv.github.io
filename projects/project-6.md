@@ -11,6 +11,7 @@ labels:
   - Excel
 summary: A basic inventory/customer management tool
 ---
+
 I used to work for a computer repair company and, at the time when I was first hired on, they used excel files to "keep track" of customers that have come into the store and what kind of work was done to their devices.
 I say "Keep track of customer files" loosely because these excel files were never updated past the customers name and phone number. And sometimes not even that much.
 I wanted to come up with a way to make sure that everyone kept things nice and organized. Thus my inventory management program was born. While we never ended up using it for inventory or order tracking, we did use it religously for our customers. This not only helped us out by being able to keep track of what work we had done, but it made the customers happy seeing more information on their printed invoices at the end of thier transactions.

@@ -15,8 +15,6 @@ labels:
 summary: The Official FlorkOfCows Sticker Pack!
 ---
 
-<img class="ui medium right floated rounded image" src="../images/Flork.png">
-
 The only official FlorkOfCows sticker pack!
 
 With over 250 stickers there’s something for every conversation!

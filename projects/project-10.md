@@ -12,6 +12,7 @@ labels:
   - Clean Desktops
 summary: No more bland browser shortcuts
 ---
+
 Hate seeing that bland icon of your browser everytime you make a website shortcut on your desktop? Tired of manually having to find, download, set an icon up for each shortcut, and being abused by your parents?
 
 Well sucks to be you I guess. Give this program a try and at least you won't have to the first couple of things.
