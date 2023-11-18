@@ -21,6 +21,8 @@ We also ended up introducing an insurance program for our customers and thus I a
 Now, when I left the company, I was still on very good terms with the Owner. And he continued to use the program. But I forgot to backup my latest source to anywhere besides their computers, and since then he has since deleted the source. Everything on Github was what little backups I had personally, plus a rewrite of most of the customer handling that I ended up doing later on to fix some bugs that were present in the version the Owner still had. I am not actively maintaining this as it was scrapped together kinda quickly to make sure we had something to work with. Additionally, the customers are stored in ini files as, at the time, I couldn't for the life of me figure out how to setup a proper Database, and by the time I had figured out how, there were too many customer files to seemlessly import from the ini files.
 Maybe one day I will recreate this with a proper database and documentation. But for now, it will stay as it is.
 
+Note: this was rewritten with a proper local DB. ignore everything that this man has said. signed this man.
+
 Source: [Inventory Manager](https://github.com/Joexv/InventoryManager)
 
 
