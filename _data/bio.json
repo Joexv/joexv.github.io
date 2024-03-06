@@ -35,7 +35,8 @@
     {"name": "Cooking and baking"},
     {"name": "Playing and creating games"},
     {"name": "Movie buff"},
-    {"name": "Foodie"}
+    {"name": "Foodie"},
+    {"name": "Dying"}
   ],
   "skills": [
     {
@@ -86,7 +87,7 @@
       "studyType": "Bachelors",
       "startDate": "2022-12-05",
       "endDate": "-",
-      "gpa": "-",
+      "gpa": "3.77",
       "courses": [
       ]
     },
