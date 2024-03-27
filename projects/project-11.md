@@ -5,7 +5,7 @@ image: images/FSU.png
 title: School Project - Project and Portfolio II Game Design - Online
 permalink: projects/School_PP2
 # All dates must be YYYY-MM-DD format!
-date: 2024-03
+date: 2024-03-01
 labels:
   - Unreal Enginge 5.3
   - School
