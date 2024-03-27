@@ -15,9 +15,9 @@ labels:
 summary: The Official FlorkOfCows Sticker Pack!
 ---
 
-The only official FlorkOfCows sticker pack!
+The only officialy licensed FlorkOfCows sticker pack!
 
-With over 250 stickers there’s something for every conversation!
+With over 300 stickers there’s something for every conversation!
 
 Sock puppet comics made in MS paint to show you that you can do anything if you have good ideas, then turned into stickers for your enjoyment.
 
@@ -31,5 +31,5 @@ Approved by Flork himself! And we didn't even have to bribe him....too much....
 
 Download: 
 <a href="https://apple.co/3nKVxpy">Apple App Store</a>
+
 <a href="https://play.google.com/store/apps/details?id=com.altappsunlim.florkofstickers">Google Play Store</a>
-<a href="https://line.me/S/sticker/22402825?_from=lcm">Line - Pack 1</a>

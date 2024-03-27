@@ -14,16 +14,16 @@ labels:
 summary: My series of Mini Pokemon ROM hacks
 ---
 
-Growing up my dad was an avid gamer. Most of my early years in life were spent in Japan, when he was stationed there for the airforce.
-He got me and my brother into Pokemon very early on. Like as soon as I was born early on.(Pokemon was first released in 1996, so he was able to start me right away).
-One thing I always wanted to do growing up was make my own Pokemon game. Granteed I don't work for Game Freak so a ROM hack was about as close as I am gonna get.
-I spent a few of my teen age years working on various ROM hacks and making tools to help the community.
+From my earliest memories, gaming has been a significant part of my life, thanks to my dad's passion for video games. Growing up in Japan, where my dad was stationed in the Air Force, I was introduced to the world of Pokemon from a very young age. In fact, I like to joke that I started playing Pokemon almost as soon as I was born, considering the game's release in 1996 coincided closely with my arrival into the world.
 
-Doing this was my first entry into programming as a whole, even though I had an interest in programming, I never really had a way to get into it.
-Through out the time that I worked on Pokemon ROM Hacks I learned, Assembly, C, and C#. Making new tools in C#. Some of my more useful tools are linked below.
-  
+Inspired by my love for Pokemon and fueled by my desire to create my own gaming experiences, I embarked on a journey to develop my own Pokemon game. While I may not have been employed by Game Freak, I found my outlet through ROM hacking – a close approximation to realizing my childhood dream. Throughout my teenage years, I dedicated myself to crafting various ROM hacks and developing tools to support the ROM hacking community.
+
+Engaging in ROM hacking served as my entry point into the world of programming. Despite harboring an interest in programming prior to this endeavor, I lacked the means to explore it further. However, as I delved deeper into the intricacies of ROM hacking, I began to learn programming languages such as Assembly, C, and eventually C#. I even developed several tools in C# to aid fellow ROM hackers in their endeavors.
+
+Through this immersive experience, I not only honed my programming skills but also cultivated a deep appreciation for the creativity and problem-solving inherent in game development. The journey from a Pokemon-loving kid to a proficient programmer and tool developer has been both rewarding and enlightening, laying the foundation for my future endeavors in the realm of technology and game development.
+
 I made various Hacks too. The ones made public are listed below. Most of these have been updated since my last post on the forums, but there are no public links to these updated versions as of right now.  
-[Holiday Hacks: Various mini hacks with varying stories and themes](https://www.pokecommunity.com/showthread.php?t=339585) - Complete  
+[Holiday Hacks: Various mini hacks with varying stories and themes](https://www.pokecommunity.com/showthread.php?t=339585) - Complete???  
 [Blackened Night: My first Pokemon ROM hack](https://www.pokecommunity.com/showthread.php?t=302424) - Unfinished  
 [A New Dawn: Standalone sequel to Blackened Night](https://www.pokecommunity.com/showthread.php?t=359943) - Unfinished  
 [Gentlemon: A simple sprite mod, that makes your Pokemon 'daper af'](https://www.pokecommunity.com/showthread.php?t=368132) - Complete  

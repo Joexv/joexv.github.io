@@ -13,31 +13,19 @@ labels:
 summary: A toolkit for end users to fix their mistakes
 ---
 
-Coworkers being frustrating, asking you to restart their printers every five minutes?
-Well mine were. So I came up with a simple solution. One button to solve all issues.
+Tired of constantly being interrupted by coworkers asking you to troubleshoot their printers every five minutes? I certainly was. That's why I developed a simple solution: the MayDay Button.
 
-If you're like me and hate it when you get asked to do the same degrading task every five minutes, by coworkers who couldn't care less
-about your time. Then the MayDay-Button is for you.
+If you're like me and find it frustrating to be pulled away from your tasks by repetitive and menial requests, the MayDay Button is your saving grace. Designed to empower end users to resolve common IT issues themselves, this intuitive button executes essential troubleshooting commands with just a single click.
 
-The MayDay Button is setup to allow end users to run the typical commands you as their IT guy might have to run if you are troubleshooting.
-For example: you have a recipte printer plugged into your POS that is always acting up. One day it decides it doesn't want to print after a jam, or maybe
-it just hates you. The MayDay button will automatically reset all printer related tasks, spools, and does it's best to notify the end user that, 
-'Hey. Maybe, it's out of paper. And when you replaced it you never closed its popup telling you, that you were out of paper.'
-In doing so it aims to help teach the user to not rely solely on calling you when you are out with your family enjoying a nice day off.
-Go enjoy yourself! Let the MayDay button do the boring work for you!
+Imagine dealing with a stubborn receipt printer that refuses to cooperate. With the MayDay Button, users can reset printer tasks, clear spools, and even receive helpful notifications to address common issues, such as low paper levels. It's about teaching self-reliance and freeing up your time to enjoy the moments that matter.
 
-Featuring an always on-screen button that simply says "MAYDAY!", even the most simple of minds can use it!
-Three big configurable buttons. 
-Have a different POS program that always freezes like mine? Easy to swap over. Just a few changes in the source!
-Don't use Adobe? Lucky duck. Change it to what ever PDF program you do use!
+Featuring a user-friendly interface with an unmistakable "MAYDAY!" button, even the least tech-savvy individuals can navigate its functionality effortlessly. Plus, with three customizable buttons, adapting to different software environments is a breeze.
 
-The MayDay Button boasts many other features for you as an IT nerd.
-Run preconfigured commands through a local TCP connection right frrom your office! Never worry about getting up again!
-See someone doing something stupid? Send a notification straight to their register with just the click of a button!
-Get SMS messages right to your phone notifying you of important events on the register, such as 'Battery is low', 'HDD/SSD is dying', 'Someone tried to close the MayDayButton!', and many more.
-Open up a private slack chat right on the register in order to communicate with the user if you're off site.
+But the MayDay Button doesn't stop there. As an IT professional, you'll appreciate its advanced features, including remote command execution via local TCP connection, instant notifications for critical events, and seamless communication through private Slack chats – all accessible directly from the workstation.
+
+Say goodbye to constant interruptions and reclaim your time with the MayDay Button – your ultimate tool for streamlining IT support and empowering end users to troubleshoot with confidence (and safety).
 
 <hr>
 
-Source: <a href="https://github.com/Joexv/MayDay-Button"><i class="large github icon "></i>MayDayButton</a>
+Source: <a href="https://github.com/Joexv/MayDay-Button"><i class="large github icon "></i>Github</a>
 
