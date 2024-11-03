@@ -1,58 +1,56 @@
-<!-- Home page design with small circular image bisecting card. -->
-
-{% assign essay_pages = site.pages | where: "type", "essay"  | where_exp: "page", "page.draft != true" %}
-{% assign project_pages = site.pages | where: "type", "project" | where_exp: "page", "page.draft != true" %}
-{% assign num_essays = essay_pages.size %}
-{% assign num_projects = project_pages.size %}
-
-<div style="height: 100%; margin-top: -75px" class="ui middle aligned grid ">
-
+<div style="height: 100%; margin-top: -75px" class="ui middle aligned grid">
   <div class="column">
-
+    <!-- Profile Picture -->
     <div style="position: relative; top: 75px; z-index: 1" class="ui fluid centered small circular image">
-      <img src="{{ site.data.bio.basics.picture }}">
+      <img src="{{ site.data.bio.basics.picture }}" alt="Profile Picture">
     </div>
 
+    <!-- Main Content Card with Improved Padding and Shadow for Structure -->
+    <div style="max-width: 800px; padding: 30px; margin-top: 30px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 10px;" class="ui fluid centered card">
+      <!-- Name and Label -->
+      <div class="center aligned content" style="margin-bottom: 20px;">
+        <h2 class="ui header" style="font-size: 2em; margin-bottom: 5px;">{{ site.data.bio.basics.name }} - {{ site.data.bio.basics.jpname }}</h2>
+        <p style="font-size: 1.2em; color: #666;">{{ site.data.bio.basics.label }}</p>
+      </div>
 
-    <div style="max-width: 800px; padding-top: 75px; margin-top: 0px" class="ui fluid centered card">
-
-      <div class="center aligned content">
-        <span class="header">{{ site.data.bio.basics.name }}</span>
-        <span class="header">{{ site.data.bio.basics.jpname }}</span>
-        <div class="center aligned content">
-          <span class="description">{{ site.data.bio.basics.label }}</span><br>
-        </div>
-        <div class="left aligned description">
+      <!-- Summary Section with Enhanced Readability -->
+      <div class="content" style="text-align: left; padding: 15px 0;">
+        <h3 class="ui header" style="color: #333; font-size: 1.4em; margin-bottom: 10px;">Summary</h3>
+        <p style="font-size: 1.1em; color: #555; line-height: 1.6;">
           {{ site.data.bio.basics.summary }}
-        </div>
+        </p>
       </div>
-      <div class="center aligned content">
-        <div class="description">
-          Interests:
-          {% for interest in site.data.bio.interests %}
-            {{ interest.name }}{% if forloop.last != true %}, {% endif %}
-          {% endfor %}
 
-        </div>
+      <!-- Interests Section with Cleaned List Styling -->
+      <div class="content" style="text-align: left; padding: 15px 0;">
+        <h3 class="ui header" style="color: #333; font-size: 1.4em; margin-bottom: 10px;">Interests</h3>
+        <ul style="font-size: 1.1em; color: #555; line-height: 1.6; padding-left: 20px; list-style-type: disc;">
+          {% for interest in site.data.bio.interests %}
+            <li>{{ interest.name }}</li>
+          {% endfor %}
+        </ul>
       </div>
-      <div class="center aligned extra content">
+
+      <!-- Buttons for Projects and Resume Pages with Project Count -->
+      <div class="center aligned content" style="margin-top: 25px;">
+        <a href="{{ site.baseurl }}/projects/" class="ui basic button" style="width: 45%; margin: 5px;">
+          Projects ({{ site.pages | where_exp: "page", "page.url contains '/projects/'" | size | minus: 1}})
+        </a>
+        <a href="{{ site.baseurl }}/bio/" class="ui basic button" style="width: 45%; margin: 5px;">
+          {{ site.bio-page-label }}
+        </a>
+        <a href="{{ site.baseurl }}/resumejp/" class="ui basic button" style="width: 45%; margin: 5px;">
+          履歴書 - {{ site.jp-resume-label }}
+        </a>
+        <a href="{{ site.baseurl }}/Shokumukeirekisho/" class="ui basic button" style="width: 45%; margin: 5px;">
+          職務経歴書 - {{ site.shoku-label }}
+        </a>
+      </div>
+
+      <!-- Social Links with Icons for Visual Appeal -->
+      <div class="center aligned extra content" style="margin-top: 20px;">
         {% include home-network-links.html %}
-      </div>
-      <div class="center aligned content">
-             <a href="{{ site.baseurl}}/projects/">
-              <button class="ui basic button" style="width: 40%;">Projects ({{ num_projects }})</button>
-            </a>
-             <a href="{{ site.baseurl}}/bio/">
-              <button class="ui basic button" style="width: 40%;">{{ site.bio-page-label }}</button>
-            </a>
-             <a href="{{ site.baseurl}}/resumejp/">
-              <button class="ui basic button" style="width: 40%;">{{ site.jp-resume-label }}</button>
-            </a>
-             <a href="{{ site.baseurl}}/Shokumukeirekisho/">
-              <button class="ui basic button" style="width: 40%;">{{ site.shoku-label }}</button>
-            </a>
       </div>
     </div>
   </div>
-
 </div>

@@ -1,14 +1,14 @@
 {
   "basics": {
     "name": "Joe Oliveira",
-    "jpname":"ジョ オリビーラ",
+    "jpname": "ジョ オリビーラ",
     "label": "永遠の痛み",
     "picture": "https://joexv.github.io/images/Cheesy.png",
     "email": "joeoliveira89+github@gmail.com",
     "phone": "",
     "website": "https://joexv.github.io",
-    "summary": "I am a seasoned IT professional with over a decade of hands-on experience in desktop engineering, systems administration, and technical support.\nThroughout my career, I have built a reputation for swiftly diagnosing and resolving complex software and hardware issues, ensuring minimal downtime and maximum performance for clients. One notable accomplishment I am exceptionally proud of includes collaborating with cross-functional teams to identify and address recurring software problems, significantly reducing system downtime and improving operational efficiency.\n\nIn my sales days, I was repeatedly held in the top 10 sales position company-wide, surpassing monthly sales goals by an average of 32%. With expertise in project management, networking administration, disaster recovery, and systems administration, I can implement innovative solutions that improve productivity and reliability.\n\nMy proficiency extends to various programming languages, with a particular focus on .Net and a deep understanding of industry-standard software and utilities. I am passionate about reliably leveraging my skills and insights to tackle diverse IT challenges.\nLet's connect through LinkedIn (https://www.linkedin.com/in/joe-oliveira) or my email (joeoliveira89@gmail.com) to discuss how I can contribute to your IT initiatives and lets fix some things together. Or maybe you want to discuss the extensive lore behind three-letter acronyms and how they have taken over this industry. I am available to discuss either.",
-    "location": {
+    "summary": "As a seasoned IT professional with over a decade of hands-on experience, I bring extensive expertise in desktop engineering, systems administration, and technical support. Throughout my career, I’ve built a reputation for efficiently diagnosing and resolving complex technical issues, ensuring minimal downtime and peak performance for clients. \n\nOne of my proudest achievements has been collaborating with cross-functional teams to tackle recurring software challenges, ultimately reducing system downtime and boosting operational efficiency. Previously, in a sales role, I consistently ranked among the top 10 performers company-wide, exceeding monthly targets by an impressive 32% on average.\n\nI possess a strong foundation in project management, network administration, disaster recovery, and systems administration, with a deep proficiency in .NET and multiple programming languages. Additionally, my understanding of industry-standard software and utilities enables me to implement innovative solutions that improve productivity and reliability. \n\nFeel free to reach out via LinkedIn (https://www.linkedin.com/in/joe-oliveira) or email (joeoliveira89@gmail.com) if you’d like to discuss IT solutions, brainstorm on tech challenges, or just chat about the vast lore of industry acronyms.",
+    "location":{ 
       "address": "",
       "postalCode": "",
       "city": "Roseburg",
@@ -28,88 +28,87 @@
       }
     ]
   },
-  "interests":[
-    {"name": "Exploring the outdoors"},
-    {"name": "Rock Climbing"},
-    {"name": "Feeling the music"},
-    {"name": "Cooking and baking"},
-    {"name": "Playing and creating games"},
-    {"name": "Movie buff"},
-    {"name": "Foodie"},
-    {"name": "Dying"}
-  ],
+  "interests": [
+    { "name": "Exploring the outdoors: From hiking trails to camping under the stars, I love connecting with nature and recharging in the open air." },
+    { "name": "Rock Climbing: Testing limits and building resilience, one climb at a time." },
+    { "name": "Music Enthusiast: Whether it’s feeling every beat or discovering new genres, music fuels my creativity." },
+    { "name": "Culinary Adventures: Cooking and baking are my outlets for creativity, and I’m always experimenting with new recipes." },
+    { "name": "Gaming: Both playing and creating games—constantly inspired by the worlds, mechanics, and stories within." },
+    { "name": "Cinema Lover: I’m a movie buff at heart, always ready to dive into everything from indie films to big blockbusters." },
+    { "name": "Foodie: Exploring new cuisines and flavors is my kind of adventure." },
+    { "name": "Seeking New Challenges: Life’s too short not to push the boundaries—whether it’s learning, creating, or exploring." }
+],
   "skills": [
     {
-        "name": "Programming Languages",
-        "level": "Proficient",
-        "keywords": [
-            "C# / .NET",
-            "C",
-            "C++",
-            "Python",
-            "Java",
-            "JavaScript",
-            "HTML / CSS",
-            "Ruby",
-            "Assembly",
-            "Swift",
-            "Objective-C"
-        ]
+      "name": "Programming Languages",
+      "level": "Proficient",
+      "keywords": [
+        "C# / .NET",
+        "C",
+        "C++",
+        "Python",
+        "Java",
+        "JavaScript",
+        "HTML / CSS",
+        "Ruby",
+        "Assembly",
+        "Swift",
+        "Objective-C"
+      ]
     },
     {
-        "name": "Game Development Tools",
-        "level": "Advanced",
-        "keywords": [
-            "Unity",
-            "Unreal Engine",
-            "Game Maker Studio",
-            "Blender (3D Modeling)",
-            "AI Development (Reinforcement Learning)"
-        ]
+      "name": "Game Development Tools",
+      "level": "Advanced",
+      "keywords": [
+        "Unity",
+        "Unreal Engine",
+        "Game Maker Studio",
+        "Blender (3D Modeling)",
+        "AI Development (Reinforcement Learning)"
+      ]
     },
     {
-        "name": "Software & Utilities",
-        "level": "Experienced",
-        "keywords": [
-            "Windows / Linux / macOS",
-            "Version Control (Git, Perforce, SVN)",
-            "Microsoft Office Suite / Office 365",
-            "Virtualization (Docker, VMware)",
-            "Ticketing Systems (e.g., Jira, ServiceNow)",
-            "Azure / AWS (Cloud Services)",
-            "Active Directory"
-        ]
+      "name": "Software & Utilities",
+      "level": "Experienced",
+      "keywords": [
+        "Windows / Linux / macOS",
+        "Version Control (Git, Perforce, SVN)",
+        "Microsoft Office Suite / Office 365",
+        "Virtualization (Docker, VMware)",
+        "Ticketing Systems (e.g., Jira, ServiceNow)",
+        "Azure / AWS (Cloud Services)",
+        "Active Directory"
+      ]
     },
     {
-        "name": "Databases",
-        "level": "Proficient",
-        "keywords": [
-            "SQL",
-            "LiteSQL",
-            "MongoDB"
-        ]
+      "name": "Databases",
+      "level": "Proficient",
+      "keywords": [
+        "SQL",
+        "LiteSQL",
+        "MongoDB"
+      ]
     },
     {
-        "name": "Software Development & Documentation",
-        "level": "Advanced",
-        "keywords": [
-            "REST API Development",
-            "Well-Structured Documentation",
-            "Agile Methodologies",
-            "Cross-Platform Development (iOS & Android)"
-        ]
+      "name": "Software Development & Documentation",
+      "level": "Advanced",
+      "keywords": [
+        "REST API Development",
+        "Well-Structured Documentation",
+        "Agile Methodologies",
+        "Cross-Platform Development (iOS & Android)"
+      ]
     }
   ],
   "education": [
     {
-      "institution": "FullSail University",
+      "institution": "Full Sail University",
       "area": "Game Design",
       "studyType": "Bachelors",
       "startDate": "2022-12-05",
       "endDate": "-",
       "gpa": "3.77",
-      "courses": [
-      ]
+      "courses": []
     }
   ],
   "work": [
@@ -119,9 +118,8 @@
       "website": "",
       "startDate": "2015-02",
       "endDate": "Present",
-      "summary": "Responsible for all levels of the business. Maintained store front while repairing customer devices following the break-fix methods in a timely manner. Handled multiple small business IT needs including but not limited to, Office 365, Active Directory, POS, server and work station setup and repairs.",
-      "highlights": [
-      ]
+      "summary": "Responsible for all levels of the business. Maintained store front while repairing customer devices following the break-fix methods in a timely manner. Handled multiple small business IT needs including but not limited to, Office 365, Active Directory, POS, server and workstation setup, and repairs.",
+      "highlights": []
     },
     {
       "company": "FX420",
@@ -129,9 +127,8 @@
       "website": "",
       "startDate": "2018-11",
       "endDate": "2019-11",
-      "summary": "Created, managed and maintained web site and shop for the business, generating thousands of sales weekly. Installed security system for video monitoring meeting all of OLCC’s guidelines and requirements. Assisted in development of the POS software Flowhub (primarily C# & Javascript).",
-      "highlights": [
-      ]
+      "summary": "Created, managed, and maintained website and e-commerce platform, generating significant weekly sales. Installed video monitoring systems to comply with OLCC guidelines and assisted in POS software development (primarily C# & JavaScript).",
+      "highlights": []
     },
     {
       "company": "Fujitsu",
@@ -139,9 +136,8 @@
       "website": "",
       "startDate": "2017-02",
       "endDate": "2017-08",
-      "summary": "Following break-fix repair servers, POS systems, self-checkout units and more for over 50 different business locations across Oregon. On-Call 24/7 for emergency repairs. Maintained company vehicle and parts shed keeping them clean, organized and in the case of the vehicle, stayed up to date on repairs. Developed system to help engineers organize their schedule and tickets and seeded the implementation across Oregon. Kept up and exceeded required repair and time metrics.",
-      "highlights": [
-      ]
+      "summary": "Performed break-fix repairs on servers, POS systems, and self-checkout units across over 50 locations in Oregon. On-call 24/7 for urgent repairs. Developed a scheduling system for engineers and assisted with knowledge base updates, surpassing performance metrics.",
+      "highlights": []
     },
     {
       "company": "Simply Mac Apple Premier Partner",
@@ -149,9 +145,8 @@
       "website": "",
       "startDate": "2017-09",
       "endDate": "2018-08",
-      "summary": "Strategized and implemented new sales techniques and trainings in order to increase sales metrics. Worked to maintain and exceed a company-wide requirement of 75% of devices being repaired within 24 hours. Managed tickets through Apple GSM & GSX. Held the top position for sales company wide for most of my time with the company.",
-      "highlights": [
-      ]
+      "summary": "Implemented new sales strategies and conducted training to improve sales metrics. Maintained a high repair rate of 75% devices within 24 hours and consistently ranked in the top sales company-wide. Managed technical support tickets via Apple GSM & GSX.",
+      "highlights": []
     },
     {
       "company": "SCommunications - Boost Mobile & Metro PCS",
@@ -159,21 +154,19 @@
       "website": "",
       "startDate": "2015-12",
       "endDate": "2017-02",
-      "summary": "Direct manager of over 70 employees and 30 different locations across Oregon, Washington and California. Implemented sales metrics and training in order to maximize company profits. Setup new locations expanding the franchise. Reported directly to the franchise owner regarding everything about the business. Handled all of the inventory, marketing and hiring for all locations.",
-      "highlights": [
-      ]
+      "summary": "Oversaw 70+ employees and 30 locations across Oregon, Washington, and California. Expanded franchise operations, managed inventory, and led hiring and training initiatives to drive business growth.",
+      "highlights": []
     }
   ],
   "volunteer": [
     {
       "organization": "Boy Scouts Of America",
       "website": "",
-      "position": "Camp Counsler and Climbing Tower Instructor",
+      "position": "Camp Counselor and Climbing Tower Instructor",
       "startDate": "",
       "endDate": "",
-      "summary": "Assisted troops during their stay at the Summer camp and taught climbing lessons and safety at the on site climbing tower.",
-      "highlights": [
-      ]
+      "summary": "Supported troops during summer camp and taught climbing lessons and safety protocols on-site.",
+      "highlights": []
     },
     {
       "organization": "Operation Christmas Child",
@@ -181,9 +174,8 @@
       "position": "Warehouse Worker",
       "startDate": "",
       "endDate": "",
-      "summary": "During multiple Christmas Seasons I have helped box, load and ship thousands of boxes to under privileged kids so they can have a wonderful Christmas.",
-      "highlights": [
-      ]
+      "summary": "Contributed during the Christmas season by boxing, loading, and shipping gifts to underprivileged children.",
+      "highlights": []
     }
   ],
   "awards": [
