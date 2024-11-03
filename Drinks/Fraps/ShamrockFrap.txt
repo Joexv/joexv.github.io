@@ -1,4 +1,0 @@
-- Start with a Vanilla Bean Frappuccino
-- Add peppermint syrup (1.5 pumps tall, 2 pumps grande, 2.5 pumps venti)
-- Add classic syrup (½ pump tall, 1 pump grande, 1.5 pumps venti)
-- Add matcha powder (2 scoops tall, 2.5 grande, 3 venti)

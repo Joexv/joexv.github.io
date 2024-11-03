@@ -1,4 +1,0 @@
-- Vanilla Bean Frappuccino
-- Add white mocha syrup (1 pump for a tall, 2 for grande, 3 for venti)
-- Add cinnamon dolce syrup (1 pump for a tall, 2 for grande, 3 for venti)
-- Top with cinnamon dolce powder

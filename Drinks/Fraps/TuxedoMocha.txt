@@ -1,3 +1,0 @@
-- Order a mocha, hot or cold
-- Made with half white chocolate mocha and half regular mocha
-- Add java chips and top with mocha drizzle

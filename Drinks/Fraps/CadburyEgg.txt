@@ -1,5 +1,0 @@
-- Java Chip Frappuccino
-- Add Frappuccino Roast (1 pump tall, 2 grande, 3 venti)
-- Add Vanilla syrup (1 pump for a tall, 1.5 pumps for a grande, 2 pumps for a venti)
-- Add Caramel syrup (1/2 pump for a tall and grande, 1 pump for a venti)
-- Add vanilla bean powder (2 scoops for a tall, 3 scoops for a grande and 4 scoops for a venti)

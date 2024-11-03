@@ -1,4 +1,0 @@
-- Vanilla Bean Frappuccino
-- Mocha Drizzle on the inside of the cup
-- Java chips blended in
-- Top with whipped cream, mocha sauce and cookie crumbles

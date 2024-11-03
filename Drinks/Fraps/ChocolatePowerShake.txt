@@ -1,5 +1,0 @@
-- Start with a Venti Java Chip Frappucino
-- Made with soy milk
-- Add 1 banana
-- Add 1 scoop of whey protein powder
-- No whip

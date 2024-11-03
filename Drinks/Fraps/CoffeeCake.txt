@@ -1,5 +1,0 @@
-- Start with a Coffee Frappuccino
-- Add Cinnamon Dolce Syrup (1 pump tall, 2 pumps grande, 3 pumps venti)
-- Add Toffee Nut Syrup (1 pump tall, 2 pumps grande, 3 pumps venti)
-- Optional: Add Vanilla Syrup (1/2 pump tall and grande, 1 pump venti)
-- Top with whipped cream and cinnamon dolce topping

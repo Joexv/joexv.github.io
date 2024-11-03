@@ -40,44 +40,64 @@
   ],
   "skills": [
     {
-      "name": "Development Languages",
-      "level": "",
-      "keywords": [
-        "C#/.NET",
-        "Assembly",
-        "Swift",
-        "Objective-C",
-        "Python",
-        "REST API",
-        "C",
-        "C++",
-        "HTML/CSS",
-        "Ruby",
-        "Javascript",
-        "Java"
-      ]
+        "name": "Programming Languages",
+        "level": "Proficient",
+        "keywords": [
+            "C# / .NET",
+            "C",
+            "C++",
+            "Python",
+            "Java",
+            "JavaScript",
+            "HTML / CSS",
+            "Ruby",
+            "Assembly",
+            "Swift",
+            "Objective-C"
+        ]
     },
     {
-      "name": "NOTABLE SOFTWARE/UTLITIES",
-      "level": "",
-      "keywords": [
-        "Windows/Linux/MacOS",
-        "Version Control (Git)",
-        "Microsoft Office Suite/Office 365",
-        "Ticketing Systems",
-        "iOS & Android Development",
-        "Azure",
-        "AWS",
-        "Active Directory",
-        "Docker",
-        "Virtualization",
-        "Ticketing Systems",
-        "SQL/LiteSQL/MongoDB",
-        "Blender",
-        "Unity",
-        "Game Maker",
-        "Well Versed Documentation"
-      ]
+        "name": "Game Development Tools",
+        "level": "Advanced",
+        "keywords": [
+            "Unity",
+            "Unreal Engine",
+            "Game Maker Studio",
+            "Blender (3D Modeling)",
+            "AI Development (Reinforcement Learning)"
+        ]
+    },
+    {
+        "name": "Software & Utilities",
+        "level": "Experienced",
+        "keywords": [
+            "Windows / Linux / macOS",
+            "Version Control (Git, Perforce, SVN)",
+            "Microsoft Office Suite / Office 365",
+            "Virtualization (Docker, VMware)",
+            "Ticketing Systems (e.g., Jira, ServiceNow)",
+            "Azure / AWS (Cloud Services)",
+            "Active Directory"
+        ]
+    },
+    {
+        "name": "Databases",
+        "level": "Proficient",
+        "keywords": [
+            "SQL",
+            "LiteSQL",
+            "MongoDB"
+        ]
+    },
+    {
+        "name": "Software Development & Documentation",
+        "level": "Advanced",
+        "keywords": [
+            "REST API Development",
+            "Well-Structured Documentation",
+            "Agile Methodologies",
+            "Cross-Platform Development (iOS & Android)"
+        ]
     }
   ],
   "education": [
@@ -88,16 +108,6 @@
       "startDate": "2022-12-05",
       "endDate": "-",
       "gpa": "3.77",
-      "courses": [
-      ]
-    },
-    {
-      "institution": "Homeschooled",
-      "area": "Computer Science & Business Marketing",
-      "studyType": "HS Diploma",
-      "startDate": "2012-09-05",
-      "endDate": "2013-06-14",
-      "gpa": "4.0",
       "courses": [
       ]
     }

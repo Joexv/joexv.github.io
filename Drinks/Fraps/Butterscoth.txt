@@ -1,5 +1,0 @@
-- Creme Base
-- Add Pumpkin Spice Sauce (1 for tall, 2 grande, 3 for venti)
-- Add Caramel syrup (1 for tall, 2 grande, 3 for venti)
-- Add Hazelnut syrup  (1 for tall, 2 grande, 3 for venti)
-- Top with whipped cream and caramel drizzle

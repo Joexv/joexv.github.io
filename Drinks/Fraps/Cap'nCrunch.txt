@@ -1,5 +1,0 @@
-- Strawberries and Creme Frappuccino
-- Add caramel syrup (1/2 pump for a tall, 1 pump for grande, 1.5 pumps for venti)
-- Add toffee syrup (1 pump tall, 1.5 pumps grande, 2 pumps venti)
-- Add hazelnut syrup (1/2 pump for a tall, 1 pump for grande, 1.5 pumps for venti)
-- Optional: Add java chips if you want some crunch

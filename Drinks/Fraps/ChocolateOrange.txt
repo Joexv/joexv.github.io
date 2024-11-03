@@ -1,4 +1,0 @@
-- Mocha Frappuccino
-- Add Java Chips
-- Orange Slices (3 tall, 5 grande, 7 venti)
-- Top with chocolate whipped cream and cookie crumble topping

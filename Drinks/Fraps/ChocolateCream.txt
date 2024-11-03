@@ -1,4 +1,0 @@
-- Mocha Sauce (3 pumps tall, 4 pumps grande, 6 pumps venti)
-- Whole Milk
-- Ice
-- Top with whipped cream and mocha drizzle if desired

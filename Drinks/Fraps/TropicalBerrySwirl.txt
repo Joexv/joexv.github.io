@@ -1,4 +1,0 @@
-- Vanilla Bean Frappuccino made with coconut milk
-- Add blueberries
-- Add blackberries
-- Optional: Add java chips

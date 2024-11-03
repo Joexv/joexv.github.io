@@ -1,6 +1,0 @@
-- Lemonade to the bottom line
-- Add creme base (2 pumps tall, 3 pumps grande, 4 pumps venti)
-- Add Raspberry Syrup (1/2 pump tall, 1 pump grande, 1.5 pumps venti)
-- Add Vanilla Syrup (3 pumps tall, 3.5 pumps grande, 4 pumps venti)
-- Add ice and blend with whipped cream
-- Top with additional whip and enjoy!

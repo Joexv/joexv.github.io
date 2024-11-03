@@ -1,5 +1,0 @@
-- Start with a Strawberries and Creme Frappuccino
-- Add Vanilla Syrup (2 pumps tall, 2.5 pumps grande, 3 pumps venti)
-- Add Raspberry Syrup (1/2 pump tall, 1 pump grande, 1.5 pumps venti)
-- Add Classic Syrup (1/2 pump tall, 1 pump grande, 1.5 pumps venti)
-- Optional: Have the Barista throw in a bit of orange mango juice as well for extra fruit flavour

@@ -1,4 +1,0 @@
-- Start with a Coffee Frappuccino
-- Add Cinnamon Dolce Syrup (1 pump tall, 2 pumps grande, 3 pumps venti)
-- Add Vanilla Syrup (1/2 pump tall, 1 pump grande, 1.5 pumps for a venti)
-- Add honey

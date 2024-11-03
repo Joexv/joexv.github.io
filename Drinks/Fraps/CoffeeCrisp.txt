@@ -1,6 +1,0 @@
-- Vanilla Bean Frappuccino
-- Add 2 scoops of java chips
-- Add 1 pump of hazelnut syrup
-- Add 1/2 pump of mocha syrup
-- Add 2 pumps of Frappuccino Roast
-- Top with mocha drizzle for extra chocolate (optional)

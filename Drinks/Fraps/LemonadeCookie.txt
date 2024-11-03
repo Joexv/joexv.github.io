@@ -1,6 +1,0 @@
-- Lemonade to the first line
-- Milk to second line
-- Add White Mocha Syrup (2 pumps for tall, 3 grande, 4 venti)
-- Add Hazelnut Syrup (1 pump tall and grande, 2 venti)
-- Add Cream base (no coffee)
-- Top with whipped cream and if desired, put vanilla drizzle on top

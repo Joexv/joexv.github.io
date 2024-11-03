@@ -1,3 +1,0 @@
-- Order a  Chocolate Smoothie
-- Ask for Cinnamon Dolce Syrup instead of Mocha
-- Add 3 scoops of Vanilla Bean

@@ -1,7 +1,0 @@
-- Iced Passion Tea
-- Sub the water for Berry Hibiscus Juice
-- Add Classic Syrup (2 pumps tall, 3 pumps grande, 4 pumps venti)
-- Add Raspberry Syrup (1 pump tall, 1.5 pumps grande, 2 pumps venti)
-- Add scoop of berries (1/2 scoop for a tall)
-- Add 1 Lime Wheel
-- Shake Shake Shake!

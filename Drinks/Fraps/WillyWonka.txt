@@ -1,5 +1,0 @@
-- Start with a Double Chocolate Chip Frappuccino
-- Add extra java chips
-- Add extra mocha syrup (1 pump tall, 1.5 pumps grande, 2 pumps venti)
-- Add hazelnut syrup (1 pump tall, 1.5 pumps grande, 2 pumps venti)
-- Top with regular or chocolate whipped cream and mocha drizzle

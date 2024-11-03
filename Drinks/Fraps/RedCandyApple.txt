@@ -1,5 +1,0 @@
-- Start with apple juice to the bottom line of the cup
-- Add Raspberry Syrup (1.5 tall, 2 grande, 2.5 venti)
-- Add Classic Syrup (2 tall, 3 grande, 4 venti)
-- Add scoop of ice and blend
-- Top with a little whip and a pump of caramel drizzle

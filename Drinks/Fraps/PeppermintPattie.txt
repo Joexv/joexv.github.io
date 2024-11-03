@@ -1,5 +1,0 @@
-- Start with a Vanilla Bean Frappuccino
-- Add java chips
-- Add peppermint syrup (1.5 pumps tall, 2.5 grande, 3.5 venti)
-- Lightly coat the sides of the cup with mocha drizzle
-- Top with whip and more mocha drizzle

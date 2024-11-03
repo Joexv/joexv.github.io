@@ -4,7 +4,6 @@ type: project
 image: images/Pokeball.jpg
 title: Pokemon ROM Hacks And Tools
 permalink: projects/PRHT
-# All dates must be YYYY-MM-DD format!
 date: 2012-10-15
 labels:
   - ASM
@@ -14,23 +13,27 @@ labels:
 summary: My series of Mini Pokemon ROM hacks
 ---
 
-From my earliest memories, gaming has been a significant part of my life, thanks to my dad's passion for video games. Growing up in Japan, where my dad was stationed in the Air Force, I was introduced to the world of Pokemon from a very young age. In fact, I like to joke that I started playing Pokemon almost as soon as I was born, considering the game's release in 1996 coincided closely with my arrival into the world.
+Growing up immersed in the world of Pokémon, I was inspired early on to create my own experiences within the games I loved. My dad’s passion for gaming, combined with my formative years in Japan, introduced me to Pokémon almost from birth. This fascination fueled a lifelong passion for game development, leading me to start my journey with Pokémon ROM hacking.
 
-Inspired by my love for Pokemon and fueled by my desire to create my own gaming experiences, I embarked on a journey to develop my own Pokemon game. While I may not have been employed by Game Freak, I found my outlet through ROM hacking – a close approximation to realizing my childhood dream. Throughout my teenage years, I dedicated myself to crafting various ROM hacks and developing tools to support the ROM hacking community.
+Although I didn’t have access to traditional game development tools, I found a way through ROM hacking, diving deep into the code of Game Boy Advance games. Throughout my teenage years, I created a series of Pokémon ROM hacks and built tools to support the ROM hacking community, learning the fundamentals of programming along the way.
 
-Engaging in ROM hacking served as my entry point into the world of programming. Despite harboring an interest in programming prior to this endeavor, I lacked the means to explore it further. However, as I delved deeper into the intricacies of ROM hacking, I began to learn programming languages such as Assembly, C, and eventually C#. I even developed several tools in C# to aid fellow ROM hackers in their endeavors.
+### Technical Development and Community Impact
+ROM hacking served as my first practical encounter with programming, where I tackled Assembly, C, and eventually C# to bring my ideas to life. I designed several tools in C# that simplified the ROM hacking process, contributing to the community’s resources and empowering other creators to realize their own visions.
 
-Through this immersive experience, I not only honed my programming skills but also cultivated a deep appreciation for the creativity and problem-solving inherent in game development. The journey from a Pokemon-loving kid to a proficient programmer and tool developer has been both rewarding and enlightening, laying the foundation for my future endeavors in the realm of technology and game development.
+#### Notable Hacks
+Over the years, I developed a number of unique Pokémon hacks, each one exploring different themes, stories, and gameplay mechanics:
+- **[Holiday Hacks](https://www.pokecommunity.com/showthread.php?t=339585)**: A collection of mini-hacks, each themed around various holidays with unique stories and settings.
+- **[Blackened Night](https://www.pokecommunity.com/showthread.php?t=302424)**: My first full Pokémon ROM hack, an ambitious story-driven project (in progress).
+- **[A New Dawn](https://www.pokecommunity.com/showthread.php?t=359943)**: A standalone sequel to *Blackened Night*, expanding on its storyline and character arcs.
+- **[Gentlemon](https://www.pokecommunity.com/showthread.php?t=368132)**: A lighthearted sprite mod, reimagining Pokémon as “dapper af” characters in top hats and monocles.
+- **[Camp Baker](https://www.pokecommunity.com/showthread.php?t=321555)**: Inspired by my time working at a Boy Scout summer camp, this hack integrates personal stories and humor.
 
-I made various Hacks too. The ones made public are listed below. Most of these have been updated since my last post on the forums, but there are no public links to these updated versions as of right now.  
-[Holiday Hacks: Various mini hacks with varying stories and themes](https://www.pokecommunity.com/showthread.php?t=339585) - Complete???  
-[Blackened Night: My first Pokemon ROM hack](https://www.pokecommunity.com/showthread.php?t=302424) - Unfinished  
-[A New Dawn: Standalone sequel to Blackened Night](https://www.pokecommunity.com/showthread.php?t=359943) - Unfinished  
-[Gentlemon: A simple sprite mod, that makes your Pokemon 'daper af'](https://www.pokecommunity.com/showthread.php?t=368132) - Complete  
-[Camp Baker: A hack based on my time working at a Boy Scout summer camp.](https://www.pokecommunity.com/showthread.php?t=321555) - Unfinished  
+#### Tool Development for ROM Hackers
+To support other developers, I created several tools aimed at simplifying common ROM hacking tasks:
+- **[Hex Helper](https://www.pokecommunity.com/showthread.php?t=338884)**: A utility for quickly adding standard hex edits, streamlining the process for both beginners and experienced hackers.
+- **[Magic Backup](https://www.pokecommunity.com/showthread.php?t=388547)**: An automatic backup system for active ROM projects, providing peace of mind by creating regular save points.
+- **[Instant Pokémon Transfer System](https://www.pokecommunity.com/showthread.php?t=361135)**: A mass import/export tool that enables hackers to move Pokémon data between ROMs easily.
+- **[A-Offset](https://www.pokecommunity.com/showthread.php?t=347441)**: A tool designed to locate lost offsets in any game using Big-endian formats, essential for finding functions, tables, and other game data.
 
-Tools:  
-[Hex Helper: A tool for quickly adding in common hex edits](https://www.pokecommunity.com/showthread.php?t=338884)  
-[Magic Backup: A hassle free way to easily create backups of your ROMs, while you are actively working on them](https://www.pokecommunity.com/showthread.php?t=388547)  
-[Instant Pokemon Transfer System: A tool to mass import and export Pokemon data from ROMs](https://www.pokecommunity.com/showthread.php?t=361135)  
-[A-Offset: A tool to find lost offsets of functions, tables and the like. Works on any game that uses Big-endian offsets](https://www.pokecommunity.com/showthread.php?t=347441)  
+### Reflection on the Journey
+Building these hacks and tools not only deepened my programming skills but also fostered a deeper understanding of game mechanics, design, and user experience. Each hack taught me new ways to engage players, while the tools I created helped support a thriving community of fellow Pokémon fans and developers. This journey from a Pokémon-loving kid to a tool developer laid the foundation for my ongoing career in game development, where technical skills meet creativity and community.

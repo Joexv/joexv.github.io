@@ -1,3 +1,0 @@
-- Vanilla Bean Frappuccino
-- Add white mocha syrup (3 pumps tall, 3.5 grande, 4 venti)
-- Add vanilla syrup (1 pump for a tall, 1.5 for a grande, 2 for a venti)

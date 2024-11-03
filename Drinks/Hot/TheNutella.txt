@@ -1,4 +1,0 @@
-- Cafe Misto
-- Add Mocha Syrup (1/2 pump tall, 1 pump grande, 1.5 pumps venti)
-- Add Hazelnut Syrup (1/2 pump tall, 1 pump grande, 1.5 pumps venti)
-- Add a few drops of caramel drizzle

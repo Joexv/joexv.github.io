@@ -1,3 +1,0 @@
-- Iced Coffee
-- Add Mocha Syrup (3 pumps tall, 4 pumps grande, 5 pumps venti)
-- Add Orange Slices (3 tall, 5 grande, 7 venti)
