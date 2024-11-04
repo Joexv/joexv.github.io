@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/MechanicsInferno.png
+image: images/MI_End.png
 title: Mechanics Inferno
 permalink: projects/MechanicsInferno
 date: 2024-11-03
