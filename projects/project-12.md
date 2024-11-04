@@ -40,19 +40,22 @@ This is a 3D platformer experience, presented in an industrial setting with heav
 2. **Power Relay Stations:** Critical points in the level allow players to activate or deactivate machinery, like shutting off steam barriers. These relays open new paths and make traversal safer by disabling certain threats temporarily.
 
 3. **Gear Lifts:** Elevators made of rotating gears that players must jump on and off of to reach higher areas. Timing is crucial to avoid being thrown off or injured.
-![Power Relay StoryBoard](images/MI_MechanicSB.png)
 
 ## Bubble Diagram
 To visualize the flow of *Mechanics Inferno*, a bubble diagram was created, illustrating the level’s multi-floor structure, pathways, and key mechanics. Each path offers unique challenges, leading the player through hazards and collectibles, converging at the Core Control Room.
-![Starting Area](images/MI_BubbleDiagram.png)
+<img src="../images/MI_BubbleDiagram.png" alt="Bubble Diagram" width="100%">
 
 ## Mood Boards
 Each section of the level is inspired by iconic industrial environments. The starting area is dark and filled with inactive machinery, the middle paths feature intense mechanical noise and motion, while the end showcases the control room’s ominous lighting and energy fields. This design creates an immersive, escalating tension as players progress.
-![Starting Area](images/MI_MoodStart.png)
-![Pathway 1](images/MI_Mood1.png)
-![Pathway 2](images/MI_Mood2.png)
-![Pathway 3](images/MI_Mood3.png)
-![Ending Area](images/MI_MoodEnd.png)
+<img src="../images/MI_MoodStart.png" alt="Starting Area" width="100%">
+<hr>
+<img src="../images/MI_Mood1.png" alt="Pathway 1" width="100%">
+<img src="../images/MI_Mood2.png" alt="Pathway 2" width="100%">
+<img src="../images/MI_Mood3.png" alt="Pathway 3" width="100%">
+<hr>
+<img src="../images/MI_MoodEnd.png" alt="Ending Area" width="100%">
+<hr>
+<img src="../images/MI_MechanicSB.png" alt="Power Relay StoryBoard" width="100%">
 
 ## Development Tools
 - **Engine:** Unreal Engine 5.3
@@ -60,6 +63,11 @@ Each section of the level is inspired by iconic industrial environments. The sta
 - **Art Style:** Industrial, gritty, and atmospheric with a focus on immersive lighting and environmental storytelling.
 
 ## References
-1. Sega. (n.d.). *A wide conveyor belt in Gene Gadget Zone Act 3*. In *Sonic 3D Blast*. Retrieved from https://sonic.fandom.com/wiki/Conveyor_Belt
-2. Plexi. (2023). *Ventilation Shaft (scifi)*. In *Plexi's Workshop*. Retrieved from https://steamcommunity.com/sharedfiles/filedetails/?id=2274932193
-3. Konami. (n.d.). *Rotating gears, Medusa Heads, and spikes in Tower of Death*. In *Castlevania: Portrait of Ruin*. Retrieved from https://castlevania.fandom.com/wiki/Tower_of_Death
+1. **Figure 1** - DALL·E. (2024). *Generated imagery for level environments and factory exterior.* OpenAI.
+2. **Figure 2** - Sega. (n.d.). *A wide conveyor belt in Gene Gadget Zone Act 3.* In *Sonic 3D Blast*. Retrieved from [https://sonic.fandom.com/wiki/Conveyor_Belt](https://sonic.fandom.com/wiki/Conveyor_Belt)
+3. **Figure 3** - Konami. (n.d.). *Rotating gears, Medusa Heads, and spikes in Tower of Death.* In *Castlevania: Portrait of Ruin*. Retrieved from [https://castlevania.fandom.com/wiki/Tower_of_Death](https://castlevania.fandom.com/wiki/Tower_of_Death)
+4. **Figure 4** - Plexi. (2023). *Ventilation Shaft (scifi).* In *Plexi's Workshop*. Retrieved from [https://steamcommunity.com/sharedfiles/filedetails/?id=2274932193](https://steamcommunity.com/sharedfiles/filedetails/?id=2274932193)
+5. **Figures 5-8** - OpenAI. (2024). *AI-generated imagery for starting, ending, and key areas of the level.* DALL·E.
+6. **Figure 9** - Sweet Home 3D. (n.d.). *3D level design for factory layout.* Retrieved from [SweetHome3D.com](https://www.sweethome3d.com).
+7. **Figures 10-11** - Deepnight. (n.d.). *Top-down map with objectives.* RPG Map Maker 2. Retrieved from [https://deepnight.net/tools/rpg-map/](https://deepnight.net/tools/rpg-map/)
+
