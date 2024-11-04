@@ -15,11 +15,13 @@ labels:
 summary: A multi-layered industrial level filled with challenges that tests players' timing, strategy, and adaptability as they navigate through steam-filled corridors, conveyor belts, and gear lifts to reach the Core Control Room.
 ---
 
-## Video Presentation
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TD54-gFbFfI" frameborder="0" allowfullscreen></iframe>
-
 ## Overview
 *Mechanics Inferno* is a short atmospheric platformer level designed within a hazardous industrial facility. Players navigate through mechanical obstacles, overcome environmental hazards, and strategically utilize power relays to open paths and disable threats as they work their way to the Core Control Room. Inspired by classic factory and machinery-based levels, this game idea emphasizes timing, skill, and strategic movement.
+
+## Video Presentation
+<hr>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TD54-gFbFfI" frameborder="0" allowfullscreen></iframe>
+<hr>
 
 ## Level Story
 In *Mechanics Inferno*, players find themselves in a factory on the verge of a catastrophic meltdown. Due to massive system failures, the facility's machinery has gone rogue, and the safety systems have activated barriers to contain the damage. Players must ascend through multiple floors, overcome hazardous obstacles, and reach the Core Control Room before it's too late.
