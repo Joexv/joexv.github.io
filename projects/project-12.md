@@ -26,6 +26,9 @@ summary: A multi-layered industrial level filled with challenges that tests play
 <hr>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/c5y4U_emVuA" frameborder="0" allowfullscreen></iframe>
 <hr>
+<hr>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/x4WSnCKTy6U" frameborder="0" allowfullscreen></iframe>
+<hr>
 
 ## Level Story
 In *Mechanics Inferno*, players find themselves in a factory on the verge of a catastrophic meltdown. Due to massive system failures, the facility's machinery has gone rogue, and the safety systems have activated barriers to contain the damage. Players must ascend through multiple floors, overcome hazardous obstacles, and reach the Core Control Room before it's too late.
