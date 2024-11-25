@@ -71,6 +71,12 @@ The level’s tone evolves as players ascend. The initial areas are dim and fill
 <hr>
 <img src="../images/MI_MechanicSB.png" alt="Power Relay StoryBoard" width="100%">
 
+## Sample Visual Cues
+<img src="../images/MI/Doros.png" alt="Ending Area" width="100%">
+<img src="../images/MI/Computers.png" alt="Ending Area" width="100%">
+<img src="../images/MI/SteamVents.png" alt="Ending Area" width="100%">
+<img src="../images/MI/MovingBelt.png" alt="Ending Area" width="100%">
+
 ## Development Tools
 - **Engine:** Unreal Engine 5.4
 - **Additional Software:** Sweet Home 3D, RPG Map Maker 2 for initial layout concepts
