@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="">
 
   {% include head.html %}
 
@@ -7,6 +7,30 @@
     {{ content }}
     {% include footer.html %}
 
-  </body>
+    <script>
+      // Set theme on load
+      (function() {
+        const stored = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = stored || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    
+      // Toggle theme function
+      function toggleTheme() {
+        const current = document.documentElement.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+      }
 
+      document.querySelectorAll('.ui.text.container').forEach(el => {
+        el.style.backgroundColor = ''; // removes inline override
+        el.style.color = '';
+      });
+
+    </script>
+
+    
+  </body>
 </html>

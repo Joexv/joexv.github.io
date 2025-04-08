@@ -10,41 +10,25 @@
       <!-- Name and Label -->
       <div class="center aligned content" style="margin-bottom: 20px;">
         <h2 class="ui header" style="font-size: 2em; margin-bottom: 5px;">{{ site.data.bio.basics.name }} - {{ site.data.bio.basics.jpname }}</h2>
-        <p style="font-size: 1.2em; color: #666;">{{ site.data.bio.basics.label }}</p>
+        <p style="font-size: 1.2em;">{{ site.data.bio.basics.label }}</p>
       </div>
 
       <!-- Summary Section with Enhanced Readability -->
       <div class="content" style="text-align: left; padding: 15px 0;">
-        <h3 class="ui header" style="color: #333; font-size: 1.4em; margin-bottom: 10px;">Summary</h3>
-        <p style="font-size: 1.1em; color: #555; line-height: 1.6;">
+        <h3 class="ui header" style=" font-size: 1.4em; margin-bottom: 10px;">Summary</h3>
+        <p style="font-size: 1.1em;  line-height: 1.6;">
           {{ site.data.bio.basics.summary }}
         </p>
       </div>
 
       <!-- Interests Section with Cleaned List Styling -->
       <div class="content" style="text-align: left; padding: 15px 0;">
-        <h3 class="ui header" style="color: #333; font-size: 1.4em; margin-bottom: 10px;">Interests</h3>
-        <ul style="font-size: 1.1em; color: #555; line-height: 1.6; padding-left: 20px; list-style-type: disc;">
+        <h3 class="ui header" style=" font-size: 1.4em; margin-bottom: 10px;">Interests</h3>
+        <ul style="font-size: 1.1em; line-height: 1.6; padding-left: 20px; list-style-type: disc;">
           {% for interest in site.data.bio.interests %}
             <li>{{ interest.name }}</li>
           {% endfor %}
         </ul>
-      </div>
-
-      <!-- Buttons for Projects and Resume Pages with Project Count -->
-      <div class="center aligned content" style="margin-top: 25px;">
-        <a href="{{ site.baseurl }}/projects/" class="ui basic button" style="width: 45%; margin: 5px;">
-          Projects ({{ site.pages | where_exp: "page", "page.url contains '/projects/'" | size | minus: 1}})
-        </a>
-        <a href="{{ site.baseurl }}/bio/" class="ui basic button" style="width: 45%; margin: 5px;">
-          {{ site.bio-page-label }}
-        </a>
-        <a href="{{ site.baseurl }}/resumejp/" class="ui basic button" style="width: 45%; margin: 5px;">
-          履歴書 - {{ site.jp-resume-label }}
-        </a>
-        <a href="{{ site.baseurl }}/Shokumukeirekisho/" class="ui basic button" style="width: 45%; margin: 5px;">
-          職務経歴書 - {{ site.shoku-label }}
-        </a>
       </div>
 
       <!-- Social Links with Icons for Visual Appeal -->
