@@ -7,7 +7,7 @@
     "email": "joeoliveira89+github@gmail.com",
     "phone": "",
     "website": "https://joexv.github.io",
-    "summary": "As a seasoned IT professional with over a decade of hands-on experience, I bring extensive expertise in desktop engineering, systems administration, and technical support. Throughout my career, I’ve built a reputation for efficiently diagnosing and resolving complex technical issues, ensuring minimal downtime and peak performance for clients. \n\nOne of my proudest achievements has been collaborating with cross-functional teams to tackle recurring software challenges, ultimately reducing system downtime and boosting operational efficiency. Previously, in a sales role, I consistently ranked among the top 10 performers company-wide, exceeding monthly targets by an impressive 32% on average.\n\nI possess a strong foundation in project management, network administration, disaster recovery, and systems administration, with a deep proficiency in .NET and multiple programming languages. Additionally, my understanding of industry-standard software and utilities enables me to implement innovative solutions that improve productivity and reliability. \n\nFeel free to reach out via LinkedIn (https://www.linkedin.com/in/joe-oliveira) or email (joeoliveira89@gmail.com) if you’d like to discuss IT solutions, brainstorm on tech challenges, or just chat about the vast lore of industry acronyms.",
+    "summary": "I’ve spent over a decade solving complex IT challenges—optimizing systems, troubleshooting software, and ensuring seamless user experiences. Now, I’m bringing that problem-solving mindset to game design and development. I’m eager to collaborate with teams that push creative boundaries, whether in level design, UI/UX, or gameplay programming. If you’re working on something exciting in game development—let’s connect!",
     "location":{ 
       "address": "",
       "postalCode": "",
@@ -22,18 +22,18 @@
         "url": "http://github.com/joexv"
       },
       {
-        "network": "twitter",
-        "username": "ManMadeOfGouda",
-        "url": "http://twitter.com/manmadeofgouda"
+        "network": "linkedin",
+        "username": "joe-oliveira",
+        "url": "https://www.linkedin.com/in/joe-oliveira/"
       }
     ]
   },
   "interests": [
     { "name": "Exploring the outdoors: From hiking trails to camping under the stars, I love connecting with nature and recharging in the open air." },
-    { "name": "Rock Climbing: Testing limits and building resilience, one climb at a time." },
+    { "name": "Rock Climbing: Testing limits and building resilience, one climb at a time. (Ask me about my back!)" },
     { "name": "Music Enthusiast: Whether it’s feeling every beat or discovering new genres, music fuels my creativity." },
     { "name": "Culinary Adventures: Cooking and baking are my outlets for creativity, and I’m always experimenting with new recipes." },
-    { "name": "Gaming: Both playing and creating games—constantly inspired by the worlds, mechanics, and stories within." },
+    { "name": "Gaming: Both playing and creating games—constantly inspired by the worlds, mechanics, and stories within. Especially now that I am forwarding myself into the gaming industry!" },
     { "name": "Cinema Lover: I’m a movie buff at heart, always ready to dive into everything from indie films to big blockbusters." },
     { "name": "Foodie: Exploring new cuisines and flavors is my kind of adventure." },
     { "name": "Seeking New Challenges: Life’s too short not to push the boundaries—whether it’s learning, creating, or exploring." }
@@ -71,6 +71,7 @@
       "name": "Software & Utilities",
       "level": "Experienced",
       "keywords": [
+	"Atlassian Suite (JIRA, Confluence, Trello)",
         "Windows / Linux / macOS",
         "Version Control (Git, Perforce, SVN)",
         "Microsoft Office Suite / Office 365",
@@ -95,8 +96,8 @@
       "keywords": [
         "REST API Development",
         "Well-Structured Documentation",
-        "Agile Methodologies",
-        "Cross-Platform Development (iOS & Android)"
+        "Scrumm and Agile Methodologies",
+        "Cross-Platform Development"
       ]
     }
   ],
@@ -106,19 +107,53 @@
       "area": "Game Design",
       "studyType": "Bachelors",
       "startDate": "2022-12-05",
-      "endDate": "-",
+      "endDate": "2025-05-09",
       "gpa": "3.77",
       "courses": []
     }
   ],
   "work": [
     {
+      "company": "Various Clients- VA, BLM, Wells Fargo, & Local Businesses",
+      "position": "IT Consultant / Systems Engineer",
+      "website": "",
+      "startDate": "2015-04",
+      "endDate": "Present",
+      "summary": "• Provided IT infrastructure solutions, system administration, and technical support for government agencies, financial institutions, and private enterprises.
+\n• Designed and implemented secure network architectures, ensuring compliance with federal and corporate cybersecurity standards.
+\n• Developed custom automation scripts and IT process improvements, streamlining repetitive tasks and enhancing system efficiency.
+\n• Advised on hardware and software procurement, helping clients reduce costs while increasing operational reliability.
+\n• Troubleshot mission-critical systems, ensuring seamless operation and minimizing disruptions for high-profile clients.
+\n• Provided remote and on-site technical support, training internal teams on best practices for IT security, disaster recovery, and system performance optimization.",
+      "highlights": []
+    },
+{
+      "company": "Freelance",
+      "position": "Freelance Developer & Consultant",
+      "website": "",
+      "startDate": "2015-04",
+      "endDate": "Present",
+      "summary": "• Worked with Flowhub’s development team to identify and fix critical bugs on their platform, improving system stability and user experience.
+\n• Developed and integrated custom API solutions, enhancing system interoperability and automating workflows for business clients.
+\n• Built inventory and customer management systems for a computer repair business, improving operational efficiency and reducing inventory discrepancies.
+\n• Designed and implemented training programs for Sprint/Boost Mobile, developing interactive learning modules that enhanced employee retention and performance.
+\n• Created web applications for small businesses, incorporating secure authentication, payment processing, and responsive UI/UX design.
+\n• Contributed to open-source projects, collaborating with developers worldwide to improve software functionality and resolve key issues.
+\n• Developed automation tools to optimize business operations, reducing manual workload and increasing efficiency.
+\n• Maintained technical documentation, providing clear guidelines for users and future developers.",
+      "highlights": []
+    },
+{
       "company": "HPD Computer Repair",
-      "position": "Part Owner / Desktop Technician",
+      "position": "Part Owner / System Engineer",
       "website": "",
       "startDate": "2015-02",
       "endDate": "Present",
-      "summary": "Responsible for all levels of the business. Maintained store front while repairing customer devices following the break-fix methods in a timely manner. Handled multiple small business IT needs including but not limited to, Office 365, Active Directory, POS, server and workstation setup, and repairs.",
+      "summary": "• Developed and implemented data-driven pricing policies by analyzing merchandising activities and identifying sales promotion opportunities, resulting in a 30% increase in average transaction value.
+\n• Managed end-to-end small business operations, including stock ordering, inventory control, cash handling, and staff rostering. 
+\n• Increased efficiency and reduced time costs by implementing an automated inventory tracking system, resulting in a 20% reduction in held stock and saving 10 hours per week.
+\n• Executed expert-level knowledge to diagnose and resolve software and hardware issues, achieving a determination of ‘no-fix’ for less than 1% of devices.
+\n• Developed a robust reporting system to track all operational activities, leading to improved communication with clients on project progress, resulting in a 30% reduction in project delays and increased client trust.",
       "highlights": []
     },
     {
@@ -127,7 +162,10 @@
       "website": "",
       "startDate": "2018-11",
       "endDate": "2019-11",
-      "summary": "Created, managed, and maintained website and e-commerce platform, generating significant weekly sales. Installed video monitoring systems to comply with OLCC guidelines and assisted in POS software development (primarily C# & JavaScript).",
+      "summary": "• Head of the day-to-day operations and administration of the IT infrastructure.
+\n• Identified and recommended the purchasing of new software and hardware solutions, resulting in a reduction in operating costs and an increase in overall productivity.
+\n• Collaborated with cross-functional teams to identify and address recurring software problems, resulting in a 60% reduction in system downtime and improving operational efficiency by 40%.
+\n• Implemented automated system backups and recovery protocols, ensuring data integrity for 100% of the company’s critical systems while maintaining OLCC backup requirements.",
       "highlights": []
     },
     {
@@ -136,7 +174,10 @@
       "website": "",
       "startDate": "2017-02",
       "endDate": "2017-08",
-      "summary": "Performed break-fix repairs on servers, POS systems, and self-checkout units across over 50 locations in Oregon. On-call 24/7 for urgent repairs. Developed a scheduling system for engineers and assisted with knowledge base updates, surpassing performance metrics.",
+      "summary": "• Executed frequent travel to prime client locations, providing on-site technical support for over 200 locations across Oregon.
+\n• Investigated and resolved complex software and hardware problems for enterprise clients, applying comprehensive expertise to various situations, achieving a 100% resolution rate on assigned tickets.
+\n• Optimized time allocation for tasks, delivering reliable service period information to future clients and meeting project deadlines, resulting in improved client satisfaction.
+\n• Collaborated with the company IT team to maintain updates to the knowledge base and procedures for all the enterprise contacts.",
       "highlights": []
     },
     {
@@ -145,16 +186,22 @@
       "website": "",
       "startDate": "2017-09",
       "endDate": "2018-08",
-      "summary": "Implemented new sales strategies and conducted training to improve sales metrics. Maintained a high repair rate of 75% devices within 24 hours and consistently ranked in the top sales company-wide. Managed technical support tickets via Apple GSM & GSX.",
+      "summary": "• Facilitated regular feedback sessions with subordinates, providing constructive criticism and
+guidance that led to individual skill development and career growth opportunities.
+\n• Monitored and analyzed daily sales data, generating detailed reports for the operations executive, allowing the operations executive to make faster data-driven decisions.
+\n• Directly managed an on-site technical support team, providing timely resolutions to over 400 customers per week, resulting in a company-wide record of returning 80% of devices to clients within 24 hours.
+\n• Achieved consistent placement within the top 10 sales performers company-wide, surpassing monthly targets by 32% on average.",
       "highlights": []
     },
     {
       "company": "SCommunications - Boost Mobile & Metro PCS",
-      "position": "Regional Manager",
+      "position": "Distric Manager",
       "website": "",
       "startDate": "2015-12",
       "endDate": "2017-02",
-      "summary": "Oversaw 70+ employees and 30 locations across Oregon, Washington, and California. Expanded franchise operations, managed inventory, and led hiring and training initiatives to drive business growth.",
+      "summary": "• Spearheaded cross-functional meetings with C-level executives to align marketing and sales goals across 30 locations and 80 employees.
+\n• Orchestrated the successful buildouts of new facilities, overseeing all aspects of project execution, including budgeting, vendor management, and timeline adherence.
+\n• Identified untapped market segments and launched targeted marketing campaigns",
       "highlights": []
     }
   ],
@@ -166,15 +213,6 @@
       "startDate": "",
       "endDate": "",
       "summary": "Supported troops during summer camp and taught climbing lessons and safety protocols on-site.",
-      "highlights": []
-    },
-    {
-      "organization": "Operation Christmas Child",
-      "website": "",
-      "position": "Warehouse Worker",
-      "startDate": "",
-      "endDate": "",
-      "summary": "Contributed during the Christmas season by boxing, loading, and shipping gifts to underprivileged children.",
       "highlights": []
     }
   ],
