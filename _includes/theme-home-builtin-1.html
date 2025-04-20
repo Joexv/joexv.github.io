@@ -17,9 +17,34 @@
       <div class="content" style="text-align: left; padding: 15px 0;">
         <h3 class="ui header" style=" font-size: 1.4em; margin-bottom: 10px;">Summary</h3>
         <p style="font-size: 1.1em;  line-height: 1.6;">
-          {{ site.data.bio.basics.summary }}
+          {{ site.data.bio.basics.summary | newline_to_br}}
         </p>
       </div>
+
+<!-- Skills Section with Cleaned List Styling -->
+<div class="content" style="text-align: left; padding: 15px 0;">
+  <h3 class="ui header" style="font-size: 1.4em; margin-bottom: 10px;">Skills</h3>
+  {% for skill in site.data.bio.skills %}
+  <div style="margin-bottom: 10px;">
+    <strong style="font-size: 1.15em;">{{ skill.name }}</strong>
+    <ul class="skill-columns">
+      {% for keyword in skill.keywords %}
+        <li>{{ keyword }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}
+</div>
+
+<div class="content" style="text-align: left; padding: 15px 0;">
+  <h3 class="ui header" style="font-size: 1.4em; margin-bottom: 10px;">Soft Skills</h3>
+  <div class="soft-skill-grid">
+    {% for skill in site.data.bio.soft_skills %}
+      <span class="soft-skill">{{ skill }}</span>
+    {% endfor %}
+  </div>
+</div>
+
 
       <!-- Interests Section with Cleaned List Styling -->
       <div class="content" style="text-align: left; padding: 15px 0;">

@@ -33,3 +33,32 @@ body {
   margin-bottom: 0px !important;
   padding-bottom: 0px !important;
 }
+.skill-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.25em 1em;
+  padding-left: 20px;
+  list-style-type: disc;
+  margin: 0;
+}
+
+.soft-skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em 1.2em;
+  padding-left: 5px;
+  margin-top: 10px;
+}
+
+.soft-skill {
+  min-width: 150px;
+  padding-left: 1.1em;
+  position: relative;
+}
+
+.soft-skill::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ccc;
+}

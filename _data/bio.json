@@ -7,7 +7,7 @@
     "email": "joeoliveira89+github@gmail.com",
     "phone": "",
     "website": "https://joexv.github.io",
-    "summary": "I’ve spent over a decade solving complex IT challenges—optimizing systems, troubleshooting software, and ensuring seamless user experiences. Now, I’m bringing that problem-solving mindset to game design and development. I’m eager to collaborate with teams that push creative boundaries, whether in level design, UI/UX, or gameplay programming. If you’re working on something exciting in game development—let’s connect!",
+    "summary": "Creative and technically versatile game designer with a strong foundation in systems programming and over a decade of professional IT and development experience. I specialize in designing immersive gameplay systems, level layouts, and interactive features, with a deep understanding of both user experience and backend logic.\n\nThroughout my career, I’ve worked across infrastructure, scripting, and automation—now I apply that same problem-solving mindset to game design. Currently completing my Bachelor’s in Game Design at Full Sail University, I’ve contributed to projects spanning level design, gameplay systems, and tool development—building everything from stealth mechanics and physics mockups to UI tools and player-driven systems. \n\nMy strengths lie in rapid prototyping, tool-driven development, and creating systems that make sense to both players and designers.",
     "location":{ 
       "address": "",
       "postalCode": "",
@@ -38,69 +38,84 @@
     { "name": "Foodie: Exploring new cuisines and flavors is my kind of adventure." },
     { "name": "Seeking New Challenges: Life’s too short not to push the boundaries—whether it’s learning, creating, or exploring." }
 ],
-  "skills": [
-    {
-      "name": "Programming Languages",
-      "level": "Proficient",
-      "keywords": [
-        "C# / .NET",
-        "C",
-        "C++",
-        "Python",
-        "Java",
-        "JavaScript",
-        "HTML / CSS",
-        "Ruby",
-        "Assembly",
-        "Swift",
-        "Objective-C"
-      ]
-    },
-    {
-      "name": "Game Development Tools",
-      "level": "Advanced",
-      "keywords": [
-        "Unity",
-        "Unreal Engine",
-        "Game Maker Studio",
-        "Blender (3D Modeling)",
-        "AI Development (Reinforcement Learning)"
-      ]
-    },
-    {
-      "name": "Software & Utilities",
-      "level": "Experienced",
-      "keywords": [
-	"Atlassian Suite (JIRA, Confluence, Trello)",
-        "Windows / Linux / macOS",
-        "Version Control (Git, Perforce, SVN)",
-        "Microsoft Office Suite / Office 365",
-        "Virtualization (Docker, VMware)",
-        "Ticketing Systems (e.g., Jira, ServiceNow)",
-        "Azure / AWS (Cloud Services)",
-        "Active Directory"
-      ]
-    },
-    {
-      "name": "Databases",
-      "level": "Proficient",
-      "keywords": [
-        "SQL",
-        "LiteSQL",
-        "MongoDB"
-      ]
-    },
-    {
-      "name": "Software Development & Documentation",
-      "level": "Advanced",
-      "keywords": [
-        "REST API Development",
-        "Well-Structured Documentation",
-        "Scrumm and Agile Methodologies",
-        "Cross-Platform Development"
-      ]
-    }
-  ],
+"skills": [
+  {
+    "name": "Game Development",
+    "level": "Advanced",
+    "keywords": [
+      "Unreal Engine 5",
+      "Unity",
+      "GameMaker Studio",
+      "Level Design",
+      "Systems Design",
+      "UI/UX Design",
+      "Visual Scripting"
+    ]
+  },
+  {
+    "name": "Programming Languages",
+    "level": "Proficient",
+    "keywords": [
+      "C++",
+      "C#",
+      "Python",
+      "Java",
+      "JavaScript",
+      "HTML/CSS",
+      "Assembly",
+      "Ruby",
+      "Swift",
+      "Objective-C"
+    ]
+  },
+  {
+    "name": "Tools & Workflow",
+    "level": "Experienced",
+    "keywords": [
+      "Version Control",
+      "Git / Perforce / SVN",
+      "JIRA / Confluence / Trello",
+      "Visual Studio",
+      "Microsoft Office Suite",
+      "Figma",
+      "Miro",
+      "Blender (3D Modeling)"
+    ]
+  },
+  {
+    "name": "Infrastructure & Scripting",
+    "level": "Experienced",
+    "keywords": [
+      "Windows / Linux / macOS",
+      "Docker / VMware",
+      "Azure / AWS",
+      "Active Directory",
+      "Bash / PowerShell / Batch"
+    ]
+  },
+  {
+    "name": "Databases & Backend",
+    "level": "Proficient",
+    "keywords": [
+      "SQL",
+      "LiteSQL",
+      "MongoDB",
+      "REST APIs"
+    ]
+  }
+],
+"soft_skills": [
+  "Collaboration",
+  "Agile & Scrum",
+  "Rapid Prototyping",
+  "Problem Solving",
+  "Team Leadership",
+  "Tech Communication",
+  "Adaptability",
+  "Time Management",
+  "Creative Thinking",
+  "Client Communication"
+],
   "education": [
     {
       "institution": "Full Sail University",
@@ -218,10 +233,10 @@ guidance that led to individual skill development and career growth opportunitie
   ],
   "awards": [
     {
-      "title": "No awards yet, but I'm always hopeful :)",
-      "date": "",
-      "awarder": "",
-      "summary": ""
+      "title": "FSHOF 2025 3rd Place",
+      "date": "2025-03-09",
+      "awarder": "FullSail Hall Of Fame GameJam",
+      "summary": "A 24 hour game jam hosted by FullSail University. My team's game Treehouse won the 3rd place for the theme Dreams"
     }
   ],
   "references": [
