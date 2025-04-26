@@ -43,15 +43,14 @@ body {
 }
 
 .soft-skill-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 0.5em 1.2em;
   padding-left: 5px;
   margin-top: 10px;
 }
 
 .soft-skill {
-  min-width: 150px;
   padding-left: 1.1em;
   position: relative;
 }
