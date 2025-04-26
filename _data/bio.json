@@ -7,7 +7,7 @@
     "email": "joeoliveira89+github@gmail.com",
     "phone": "",
     "website": "https://joexv.github.io",
-    "summary": "Creative and technically versatile game designer with a strong foundation in systems programming and over a decade of professional IT and development experience. I specialize in designing immersive gameplay systems, level layouts, and interactive features, with a deep understanding of both user experience and backend logic.\n\nThroughout my career, I’ve worked across infrastructure, scripting, and automation—now I apply that same problem-solving mindset to game design. Currently completing my Bachelor’s in Game Design at Full Sail University, I’ve contributed to projects spanning level design, gameplay systems, and tool development—building everything from stealth mechanics and physics mockups to UI tools and player-driven systems. \n\nMy strengths lie in rapid prototyping, tool-driven development, and creating systems that make sense to both players and designers.",
+    "summary": "Creative and collaborative Game Designer specializing in gameplay design, core game features, progression systems, and player retention. Strong experience in analyzing player data, metrics, and user research to drive iterative improvements. Excellent written communication, leadership, and knowledge sharing skills, combined with hands-on experience in Unity and Unreal Engine.",
     "location":{ 
       "address": "",
       "postalCode": "",
@@ -40,81 +40,69 @@
 ],
 "skills": [
   {
-    "name": "Game Development",
+    "name": "Design & Development",
     "level": "Advanced",
     "keywords": [
-      "Unreal Engine 5",
-      "Unity",
-      "GameMaker Studio",
+      "Gameplay Systems",
+      "Core Features",
+      "Progression Systems",
       "Level Design",
       "Systems Design",
-      "UI/UX Design",
-      "Visual Scripting"
+      "Balancing",
+      "Feature Documentation",
+      "Core Gameplay Features",
+      "Gameplay Mechanics",
+      "Level Flow"
     ]
   },
   {
-    "name": "Programming Languages",
-    "level": "Proficient",
+    "name": "Tools & Technology",
+    "level": "Advanced",
     "keywords": [
+      "Unity",
+      "Unreal Engine",
+      "Blueprint Scripting",
       "C++",
       "C#",
-      "Python",
-      "Java",
-      "JavaScript",
-      "HTML/CSS",
-      "Assembly",
-      "Ruby",
-      "Swift",
-      "Objective-C"
+      "API Development",
+      "Automation",
+      "Git",
+      "Perforce",
+      "Jira",
+      "Confluence",
+      "Trello",
+      "CMS Tools"
     ]
   },
   {
-    "name": "Tools & Workflow",
-    "level": "Experienced",
+    "name": "Player Research & Analytics",
+    "level": "Advanced",
     "keywords": [
-      "Version Control",
-      "Git / Perforce / SVN",
-      "JIRA / Confluence / Trello",
-      "Visual Studio",
-      "Microsoft Office Suite",
-      "Figma",
-      "Miro",
-      "Blender (3D Modeling)"
-    ]
-  },
-  {
-    "name": "Infrastructure & Scripting",
-    "level": "Experienced",
-    "keywords": [
-      "Windows / Linux / macOS",
-      "Docker / VMware",
-      "Azure / AWS",
-      "Active Directory",
-      "Bash / PowerShell / Batch"
-    ]
-  },
-  {
-    "name": "Databases & Backend",
-    "level": "Proficient",
-    "keywords": [
-      "SQL",
-      "LiteSQL",
-      "MongoDB",
-      "REST APIs"
+      "Player Data Analysis",
+      "User Research",
+      "Playtest Metrics",
+      "Retention Strategies",
+      "Behavioral Metrics",
+      "Testing Feedback"
     ]
   }
 ],
 "soft_skills": [
+  "Leadership",
   "Collaboration",
-  "Agile & Scrum",
-  "Rapid Prototyping",
-  "Problem Solving",
+  "Cross-Functional Collaboration",
+  "Written Communication",
+  "Oral Communication",
   "Team Leadership",
-  "Tech Communication",
+  "Mentorship",
+  "Knowledge Sharing",
+  "Critical Thinking",
+  "Problem Solving",
   "Adaptability",
-  "Time Management",
-  "Creative Thinking",
-  "Client Communication"
+  "Rapid Prototyping",
+  "Agile Development",
+  "Player-Centric Design",
+  "Community Feedback Integration"
 ],
   "education": [
     {
