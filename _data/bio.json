@@ -238,5 +238,27 @@ guidance that led to individual skill development and career growth opportunitie
       "name": "Available upon request",
       "reference": ""
     }
+  ],
+"downloads": [
+    {
+      "name": "English Resume",
+      "docx": "",
+      "pdf": "/resume/JoeOliveira_GameDesign_Resume.pdf"
+    },
+    {
+      "name": "English CV",
+      "docx": "/resume/JoeOliveira_CV.pdf",
+      "pdf": "/resume/JoeOliveira_CV.pdf"
+    },
+{
+      "name": "Japanese Resume - 日本語履歴書",
+      "docx": "/resume/JoeOliveira_ResumeJP.docx",
+      "pdf": "/resume/JoeOliveira_ResumeJP.pdf"
+    },
+{
+      "name": "Shokumukeirekisho -  職務経歴書",
+      "docx": "/resume/JoeOliveira_Shokumukeirekisho.docx",
+      "pdf": "/resume/JoeOliveira_Shokumukeirekisho.pdf"
+    },
   ]
 }
