@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/rogue-slots.png
+image: images/Rogue-Slots.png
 title: Rogue Slots
 permalink: projects/Rogue-Slots
 date: 2025-05-05
