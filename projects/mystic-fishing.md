@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/mysticfishing.png
+image: images/MysticFishing.png
 title: Mystic Fishing
 permalink: projects/mystic-fishing
 date: 2024-08-30

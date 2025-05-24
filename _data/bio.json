@@ -6,11 +6,8 @@
     "picture": "https://joexv.github.io/images/Cheesy.png",
     "email": "joeoliveira89+github@gmail.com",
     "phone": "",
-    "website": "https://joexv.github.io",
-    "summary": "Aspiring game designer focused on crafting addictive gameplay, building immersive levels and making tech work seamlessly behind the scenes.
-I dig deep into player insights and analytics to shape gameplay that actually connects with players.
-Great with Godot, Unity and Unreal, communicating clearly, leading teams, and breaking down complex ideas into easy-to-grasp concepts.
-Always down to collaborate and share what I learn along the way.",
+    "website": "https://cheesiest.dev/",
+    "summary": "Gameplay-focused designer and systems programmer specializing in balancing combat systems, player analytics, and scalable technical solutions. Led design and implementation on multiple student projects, demonstrating proven ability in rapid prototyping, iterative development, and cross-functional collaboration.",
     "location":{ 
       "address": "",
       "postalCode": "",
@@ -42,199 +39,206 @@ Always down to collaborate and share what I learn along the way.",
     { "name": "Seeking New Challenges: Life’s too short not to push the boundaries—whether it’s learning, creating, or exploring." }
 ],
 "skills": [
-  {
-    "name": "Design & Development",
-    "level": "Advanced",
-    "keywords": [
-      "Gameplay Systems",
-      "Core Features",
-      "Progression Systems",
-      "Level Design",
-      "Systems Design",
-      "Balancing",
-      "Feature Documentation",
-      "Core Gameplay Features",
-      "Gameplay Mechanics",
-      "Level Flow"
-    ]
-  },
-  {
-    "name": "Tools & Technology",
-    "level": "Advanced",
-    "keywords": [
-      "Unity",
-      "Unreal Engine",
-      "Blueprint Scripting",
-      "C++",
-      "C#",
-      "API Development",
-      "Automation",
-      "Git",
-      "Perforce",
-      "Jira",
-      "Confluence",
-      "Trello",
-      "CMS Tools"
-    ]
-  },
-  {
-    "name": "Player Research & Analytics",
-    "level": "Advanced",
-    "keywords": [
-      "Player Data Analysis",
-      "User Research",
-      "Playtest Metrics",
-      "Retention Strategies",
-      "Behavioral Metrics",
-      "Testing Feedback"
-    ]
-  }
-],
-"soft_skills": [
-  "Leadership",
-  "Collaboration",
-  "Cross-Functional Collaboration",
-  "Written Communication",
-  "Oral Communication",
-  "Team Leadership",
-  "Mentorship",
-  "Knowledge Sharing",
-  "Critical Thinking",
-  "Problem Solving",
-  "Adaptability",
-  "Rapid Prototyping",
-  "Agile Development",
-  "Player-Centric Design",
-  "Community Feedback Integration"
-],
-  "education": [
+    {
+      "name": "Design",
+      "level": "Advanced",
+      "keywords": [
+        "Core Gameplay Systems",
+        "Balancing",
+        "Level Design"
+      ]
+    },
+    {
+      "name": "Engines & Tools",
+      "level": "Advanced",
+      "keywords": [
+        "Unity",
+        "Unreal Engine",
+        "Blueprint Scripting",
+        "C++",
+        "C#"
+      ]
+    },
+    {
+      "name": "Prototyping & Documentation",
+      "level": "Advanced",
+      "keywords": [
+        "Game Design Documents",
+        "Wireframes",
+        "User Flows"
+      ]
+    },
+    {
+      "name": "Analytics",
+      "level": "Advanced",
+      "keywords": [
+        "Player Data",
+        "Metrics-driven Iteration"
+      ]
+    },
+    {
+      "name": "Technical Integration",
+      "level": "Advanced",
+      "keywords": [
+        "API Development",
+        "Automation",
+        "Scalable Infrastructure"
+      ]
+    }
+  ],
+  "soft_skills": [
+    "Mentorship",
+    "Knowledge Sharing",
+    "Team Development",
+    "Cross-Functional Collaboration",
+    "Clear Documentation",
+    "Stakeholder Reports",
+    "Design Rationales",
+    "Player Feedback",
+    "Community Insights",
+    "Iterative Testing",
+    "Rapid Prototyping",
+    "Agile Development",
+    "Responsive Design"
+  ],
+ "education": [
     {
       "institution": "Full Sail University",
       "area": "Game Design",
-      "studyType": "Bachelors",
-      "startDate": "2022-12-05",
+      "studyType": "Bachelor of Science",
+      "startDate": "2022-11-01",
       "endDate": "2025-05-09",
       "gpa": "3.77",
-      "courses": []
+      "courses": [
+        "Game Mechanics",
+        "Systems",
+        "Technical Design",
+        "Gameplay & Level Design",
+        "UI/UX"
+      ]
     }
   ],
   "work": [
     {
-      "company": "Various Clients- VA, BLM, Wells Fargo, & Local Businesses",
-      "position": "IT Consultant / Systems Engineer",
-      "website": "",
-      "startDate": "2015-04",
-      "endDate": "Present",
-      "summary": "• Provided IT infrastructure solutions, system administration, and technical support for government agencies, financial institutions, and private enterprises.
-\n• Designed and implemented secure network architectures, ensuring compliance with federal and corporate cybersecurity standards.
-\n• Developed custom automation scripts and IT process improvements, streamlining repetitive tasks and enhancing system efficiency.
-\n• Advised on hardware and software procurement, helping clients reduce costs while increasing operational reliability.
-\n• Troubleshot mission-critical systems, ensuring seamless operation and minimizing disruptions for high-profile clients.
-\n• Provided remote and on-site technical support, training internal teams on best practices for IT security, disaster recovery, and system performance optimization.",
-      "highlights": []
-    },
-{
-      "company": "Freelance",
-      "position": "Freelance Developer & Consultant",
-      "website": "",
-      "startDate": "2015-04",
-      "endDate": "Present",
-      "summary": "• Worked with Flowhub’s development team to identify and fix critical bugs on their platform, improving system stability and user experience.
-\n• Developed and integrated custom API solutions, enhancing system interoperability and automating workflows for business clients.
-\n• Built inventory and customer management systems for a computer repair business, improving operational efficiency and reducing inventory discrepancies.
-\n• Designed and implemented training programs for Sprint/Boost Mobile, developing interactive learning modules that enhanced employee retention and performance.
-\n• Created web applications for small businesses, incorporating secure authentication, payment processing, and responsive UI/UX design.
-\n• Contributed to open-source projects, collaborating with developers worldwide to improve software functionality and resolve key issues.
-\n• Developed automation tools to optimize business operations, reducing manual workload and increasing efficiency.
-\n• Maintained technical documentation, providing clear guidelines for users and future developers.",
-      "highlights": []
-    },
-{
       "company": "HPD Computer Repair",
-      "position": "Part Owner / System Engineer",
-      "website": "",
+      "position": "Part Owner / Systems Engineer",
       "startDate": "2015-02",
       "endDate": "Present",
-      "summary": "• Developed and implemented data-driven pricing policies by analyzing merchandising activities and identifying sales promotion opportunities, resulting in a 30% increase in average transaction value.
-\n• Managed end-to-end small business operations, including stock ordering, inventory control, cash handling, and staff rostering. 
-\n• Increased efficiency and reduced time costs by implementing an automated inventory tracking system, resulting in a 20% reduction in held stock and saving 10 hours per week.
-\n• Executed expert-level knowledge to diagnose and resolve software and hardware issues, achieving a determination of ‘no-fix’ for less than 1% of devices.
-\n• Developed a robust reporting system to track all operational activities, leading to improved communication with clients on project progress, resulting in a 30% reduction in project delays and increased client trust.",
-      "highlights": []
+      "summary": [
+        "Developed modular automation scripts for inventory and reporting systems, significantly reducing manual workload and improving efficiency.",
+        "Led onboarding and technical training sessions, streamlining team productivity and enhancing service quality.",
+        "Executed complex tasks including micro-soldering, server deployment, cybersecurity hardening, and troubleshooting."
+      ]
+    },
+    {
+      "company": "VA, Wells Fargo & Local Businesses",
+      "position": "IT Consultant / Systems Engineer",
+      "startDate": "2018-04",
+      "endDate": "Present",
+      "summary": [
+        "Designed and implemented network solutions adhering to federal cybersecurity standards, improving reliability and maintainability.",
+        "Led USDA server EOL replacements across Oregon with zero downtime and flawless connectivity.",
+        "Completed deployments under budget and ahead of schedule, known for speed and precision.",
+        "Used system metrics and diagnostics to preempt issues, reducing downtime and stabilizing infrastructure."
+      ]
+    },
+    {
+      "company": "Self-Employed",
+      "position": "Freelance Developer & Consultant",
+      "startDate": "2015-04",
+      "endDate": "Present",
+      "summary": [
+        "Built and launched a custom mobile trivia game with dynamic question randomization over a 300-question dataset.",
+        "Patched critical bugs in Flowhub’s cannabis compliance platform, boosting stability and performance.",
+        "Created inventory and customer management systems for small businesses, replacing manual spreadsheets.",
+        "Designed and deployed 100+ client websites with e-commerce, scheduling, and secure authentication.",
+        "Prioritized privacy-focused dev, minimizing tracking and aligning with regulatory needs."
+      ]
     },
     {
       "company": "FX420",
-      "position": "Contracted System Administrator / IT Engineer",
-      "website": "",
+      "position": "Contracted System Administrator",
       "startDate": "2018-11",
       "endDate": "2019-11",
-      "summary": "• Head of the day-to-day operations and administration of the IT infrastructure.
-\n• Identified and recommended the purchasing of new software and hardware solutions, resulting in a reduction in operating costs and an increase in overall productivity.
-\n• Collaborated with cross-functional teams to identify and address recurring software problems, resulting in a 60% reduction in system downtime and improving operational efficiency by 40%.
-\n• Implemented automated system backups and recovery protocols, ensuring data integrity for 100% of the company’s critical systems while maintaining OLCC backup requirements.",
-      "highlights": []
+      "summary": [
+        "Maintained IT infrastructure reliability through proactive monitoring and optimizations, ensuring minimal downtime and robust performance."
+      ]
     },
     {
-      "company": "Fujitsu",
+      "company": "Fujitsu America",
       "position": "Field Engineer",
-      "website": "",
       "startDate": "2017-02",
       "endDate": "2017-08",
-      "summary": "• Executed frequent travel to prime client locations, providing on-site technical support for over 200 locations across Oregon.
-\n• Investigated and resolved complex software and hardware problems for enterprise clients, applying comprehensive expertise to various situations, achieving a 100% resolution rate on assigned tickets.
-\n• Optimized time allocation for tasks, delivering reliable service period information to future clients and meeting project deadlines, resulting in improved client satisfaction.
-\n• Collaborated with the company IT team to maintain updates to the knowledge base and procedures for all the enterprise contacts.",
-      "highlights": []
-    },
-    {
-      "company": "Simply Mac Apple Premier Partner",
-      "position": "Sales Manager / Genius Bar",
-      "website": "",
-      "startDate": "2017-09",
-      "endDate": "2018-08",
-      "summary": "• Facilitated regular feedback sessions with subordinates, providing constructive criticism and
-guidance that led to individual skill development and career growth opportunities.
-\n• Monitored and analyzed daily sales data, generating detailed reports for the operations executive, allowing the operations executive to make faster data-driven decisions.
-\n• Directly managed an on-site technical support team, providing timely resolutions to over 400 customers per week, resulting in a company-wide record of returning 80% of devices to clients within 24 hours.
-\n• Achieved consistent placement within the top 10 sales performers company-wide, surpassing monthly targets by 32% on average.",
-      "highlights": []
-    },
-    {
-      "company": "SCommunications - Boost Mobile & Metro PCS",
-      "position": "Distric Manager",
-      "website": "",
-      "startDate": "2015-12",
-      "endDate": "2017-02",
-      "summary": "• Spearheaded cross-functional meetings with C-level executives to align marketing and sales goals across 30 locations and 80 employees.
-\n• Orchestrated the successful buildouts of new facilities, overseeing all aspects of project execution, including budgeting, vendor management, and timeline adherence.
-\n• Identified untapped market segments and launched targeted marketing campaigns",
-      "highlights": []
+      "summary": [
+        "Delivered enterprise-level hardware/software support across 200+ client sites in Oregon.",
+        "Performed diagnostics, repairs, and user training to achieve a 100% resolution rate.",
+        "Optimized task scheduling and contributed to the IT knowledge base."
+      ]
     }
   ],
-  "volunteer": [
+  "projects": [
     {
-      "organization": "Boy Scouts Of America",
-      "website": "",
-      "position": "Camp Counselor and Climbing Tower Instructor",
-      "startDate": "",
-      "endDate": "",
-      "summary": "Supported troops during summer camp and taught climbing lessons and safety protocols on-site.",
-      "highlights": []
+      "name": "Treehouse",
+      "role": "Lead Systems & Gameplay Designer",
+      "context": "Full Sail Hall of Fame Game Jam",
+      "highlights": [
+        "3rd Place Winner – FSHOF 2025",
+        "Led modular building, stealth mechanics, and progression system design",
+        "Built inventory & enemy detection systems with Blueprint scripting",
+        "Ran iterative playtests with 10 testers to refine mechanics"
+      ]
+    },
+    {
+      "name": "Rogue Slots",
+      "role": "Technical, Combat, Gameplay & Systems Designer",
+      "context": "Full Sail Capstone Project",
+      "highlights": [
+        "Designed roguelike-slot hybrid systems balancing randomness and control",
+        "Authored GDDs, wireframes, and flowcharts to keep the team aligned",
+        "Engineered randomized encounters and reward logic in UE5 Blueprints & C++",
+        "Analyzed test metrics to sharpen feedback loops and boost engagement"
+      ]
+    },
+    {
+      "name": "Japanese Garden",
+      "role": "Level Designer & Sole Developer",
+      "context": "Full Sail Level Design Project",
+      "highlights": [
+        "Crafted an exploration-focused level with puzzles, collectibles, and soft gating",
+        "Used player testing data to refine navigation and pacing"
+      ]
+    },
+    {
+      "name": "Mechanic’s Inferno",
+      "role": "Level & Systems Designer & Sole Developer",
+      "context": "Full Sail IPM Level Design Project",
+      "highlights": [
+        "Built obstacle-based puzzles focusing on traversal complexity",
+        "Applied test metrics to adjust pacing and guide player decisions",
+        "Collaborated with peers to improve obstacle readability"
+      ]
     }
   ],
   "awards": [
     {
-      "title": "FSHOF 2025 3rd Place",
+      "title": "3rd Place – Full Sail Hall of Fame Game Jam",
       "date": "2025-03-09",
-      "awarder": "FullSail Hall Of Fame GameJam",
-      "summary": "A 24 hour game jam hosted by FullSail University. My team's game Treehouse won the 3rd place for the theme Dreams"
+      "awarder": "Full Sail University",
+      "summary": "Treehouse won 3rd place in the 24-hour game jam themed “Dreams.”"
     },
- {
-    "title": "Member - National Society of Collegiate Scholars",
-    "date": "2024-01-17",
-    "awarder": "NSCS",
-    "summary": "Inducted into the National Society of Collegiate Scholars for academic achievement and leadership potential."
-  }
+    {
+      "title": "Member – National Society of Collegiate Scholars",
+      "date": "2024-01-17",
+      "awarder": "NSCS",
+      "summary": "Inducted for academic achievement and leadership potential."
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Boy Scouts of America",
+      "position": "Camp Counselor & Climbing Tower Instructor",
+      "summary": "Supported troops during summer camp and led climbing safety lessons."
+    }
   ],
   "references": [
     {
