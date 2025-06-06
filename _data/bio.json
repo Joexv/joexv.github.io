@@ -8,12 +8,23 @@
     "phone": "",
     "website": "https://cheesiest.dev/",
     "summary": "Gameplay-focused designer and systems programmer specializing in balancing combat systems, player analytics, and scalable technical solutions. Led design and implementation on multiple student projects, demonstrating proven ability in rapid prototyping, iterative development, and cross-functional collaboration.",
-    "location":{ 
+    "location": {
       "address": "",
       "postalCode": "",
       "city": "Roseburg",
       "countryCode": "USA",
       "region": "Oregon"
+    },
+    "about_me": {
+      "paragraphs": [
+         "I’m a systems-driven designer who builds weird ideas that feel surprisingly intuitive. Whether it’s modular level design, combat scripting, or dynamic UI flow, I love turning messy concepts into gameplay that just clicks. If it supports experimentation, player expression, or feels slightly cursed—I’m into it.",
+    "Before pivoting into game design, I spent over a decade in IT solving real-world technical chaos across government, healthcare, and finance. That background sharpened my debugging instincts, taught me how to translate complexity into clarity, and made me the go-to bridge between technical and creative minds.",
+    "Outside of development, you’ll find me falling off rocks, cooking something I probably shouldn’t, or deep in a PlayStation 2-era classic. Games are puzzles, toys, systems, and stories all at once—and I try to bring a little bit of each into everything I make."
+      ],
+      "quote": {
+        "text": "Art is chaos taking shape.",
+        "author": "Pablo Picasso"
+      }
     },
     "profiles": [
       {
@@ -25,20 +36,57 @@
         "network": "linkedin",
         "username": "joe-oliveira",
         "url": "https://www.linkedin.com/in/joe-oliveira/"
+      },
+      {
+        "network": "Itch-io",
+        "username": "ManMadeOfGouda",
+        "url": "https://manmadeofgouda.itch.io/"
       }
     ]
   },
   "interests": [
-    { "name": "Exploring the outdoors: From hiking trails to camping under the stars, I love connecting with nature and recharging in the open air." },
-    { "name": "Rock Climbing: Testing limits and building resilience, one climb at a time. (Ask me about my back!)" },
-    { "name": "Music Enthusiast: Whether it’s feeling every beat or discovering new genres, music fuels my creativity." },
-    { "name": "Culinary Adventures: Cooking and baking are my outlets for creativity, and I’m always experimenting with new recipes." },
-    { "name": "Gaming: Both playing and creating games—constantly inspired by the worlds, mechanics, and stories within. Especially now that I am forwarding myself into the gaming industry!" },
-    { "name": "Cinema Lover: I’m a movie buff at heart, always ready to dive into everything from indie films to big blockbusters." },
-    { "name": "Foodie: Exploring new cuisines and flavors is my kind of adventure." },
-    { "name": "Seeking New Challenges: Life’s too short not to push the boundaries—whether it’s learning, creating, or exploring." }
-],
-"skills": [
+    {
+      "name": "Hiking",
+      "description": "Exploring the outdoors: From hiking trails to camping under the stars, I love connecting with nature and recharging in the open air.",
+      "icon": "fa-mountain"
+    },
+    {
+      "name": "Rock Climbing",
+      "description": "Testing limits and building resilience, one climb at a time. (Ask me about my back!)",
+      "icon": "fa-person-hiking"
+    },
+    {
+      "name": "Music",
+      "description": "Whether it’s feeling every beat or discovering new genres, music fuels my creativity.",
+      "icon": "fa-music"
+    },
+    {
+      "name": "Culinary Adventures",
+      "description": "Cooking and baking are my outlets for creativity, and I’m always experimenting with new recipes.",
+      "icon": "fa-utensils"
+    },
+    {
+      "name": "Gaming",
+      "description": "Both playing and creating games—constantly inspired by the worlds, mechanics, and stories within. Especially now that I am forwarding myself into the gaming industry!",
+      "icon": "fa-gamepad"
+    },
+    {
+      "name": "Cinema",
+      "description": "I’m a movie buff at heart, always ready to dive into everything from indie films to big blockbusters.",
+      "icon": "fa-film"
+    },
+    {
+      "name": "Foodie",
+      "description": "Exploring new cuisines and flavors is my kind of adventure.",
+      "icon": "fa-bowl-food"
+    },
+    {
+      "name": "New Challenges",
+      "description": "Life’s too short not to push the boundaries—whether it’s learning, creating, or exploring.",
+      "icon": "fa-lightbulb"
+    }
+  ],
+  "skills": [
     {
       "name": "Design",
       "level": "Advanced",
@@ -49,14 +97,26 @@
       ]
     },
     {
+      "name": "Programming",
+      "level": "Advanced",
+      "keywords": [
+        "C++",
+        "C#",
+        "Python",
+        "Blueprint Scripting",
+        "Assembly"
+      ]
+    },
+    {
       "name": "Engines & Tools",
       "level": "Advanced",
       "keywords": [
         "Unity",
         "Unreal Engine",
-        "Blueprint Scripting",
-        "C++",
-        "C#"
+        "Jira",
+        "Confluence",
+        "Perforce",
+        "Git"
       ]
     },
     {
@@ -101,7 +161,7 @@
     "Agile Development",
     "Responsive Design"
   ],
- "education": [
+  "education": [
     {
       "institution": "Full Sail University",
       "area": "Game Design",
@@ -246,7 +306,7 @@
       "reference": ""
     }
   ],
-"downloads": [
+  "downloads": [
     {
       "name": "Game Design Resume",
       "docx": "/resume/JoeOliveira_GameDesign_Resume.docx",
@@ -257,12 +317,12 @@
       "docx": "/resume/JoeOliveira_IT_Resume.docx",
       "pdf": "/resume/JoeOliveira_IT_Resume.pdf"
     },
-{
+    {
       "name": "Japanese Resume - 日本語履歴書",
       "docx": "/resume/JoeOliveira_ResumeJP.docx",
       "pdf": "/resume/JoeOliveira_ResumeJP.pdf"
     },
-{
+    {
       "name": "Shokumukeirekisho -  職務経歴書",
       "docx": "/resume/JoeOliveira_Shokumukeirekisho.docx",
       "pdf": "/resume/JoeOliveira_Shokumukeirekisho.pdf"

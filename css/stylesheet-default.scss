@@ -1,6 +1,6 @@
----
-# Provide front matter so Jekyll processes this file as SASS.
----
+--- 
+# Provide front matter so Jekyll processes this file as SASS. 
+--- 
 @charset "utf-8";
 
 // Default CSS.
@@ -24,8 +24,13 @@ body {
 
 // Prefer space between list items in screen mode.
 .list-padding {
-  ul li { padding: 5px 0px; }
-  ol li { padding: 5px 0px; }
+  ul li {
+    padding: 5px 0px;
+  }
+
+  ol li {
+    padding: 5px 0px;
+  }
 }
 
 // This class is used in the prebuilt bio themes.
@@ -33,6 +38,7 @@ body {
   margin-bottom: 0px !important;
   padding-bottom: 0px !important;
 }
+
 .skill-columns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -46,7 +52,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 0.5em 1.2em;
-  padding-left: 5px;
+  padding-left: 10px;
   margin-top: 10px;
 }
 
@@ -60,4 +66,135 @@ body {
   position: absolute;
   left: 0;
   color: #ccc;
+}
+
+.pill-tag {
+  display: inline-block;
+  background-color: var(--card-bg);
+  color: var(--text);
+  padding: 6px 12px;
+  margin: 5px 8px 5px 0;
+  border: 1px solid var(--text);
+  border-radius: 9999px;
+  font-size: 0.9em;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+#skills-tabs-wrapper {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background-color: var(--card-bg);
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.interest-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+.interest-wrapper {
+  border: 1px solid var(--border);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.interest-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 500;
+  white-space: nowrap;
+  z-index: 1;
+}
+.interest-pill i {
+  font-size: 1rem;
+}
+.interest-tooltip {
+  position: absolute;
+  background-color: var(--tooltip-bg, #222);
+  color: var(--text, #fff);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  max-width: 320px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  z-index: 9999;
+  pointer-events: none;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+@media (max-width: 768px) {
+  .interest-tooltip {
+    position: absolute;
+    left: 5% !important;
+    width: 90vw !important;
+    top: auto;
+    bottom: auto;
+    pointer-events: auto;
+    z-index: 99999;
+  }
+  .interest-pill {
+    font-size: 0.95rem;
+    padding: 0.3rem 0.75rem;
+  }
+
+  .interest-pill i {
+    font-size: 0.95rem;
+  }
+}
+
+.about-me {
+  background: var(--surface-alt, rgba(255,255,255,0.03));
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+  color: var(--text, #ddd);
+}
+
+.about-me h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-me p {
+  margin-bottom: 1rem;
+}
+.about-quote {
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  border-left: 5px solid var(--accent, #88c);
+  border-right: 5px solid var(--accent, #88c);
+  background: rgba(255,255,255,0.05);
+  font-style: italic;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  color: var(--text, #aaa);
+}
+
+.quote-author {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  opacity: 0.7;
+}
+.about-heading {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }

@@ -4,6 +4,8 @@
     --text: #111111;
     --card-bg: #ffffff;
     --card-text: #111111;
+      --tooltip-bg: #eee;
+  --tooltip-text: #111;
   }
   
   [data-theme='dark'] {
@@ -11,6 +13,8 @@
     --text: #f5f5f5;
     --card-bg: #2c2c2c;
     --card-text: #f5f5f5;
+      --tooltip-bg: #222;
+  --tooltip-text: #fff;
   }
   
   /* Site-wide background and text fallback */
@@ -117,3 +121,121 @@
     color: var(--card-text) !important;
   }
 
+.skill-pill {
+  background-color: var(--card-text);
+  color: var(--card-bg);
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px 6px 4px 0;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme='dark'] .skill-pill {
+  background-color: #86C1B5;
+  color: #1e1e1e;
+}
+
+[data-theme='light'] .skill-pill {
+  background-color: #BABABD;
+  color: #111111;
+}
+/* Wrapper Container */
+#skills-tabs-wrapper {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+   overflow: visible !important;
+  z-index: 1;
+  margin-bottom: 2rem;
+}
+
+/* Tab Menu */
+.ui.tabular.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--card-bg) !important;
+  padding: 0.5rem 0;
+  gap: 4px;
+}
+
+/* Individual Tab */
+.ui.tabular.menu .item {
+  padding: 0.6rem 1rem;
+  color: var(--text);
+  background: none;
+  border: none;
+  font-weight: 500;
+  border-radius: 8px 8px 0 0;
+  transition: background-color 0.2s ease;
+}
+
+.ui.tabular.menu .item:hover {
+  background-color: var(--card-text);
+  color: var(--card-bg) !important;
+}
+
+/* Active Tab */
+.ui.tabular.menu .active.item {
+  background-color: var(--card-bg);
+  color: var(--text);
+  font-weight: 600;
+  border: 1px solid var(--border);
+  z-index: 2;
+}
+
+/* Tab Content */
+#skills-tab-content {
+  background-color: var(--card-bg);
+  padding: 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  border-top: none;
+  z-index: 1;
+  position: relative;
+}
+
+/* Pills */
+.pill-tag {
+  background-color: var(--card-bg);
+  color: var(--text);
+  padding: 6px 14px;
+  border: 1px solid var(--text);
+  border-radius: 999px;
+  font-size: 0.9em;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+:root {
+  --card-bg: #f9f9f9;
+  --surface: #ffffff;
+  --text: #111;
+  --border: #ccc;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --card-bg: #222;
+    --surface: #2b2b2b;
+    --text: #eee;
+    --border: #444;
+  }
+}
+#skills-tabs-wrapper,
+.skills-section,
+.interests-wrapper {
+  overflow: visible !important;
+  position: relative;
+  z-index: 1;
+}
+.fab{
+  color: var(--text)!important;
+  padding: 10px;
+}

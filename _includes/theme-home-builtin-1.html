@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <div style="height: 100%; margin-top: -75px" class="ui middle aligned grid">
   <div class="column">
     <!-- Profile Picture -->
@@ -6,60 +7,141 @@
     </div>
 
     <!-- Main Content Card with Improved Padding and Shadow for Structure -->
-    <div style="max-width: 800px; padding: 30px; margin-top: 30px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 10px;" class="ui fluid centered card">
+    <div
+      style="max-width: 800px; padding: 30px; margin-top: 30px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 10px;"
+      class="ui fluid centered card">
       <!-- Name and Label -->
       <div class="center aligned content" style="margin-bottom: 20px;">
         <h2 class="ui header" style="font-size: 2em; margin-bottom: 5px;">{{ site.data.bio.basics.name }}</h2>
         <p style="font-size: 1.2em;">{{ site.data.bio.basics.label }}</p>
+        <blockquote class="about-quote">
+          “{{ site.data.bio.basics.about_me.quote.text }}”<br>
+          <span class="quote-author">– {{ site.data.bio.basics.about_me.quote.author }}</span>
+        </blockquote>
       </div>
+       <section class="about-me">
+        <h2 class="about-heading">
+          <i class="fas fa-user-tie"></i> Professional Summary
+        </h2>
+         {{ site.data.bio.basics.summary | newline_to_br}}
+      </section>
 
-      <!-- Summary Section with Enhanced Readability -->
-      <div class="content" style="text-align: left; padding: 15px 0;">
-        <h3 class="ui header" style=" font-size: 1.4em; margin-bottom: 10px;">Summary</h3>
-        <p style="font-size: 1.1em;  line-height: 1.6;">
-          {{ site.data.bio.basics.summary | newline_to_br}}
-        </p>
-      </div>
-
-<!-- Skills Section with Cleaned List Styling -->
-<div class="content" style="text-align: left; padding: 15px 0;">
-  <h3 class="ui header" style="font-size: 1.4em; margin-bottom: 10px;">Skills</h3>
-  {% for skill in site.data.bio.skills %}
-  <div style="margin-bottom: 10px;">
-    <strong style="font-size: 1.15em;">{{ skill.name }}</strong>
-    <ul class="skill-columns">
-      {% for keyword in skill.keywords %}
-        <li>{{ keyword }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-{% endfor %}
-</div>
-
-<div class="content" style="text-align: left; padding: 15px 0;">
-  <h3 class="ui header" style="font-size: 1.4em; margin-bottom: 10px;">Soft Skills</h3>
-  <div class="soft-skill-grid">
-    {% for skill in site.data.bio.soft_skills %}
-      <span class="soft-skill">{{ skill }}</span>
-    {% endfor %}
-  </div>
-</div>
+      <section class="about-me">
+        <h2 class="about-heading">
+          <i class="fas fa-user-secret"></i> About Me
+        </h2>
+        {% for paragraph in site.data.bio.basics.about_me.paragraphs %}
+        <p>{{ paragraph }}</p>
+        {% endfor %}
+      </section>
 
 
-      <!-- Interests Section with Cleaned List Styling -->
-      <div class="content" style="text-align: left; padding: 15px 0;">
-        <h3 class="ui header" style=" font-size: 1.4em; margin-bottom: 10px;">Interests</h3>
-        <ul style="font-size: 1.1em; line-height: 1.6; padding-left: 20px; list-style-type: disc;">
-          {% for interest in site.data.bio.interests %}
-            <li>{{ interest.name }}</li>
+      <h2 class="ui header"><i class="fas fa-book-skull"></i> Skills</h2>
+      <div id="skills-tabs-wrapper">
+        <!-- Tab headers -->
+        <div class="ui top attached tabular menu">
+          {% assign index = 0 %}
+          {% for category in site.data.bio.skills %}
+          <a class="item {% if forloop.first %}active{% endif %}"
+            data-tab="{{ category.name | downcase | replace: ' ', '-' }}">{{ category.name }}</a>
           {% endfor %}
-        </ul>
+          <a class="item" data-tab="soft-skills">Soft Skills</a>
+        </div>
+
+        <!-- Tab content -->
+        <div id="skills-tab-content">
+          {% for category in site.data.bio.skills %}
+          <div class="ui bottom attached tab segment {% if forloop.first %}active{% endif %}"
+            data-tab="{{ category.name | downcase | replace: ' ', '-' }}">
+            {% for keyword in category.keywords %}
+            <span class="pill-tag">{{ keyword }}</span>
+            {% endfor %}
+          </div>
+          {% endfor %}
+
+          <div class="ui bottom attached tab segment" data-tab="soft-skills">
+            {% for skill in site.data.bio.soft_skills %}
+            <span class="pill-tag">{{ skill }}</span>
+            {% endfor %}
+          </div>
+        </div>
       </div>
 
-      <!-- Social Links with Icons for Visual Appeal -->
+
+      <!-- HTML: Place this where you want the Interests section -->
+      <section class="interests">
+        <h2 class="ui header"><i class="fas fa-star-of-life"></i> Interests</h2>
+        <div class="interest-wrapper">
+          {% for interest in site.data.bio.interests %}
+          <div class="interest-pill" data-description="{{ interest.description }}">
+            <i class="fas {{ interest.icon }}"></i>
+            <span>{{ interest.name }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <div class="ui center aligned segment">
+        <a class="ui teal button" href="/projects">See My Projects</a>
+        <a class="ui basic button" href="/resume/">See My Resumes</a>
+      </div>
+
       <div class="center aligned extra content" style="margin-top: 20px;">
         {% include home-network-links.html %}
       </div>
     </div>
   </div>
 </div>
+
+<script>
+  $('.menu .item').tab();
+  document.addEventListener('DOMContentLoaded', () => {
+    const pills = document.querySelectorAll('.interest-pill');
+
+    function closeAllTooltips() {
+      document.querySelectorAll('.interest-tooltip').forEach(el => el.remove());
+    }
+
+    pills.forEach(pill => {
+      pill.addEventListener('mouseenter', (e) => {
+        if (window.innerWidth <= 768) return; // No hover tooltip on mobile
+        closeAllTooltips();
+        const tooltip = document.createElement('div');
+        tooltip.className = 'interest-tooltip';
+        tooltip.textContent = pill.dataset.description;
+        document.body.appendChild(tooltip);
+        const rect = pill.getBoundingClientRect();
+        tooltip.style.top = `${rect.top - tooltip.offsetHeight - 12 + window.scrollY}px`;
+        tooltip.style.left = `${rect.left + rect.width / 2 - tooltip.offsetWidth / 2}px`;
+      });
+
+      pill.addEventListener('mouseleave', () => {
+        if (window.innerWidth <= 768) return;
+        closeAllTooltips();
+      });
+
+      pill.addEventListener('click', (e) => {
+        e.stopPropagation();
+        closeAllTooltips();
+        const tooltip = document.createElement('div');
+        tooltip.className = 'interest-tooltip';
+        tooltip.textContent = pill.dataset.description;
+        document.body.appendChild(tooltip);
+        const rect = pill.getBoundingClientRect();
+        if (window.innerWidth <= 768) {
+          const spaceAbove = rect.top;
+          const tooltipHeight = 120; // estimated max height
+          if (spaceAbove > tooltipHeight + 20) {
+            tooltip.style.top = `${rect.top - tooltipHeight + window.scrollY - 8}px`;
+          } else {
+            tooltip.style.top = `${rect.bottom + 8 + window.scrollY}px`;
+          }
+          tooltip.style.left = `5%`;
+          tooltip.style.width = '90vw';
+        }
+      });
+    });
+
+    document.addEventListener('click', () => closeAllTooltips());
+  });
+</script>
