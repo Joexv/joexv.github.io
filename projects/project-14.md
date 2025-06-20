@@ -11,102 +11,104 @@ labels:
   - Systems Design
   - UI/UX
   - Student Project
-summary: A chaotic roguelite where your slot machine is both your weapon and your curse. Built in Unreal Engine 5.4 as a final student project, Rogue Slots fuses gambling mechanics with real-time combat and strategic upgrades.
+summary: A roguelite where your slot machine fuels your combat. Built in UE5.4, Rogue Slots challenges players to adapt, spin, and strategize their way through chaos, with layered systems, a bold UI, and player-first iteration at its core.
 ---
 
-### **Rogue Slots** was developed by **Melted Pixels** as our final student project at Full Sail University.
+## Rogue Slots  
+**Role: Combat Design • Technical Systems • UI/UX • Player Feedback**  
+*Melted Pixels – Final Student Project*
 
- Welcome to Rogue Slots, where fast-paced action meets the unpredictability of running away with a mountain of debt. You play as a broke gambler, carrying gOLDy ,  an old, retired slot machine with magical properties, fused to your back.
+---
 
-Every spin fuels your powers, from explosive attacks to life-saving health!
+### Overview  
+Rogue Slots is a fast-paced roguelite where you carry **gOLDy**, a cursed slot machine, into battle. Every spin empowers you: buffs, effects, tools. There’s no penalty—just potential. Built in Unreal Engine 5.4, this project pushed us to take a volatile mechanic and **make it empowering, readable, and fun**.
 
-Explore the different personifications of your favorite casino games, face twisted slot machines looking to recoup their master's funds, and build your power through strategic upgrades, stamps, and treatments. No two runs are the same, and no spin is guaranteed. 
+This was my most system-heavy project to date, and the first time I approached design through the lens of player clarity above all else.
 
-### Features
-- **Slot-Powered Combat**: Abilities are tied to your machine's spins, choose wisely.
-- **Stamps & Treatments**: Modify your slots with upgrades that trigger chain reactions, cast spells, or alter movement.
-- **Evil Slot Machines**: Battle possessed mechanical monstrosities, each with unique behaviors.
-- **Tactile Movement & Timing**: Carrying gOLDy slows you down, but buffs can turn you into a slot-fueled juggernaut.
-- **Bonus Rounds**: Match icons for a massive burst of tokens between stages, a little luck goes a long way.
+> **[Insert Image: Hero shot of player running with gOLDy attached mid-spin]**
 
-## My Roles – In Detail
+---
 
-### Combat Systems & Enemy AI  
-I expanded on Dustin’s foundational enemy state machine, optimizing and enhancing its capabilities significantly. My work allowed us to handle potentially hundreds of enemies simultaneously without performance issues. Specifically, I:
+### Design Challenge  
+How do you take a mechanic built on randomness and make players want to engage with it?
 
-- Designed and implemented enemy variants:
-  - **Ranged Enemies**: Developed logic for ranged combat behavior.
-  - **Lobbing Enemies**: Created projectiles leaving residual damage zones on impact.
-  - **Charging Enemies**: Programmed AI behavior for enemies charging the player, becoming stunned upon collision.
-  - **Boss Encounters**: Built unique boss mechanics and behaviors to diversify combat encounters.
-- Optimized AI states to maintain stable frame rates during intense encounters.
+Our early version of the slot machine was noisy. Too many reels, unclear buffs, weak feedback. Players didn’t know why to spin or what just happened. I focused on refining that system—trimming it down and embedding the feedback **into the game moment**, not into a separate menu or tutorial.
 
-### Slot Machine Systems & Mechanics  
-Building upon Dustin’s initial slot machine setup, I significantly extended the feature with additional functionality, enhanced visuals, and audio cues. Key enhancements included:
+---
 
-- Implementing precisely timed audio triggers aligned with slot outcomes, providing immediate feedback.
-- Integrating visual timers directly onto slots, clearly communicating buff durations to players.
-- Streamlining UI from multiple slot rows to a single active row for clarity.
-- Adapting existing "run-and-forget" logic into a more flexible and modular format, enabling easier integration of time-sensitive features without compromising stability.
+### My Approach
 
-### UI/UX Design and Implementation  
-I managed the game's entire UI/UX implementation, emphasizing intuitive design and clarity. Highlights of my work include:
+#### 🎰 Refining the Slot Machine  
+I didn’t invent the slot system—but I made it understandable.
 
-- Establishing a sleek, modern aesthetic using a clear black-on-neon color scheme, enhancing readability and theme consistency.
-- Rapid prototyping UI layouts and interactions to iteratively test and refine usability, despite my limited artistic skills.
-- Iterative UX improvements informed directly by player feedback, such as enlarging interactive buttons and embedding important information into central UI components.
+- Reduced from 9 visible reels to **3 active slots**  
+- Embedded **buff timers directly inside slots**  
+- Added fading, blur, and iconography for **clear slot state**  
+- Built a **Jackpot Event system** (cut) that rewarded matching Stamp rolls with burst bonuses
 
-### Gameplay Programming & Systems Integration  
-I was responsible for creating robust, modular systems enabling seamless collaboration among team members. Notable systems included:
+> **[Insert Image: Side-by-side of old vs updated slot machine UI with buffs visible]**
 
-- **Modular Enemy Framework**: Allowed easy addition of new enemy types without modifying AI code.
-- **Flexible Enemy Spawn System**: Enabled level designers to specify global or zone-based enemy spawns effortlessly.
-- **Event Flag System**: Simplified triggering global game events by level designers without manual variable management.
-- **Dynamic Background Music System**: Automated seamless music transitions between levels, simplifying audio management for level designers.
-- **Level Timer & Best Time Tracking**: Created a consistent system for tracking and displaying players' best completion times.
+---
 
-Additionally, I frequently managed and troubleshot our version control workflows, assisting team members with merges and resolving conflicts.
+#### ⚔️ Building Combat That Feels Reactive  
+I designed the player combat system from the ground up:
+- Attack animations synced with damage/hit frames  
+- Cone-based hitboxes refined for weight and timing  
+- Polished feedback: **particles, hit SFX, camera shake, hit pause**  
+- Designed enemy attack timing to support player spacing and reactive play
 
-### Playtesting, Feedback & Iteration  
-I coordinated our playtesting processes and personally handled comprehensive analysis of feedback:
+> **[Insert Image: Player attacking multiple enemies while under the effect of a slot buff]**
 
-- Developed and administered structured feedback collection using Google Forms.
-- Reviewed recorded gameplay extensively, pinpointing friction and confusion points.
-- Identified and addressed critical UX and gameplay issues through rapid iteration, significantly improving player comprehension of the slot mechanic through targeted UI adjustments.
+---
 
-This rigorous and iterative approach was essential to refining Rogue Slots into an engaging, accessible experience.
+#### 🧠 UI/UX That Carries the System  
+With the slot machine, status effects, shop menus, and powerups—all active at once—**the UI had to do real work**.
 
-### Team Melted Pixels
-- **Dustin Russell** – Vision Holder, Systems & Gameplay Design
-- **Kyle Elliot** – Level & Combat Design
-- **Joelle Jahns** – Level & UI Design
-- **Joe Oliveira** – Combat, Technical, and UI Design
-- **Miguel Uliaz** – Level & Combat Design
+- Designed and implemented the entire UI: HUD, menus, feedback prompts  
+- Used **iconography** for Stamps and **color-coded borders** for Treatments  
+- Created interaction layouts that were usable even during combat  
+- Tuned every button, layout, and tooltip based on actual tester behavior
 
-### Art Collaboration | Asset Creators
+> **[Insert Image: Screenshot of clean HUD with active buff slots and readable layout]**
 
-- **Michael Reger**
-- **Hannah Carroll**
+---
 
-### Current Status
-This early prototype was built in Unreal Engine 5.4 and features two environments to play through. Expect bugs, surprises, and mechanical experimentation. Feedback is welcome!
+#### 🔧 Technical Systems & Support  
+I also built core systems to support the rest of the team:
+- **Event Flag System** to help level designers trigger gameplay changes  
+- **Dynamic Music Transition System** to swap tracks smoothly between stages  
+- **Timer + Best-Time Tracker** to reinforce speedrun and mastery elements  
+- Built and implemented the game’s **HUB area**, including upgrade/shop NPC functionality
 
-[Download Rogue Slots from Itch.io](https://manmadeofgouda.itch.io/mp-rogue-slots)
+> **[Insert Image: HUB area with player interacting with shop or resting station]**
 
+---
 
-### Retrospective - My Thoughts & Feelings
-Working on Rogue Slots was genuinely one of the highlights of my game design journey. From the moment Dustin pitched me the concept before our Capstone, I was all-in. I’ve always loved roguelikes and roguelites, and the chance to innovate around the quirky mechanic of a slot machine as both weapon and buff-provider sounded incredible.
+### Testing & Iteration  
+A turning point came when a tester asked:  
+> *"Why spin? The buffs feel permanent."*
 
-In past projects, I typically gravitated toward level design and foundational game mechanics, but this time I intentionally pivoted to technical design and broader programming responsibilities. My goal was to create robust, modular systems that my teammates could easily integrate their unique features into, all while maintaining consistency in gameplay feel and UI/UX.
+That critique changed everything. I:
+- Added **buff durations as animated bars inside each slot**  
+- Faded expired buffs and blurred inactive ones  
+- Synced audio hits to spin resolution  
+- Upgraded spin animations to feel snappy and exciting
 
-My first priority was the player combat and the central slot machine mechanic. Initially, combat was straightforward: both the player and enemies used cone-based hitboxes. I quickly enhanced this by introducing clear visual indicators, like enemy charge bars, to better telegraph attacks. For the player character, I pulled animations from the Fab store and grabbed a whimsical toy hammer from CGTrader, carefully timing hitbox activation to animation frames for intuitive and satisfying combat swings.
+> **[Insert Image: Annotated HUD showing duration bar, blurred expired slot, and active spin FX]**
 
-The slot machine itself went through multiple evolutions. At first, it showed three rows of slots, similar to traditional machines, but I streamlined this to just one active row for clarity. Each slot provided visual and textual cues, enhancing readability. I also implemented a more ambitious "Stamps" system, where matching symbols could trigger powerful buffs or even humorous effects like transforming enemies into passive casino fruits. To maintain balance, equipping beneficial Stamps came bundled with negative effects, like tougher enemy behavior. Although I loved this feature, it was eventually cut to maintain game simplicity, but it's something I'd love to revisit, perhaps tying more directly into core slot mechanics.
+---
 
-Player feedback was crucial and sometimes brutal. During extensive playtests, I saw firsthand how even seemingly minor design decisions could dramatically affect player experience. For instance, making shop buttons physically larger to encompass item icons solved simple but frustrating UX issues players faced.
+### What Got Scoped  
+- **Jackpot Events**: Burst-reward mechanic for matching Stamps. Cut late for time/balance.  
+- **Drawback Stamps/Slots**: Dropped early—confused players and disrupted flow  
+- **Boss Encounters**: Planned unique boss fights became tougher waves due to animation and AI time constraints  
+- **Planned Expansions**: Upgrade trees, adjustable starting loadouts, narrative cutscenes, and multi-level progression were left on the table
 
-But not all feedback was easy to tackle. Early on, players repeatedly struggled with the slot machine mechanic itself, our core gameplay hook. Watching testers repeatedly fail to grasp such an essential feature was a wake-up call, forcing me into a deep dive: Was the machine unclear visually? Did it lack incentives? Was interaction unintuitive?
+> **[Insert Image: Concept mockup of loadout menu or early boss design sketch]**
 
-One tester crystallized the issue perfectly: "Why spin at all if the bonuses are always active?" This insight hit me hard. Players weren’t noticing the buff timers tucked away in the corner. To address this, I directly embedded timer indicators onto the slots themselves, fading and blurring slots visually when their buffs expired. It was a simple yet transformative change, immediately improving usability and enjoyment. Players finally understood the purpose and timing of each spin, making the core mechanic not just usable, but genuinely fun.
+---
 
-This experience reminded me of something critical: clarity and player perspective are everything. What’s obvious to a developer often isn't to players. Being open to feedback, even when it hurts, and willing to pivot quickly is a lesson I'll carry forward into every project.
+### Final Thoughts  
+Rogue Slots wasn’t about chaos—it was about **trusting the system**. Every decision I made—from visual feedback to combat timing—was about giving the player control, even when outcomes were random. I didn’t just patch over confusion—I redesigned the communication around every spin, so players always knew what just happened, and why it was awesome.
+
+> **[Insert Image: Final spin-to-buff moment during combat or cinematic player victory frame]**

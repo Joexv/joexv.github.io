@@ -10,7 +10,7 @@ labels:
   - Game Jam
   - Systems Design
   - Level Design
-summary: A Nordic-inspired fishing game built during a game jam, combining mythological elements with immersive exploration and systems-based gameplay.
+summary: A fishing game about myth and survival, developed during a 30-day jam while balancing school. Focused on modular systems, atmosphere, and harpoon-based combat in Unreal Engine 5.
 screenshots:
   - Screenshots/MysticFishing1.png
   - Screenshots/MysticFishing2.png
@@ -18,18 +18,94 @@ screenshots:
   - Screenshots/MysticFishing4.png
 ---
 
-### Mystic Fishing – Ryan Laley Games Game Jam 2024
+## Mystic Fishing  
+*30-Day Game Jam – Ryan Laley Games 2024*  
 **Role: Level Designer / Gameplay Systems Designer**
 
-Set in a tranquil Nordic-inspired world, *Mystic Fishing* invites players to explore icy waters in search of ancient mythological fish. Built in Unreal Engine, the game blends calm exploration with interactive, skill-based harpoon fishing. I was responsible for level layout, boat movement and control, water and fish spawning systems, and early mechanical/world concepting.
+---
 
-Initially pitched as a time-traveling fishing adventure through multiple mythologies, the project evolved into a focused vertical slice—emphasizing exploration, rune-based fish combat, and trading. Despite cuts to some of the original scope, core mechanics such as mouse-based quick-time harpoon duels, a working bait-and-trade economy, and dynamic music/environment systems were implemented and showcased.
+### Overview  
+Built during a brutal month of balancing school and development, Mystic Fishing aimed to blend mythological storytelling with systemic gameplay. You play as a lone fisherman in icy Nordic waters, hunting ancient creatures of legend. We didn’t have time for full boss fights or lore progression—but we built a polished vertical slice showcasing atmosphere, fishing mechanics, and exploration.
 
-### Key Contributions:
-- **Level Design**: Built the explorable ocean environment, including the merchant shack, rare fish zones, and player guidance layout.
-- **Boat and Water Physics**: Designed and tuned boat controls for smooth traversal; integrated physical water response.
-- **Spawning and Economy Systems**: Created a modular fish spawning system with rarity scaling tied to zone and bait; connected core loop of catching → selling → upgrading bait.
-- **Audio & Mood**: Set up layered ambient music triggers and environment blending for a calm, mythic vibe.
-- **Narrative & Concept**: Pitched the original story idea of traveling through mythologies with a magical fishing grimoire. While the final game shifted directions, the early tone and lore foundations remain.
+> **[Insert Image: Key promo art or logo with misty ocean setting]**
 
-👉 [Play Mystic Fishing on Itch.io](https://manmadeofgouda.itch.io/mysticfishing)
+---
+
+### Original Concept  
+We originally pitched a myth-tracking, world-exploring fishing epic:
+- Discover scattered lore about ancient mythic fish
+- Prepare with bait, tools, and environmental knowledge
+- Engage in boss-level showdowns à la *Moby Dick*
+
+> **[Insert Image: Early pitch slide or whiteboard showing original gameplay loop]**
+
+---
+
+### What We Actually Built  
+With 30 days and school deadlines, we narrowed focus:
+- A single handcrafted Nordic ocean zone  
+- Harpoon-based quick-time fishing combat  
+- A bait economy and fish behavior system  
+- Atmospheric audio zones and environment triggers
+
+---
+
+### Development Breakdown
+
+#### Week 1 – Pitch to Pivot  
+We immediately realized the scope was too large. Instead of cutting features later, we trimmed upfront and focused on a strong vertical slice.
+
+> **[Insert Image: Scope reduction diagram or notes from planning doc]**
+
+#### Week 2 – Systems First  
+- Designed spline-based ocean layout  
+- Procedural fish spawns tied to bait type  
+- Physics-driven boat controls tuned for immersion
+
+> **[Insert Image: Ocean layout or UE viewport showing spawn logic]**
+
+#### Week 3 – Combat Prototype  
+Combat went through multiple prototypes:
+- Click-to-time throws  
+- Directional mouse QTEs  
+- A drift-lock harpoon throw that added tension (final version)
+
+> **[Insert Image: Screenshot of harpoon combat, maybe debug or UI overlay]**
+
+#### Week 4 – Final Pass  
+We focused on environmental polish:
+- Ambient fog and sound zones  
+- Music blending by location  
+- Trade economy and lore nodes (partially implemented)
+
+---
+
+### Deliverables  
+- Playable fishing loop with four fish types and bait interactions  
+- Responsive boat movement and fishing QTE  
+- Atmospheric exploration in a compact but immersive world
+
+> **[Insert Image: In-game moment or player-focused cinematic shot]**
+
+---
+
+### Lessons Learned
+
+**What Worked**  
+- Modular systems made it easy to adapt and trim  
+- Scope control early kept us focused  
+- Emphasis on vibe and pacing helped it stand out
+
+**What Didn’t**  
+- No time for the big boss-style fish fights  
+- Tutorial elements were light, players felt a bit lost  
+- Audio and UI were functional but not final quality
+
+---
+
+### Summary  
+Mystic Fishing is a lesson in disciplined scoping and modular design. While the game didn’t fully realize the myth-hunting fantasy, it nailed the tone, loop, and pacing we set out to test—under heavy constraints.
+
+> **[Insert Image: Final polish moment or clean screenshot of gameplay UI]**
+
+👉 [Download Mystic Fishing on Itch.io](https://manmadeofgouda.itch.io/mysticfishing)

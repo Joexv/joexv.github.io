@@ -17,9 +17,9 @@
     },
     "about_me": {
       "paragraphs": [
-         "I’m a systems-driven designer who builds weird ideas that feel surprisingly intuitive. Whether it’s modular level design, combat scripting, or dynamic UI flow, I love turning messy concepts into gameplay that just clicks. If it supports experimentation, player expression, or feels slightly cursed—I’m into it.",
-    "Before pivoting into game design, I spent over a decade in IT solving real-world technical chaos across government, healthcare, and finance. That background sharpened my debugging instincts, taught me how to translate complexity into clarity, and made me the go-to bridge between technical and creative minds.",
-    "Outside of development, you’ll find me falling off rocks, cooking something I probably shouldn’t, or deep in a PlayStation 2-era classic. Games are puzzles, toys, systems, and stories all at once—and I try to bring a little bit of each into everything I make."
+        "I’m a systems-driven designer who builds weird ideas that feel surprisingly intuitive. Whether it’s modular level design, combat scripting, or dynamic UI flow, I love turning messy concepts into gameplay that just clicks. If it supports experimentation, player expression, or feels slightly cursed—I’m into it.",
+        "Before pivoting into game design, I spent over a decade in IT solving real-world technical chaos across government, healthcare, and finance. That background sharpened my debugging instincts, taught me how to translate complexity into clarity, and made me the go-to bridge between technical and creative minds.",
+        "Outside of development, you’ll find me falling off rocks, cooking something I probably shouldn’t, or deep in a PlayStation 2-era classic. Games are puzzles, toys, systems, and stories all at once—and I try to bring a little bit of each into everything I make."
       ],
       "quote": {
         "text": "Art is chaos taking shape.",
@@ -147,19 +147,32 @@
     }
   ],
   "soft_skills": [
-    "Mentorship",
-    "Knowledge Sharing",
-    "Team Development",
-    "Cross-Functional Collaboration",
-    "Clear Documentation",
-    "Stakeholder Reports",
-    "Design Rationales",
-    "Player Feedback",
-    "Community Insights",
-    "Iterative Testing",
-    "Rapid Prototyping",
-    "Agile Development",
-    "Responsive Design"
+    {
+      "name": "Collaboration",
+      "keywords": [
+        "Mentorship",
+        "Knowledge Sharing",
+        "Team Development",
+        "Cross-Functional Collaboration"
+      ]
+    },
+    {
+      "name": "Player Empathy",
+      "keywords": [
+        "Player Feedback",
+        "Community Insights",
+        "Iterative Testing"
+      ]
+    },
+    {
+      "name": "Collab Process & Delivery Oration",
+      "keywords": [
+        "Agile Development",
+        "Rapid Prototyping",
+        "Clear Documentation",
+        "Design Rationales"
+      ]
+    }
   ],
   "education": [
     {
@@ -238,45 +251,71 @@
   ],
   "projects": [
     {
-      "name": "Treehouse",
-      "role": "Lead Systems & Gameplay Designer",
-      "context": "Full Sail Hall of Fame Game Jam",
-      "highlights": [
-        "3rd Place Winner – FSHOF 2025",
-        "Led modular building, stealth mechanics, and progression system design",
-        "Built inventory & enemy detection systems with Blueprint scripting",
-        "Ran iterative playtests with 10 testers to refine mechanics"
-      ]
+      "title": "Rogue Slots",
+      "permalink": "/projects/Rogue-Slots",
+      "summary": "A chaotic roguelike where slot mechanics fuel player powers and feedback loops.",
+      "thumbnail": "images/Rogue-Slots.png",
+      "featured": true,
+      "role": "Combat, Technical, and UI Designer",
+      "year": "2025",
+      "engine": "Unreal Engine 5.4",
+      "tags": [
+        "Roguelike",
+        "Slot Machine",
+        "UI/UX",
+        "Systems Design",
+        "Player Feedback"
+      ],
+      "highlight": true,
+      "highlight_label": "Capstone Project",
+      "contribution": "Combat Design • Technical Systems • UI/UX • Player Feedback",
+      "itch": "https://manmadeofgouda.itch.io/rogue-slots"
     },
     {
-      "name": "Rogue Slots",
-      "role": "Technical, Combat, Gameplay & Systems Designer",
-      "context": "Full Sail Capstone Project",
-      "highlights": [
-        "Designed roguelike-slot hybrid systems balancing randomness and control",
-        "Authored GDDs, wireframes, and flowcharts to keep the team aligned",
-        "Engineered randomized encounters and reward logic in UE5 Blueprints & C++",
-        "Analyzed test metrics to sharpen feedback loops and boost engagement"
-      ]
+      "title": "Treehouse",
+      "permalink": "/projects/Treehouse",
+      "summary": "A stealth-building narrative hybrid where grief is rebuilt one wall at a time.",
+      "thumbnail": "images/treehouse.png",
+      "featured": true,
+      "role": "UI/UX, Menus, Building System, Inventory, HUD, Glasses Tracker",
+      "year": "2025",
+      "engine": "Unreal Engine 5.3",
+      "tags": [
+        "Stealth",
+        "Narrative",
+        "Blueprints",
+        "System Design",
+        "UI/UX"
+      ],
+      "contribution": "Systems Designer / UI/UX Developer / Technical Designer",
+      "itch": "https://ampmunkey.itch.io/treehouse"
     },
     {
-      "name": "Japanese Garden",
-      "role": "Level Designer & Sole Developer",
-      "context": "Full Sail Level Design Project",
-      "highlights": [
-        "Crafted an exploration-focused level with puzzles, collectibles, and soft gating",
-        "Used player testing data to refine navigation and pacing"
-      ]
+      "title": "Mechanics Inferno",
+      "permalink": "/projects/MechanicsInferno",
+      "summary": "A simple vertical platformer exploring trust in mechanical systems.",
+      "thumbnail": "images/MI_End.png",
+      "featured": true,
+      "role": "Solo Developer",
+      "year": "2024",
+      "engine": "Unreal Engine 5.4",
+      "tags": [
+        "Platformer",
+        "Rhythm",
+        "Level Design",
+        "Solo",
+        "Puzzle",
+        "Blueprints"
+      ],
+      "contribution": "Solo Designer (Level Design • Scripting • Lighting • Audio • Playtesting)",
+      "github": "https://cheesiest.dev/projects/MechanicsInferno"
     },
     {
-      "name": "Mechanic’s Inferno",
-      "role": "Level & Systems Designer & Sole Developer",
-      "context": "Full Sail IPM Level Design Project",
-      "highlights": [
-        "Built obstacle-based puzzles focusing on traversal complexity",
-        "Applied test metrics to adjust pacing and guide player decisions",
-        "Collaborated with peers to improve obstacle readability"
-      ]
+      "title": "Mystic Fishing",
+      "permalink": "/projects/MysticFishing",
+      "summary": "Track mythical creatures in a lore-based fishing adventure made in 30 days.",
+      "thumbnail": "images/MysticFishing.png",
+      "featured": false
     }
   ],
   "awards": [
@@ -326,6 +365,6 @@
       "name": "Shokumukeirekisho -  職務経歴書",
       "docx": "/resume/JoeOliveira_Shokumukeirekisho.docx",
       "pdf": "/resume/JoeOliveira_Shokumukeirekisho.pdf"
-    },
-  ]
+    }
+  ],
 }

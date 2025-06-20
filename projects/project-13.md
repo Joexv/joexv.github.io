@@ -11,32 +11,89 @@ labels:
   - Stealth
   - Collectathon
   - Systems Design
-summary: A stealthy collectathon about building your childhood dream treehouse using high-tech glasses and your dad’s TODO list.
+summary: A stealth-based collectathon where you finish your dad’s old treehouse using smart glasses, a TODO list, and a lot of sneaking around. Built in UE5 for the 2025 Full Sail HOF Game Jam.
+---
+
+## Treehouse  
+**Role: Systems Designer / UI/UX Developer / Technical Designer**  
+*Melted Pixels – Full Sail Hall of Fame Jam 2025*  
+**🏆 3rd Place Winner**
 
 ---
 
-### **Treehouse** was made by **Melted Pixels** for the 2025 Full Sail University Hall of Fame Game Jam!
-#### Treehouse won 3rd place!
+### Overview  
+Treehouse is a stealthy collectathon with a nostalgic twist. You’re finishing your dad’s abandoned treehouse using his smart glasses to find parts, sneak around obstacles, and piece it all together. The tone blends light childhood fantasy with a grounded systems design loop.
 
-It’s a simple stealth and collecting game about finishing up the treehouse your dad never got around to building. With your dad's smart glasses, you can see his TODO list and track his phone to gather the supplies you need. Piece by piece, bring your dream treehouse to life!
+> **[Insert Image: HUD view of smart glasses while tracking an item]**
 
-### My Roles
-- Resident IT Know-it-all  
-- Systems Designer  
-- Technical Designer  
-- Core Building Mechanic  
-- Inventory System  
-- Original Concept  
-- Professional Lister of Things  
-- Also, likes cheese
+---
 
-### Team Melted Pixels
-- Kyle Elliot  
-- Joelle Jahns  
-- Joe Oliveira  
-- Dustin Russell
+### Design Concept  
+The idea started simple:  
+**“What if your dad left behind everything you needed to finish what he started?”**
 
-[Download Treehouse from Itch.io](https://ampmunkey.itch.io/treehouse)
+We leaned into:
+- A heartfelt build-your-own-treehouse fantasy  
+- Light stealth, with neighborhood-style distractions  
+- Diegetic UI through smart glasses (no pause menu needed)
 
-## Video Playthrough
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gpPW8UAuhA8" title="Full Game - Treehouse by Melted Pixels Gameplay Footage - Full Sail HOF Jam 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Game loop:  
+**Track supplies → Sneak around → Build the treehouse step by step**
+
+> **[Insert Image: TODO list projected in smart glasses view]**
+
+---
+
+### My Contributions  
+I was responsible for most of the gameplay systems and player interaction layers:
+- **UI/UX**: Designed and implemented the entire HUD, menus, and overlays  
+- **Inventory System**: Built a modular pickup and storage system with contextual interaction logic  
+- **Treehouse Build System**: Created raycast-based slot placement that updated dynamically with player input  
+- **Smart Glasses Tracker**: Developed the TODO list system, object highlighting, and directional pings  
+- **Core Gameplay Loop**: Integrated all systems into a smooth, stealthy collectathon flow  
+
+> **[Insert Image: Build zone activating when player gets close with supplies]**
+
+---
+
+### Development Timeline  
+We developed the game during a packed academic week, splitting up tasks efficiently:  
+- **I** led UI/UX, gameplay systems, inventory, building, and the smart glasses design  
+- **Joelle and Kyle** handled level design, spatial layout, and item placement  
+- **Dustin** implemented AI behavior, stealth logic, and in-game cutscenes  
+- **Kyle** also contributed the distraction system via throwable objects, which enhanced stealth dynamics
+
+> **[Insert Image: Player throwing an object to lure AI away from item]**
+
+---
+
+### Challenges & Fixes  
+Playtesting confirmed that players quickly understood the **HUD tracking**, **inventory system**, and **build prompts**—all functioned smoothly without confusion. The core loop was solid from the start thanks to early iteration on UI clarity.
+
+---
+
+### Cut Content & Scope Adjustments  
+- **Treehouse Build System**:  
+  Originally, players would build the treehouse plank-by-plank, fully customizing each section. To fit the jam timeline and keep gameplay tight, we swapped to building in **larger structural chunks** (walls, platforms) instead.
+
+- **Narrative Tone & Visual Progression**:  
+  The game was initially meant to lean into **spooky themes**, with the dad becoming more grotesque and surreal as the story unfolded—symbolizing the child’s struggle with grief. We planned visual transformations and gameplay tension that escalated emotionally. Ultimately, this was **cut due to time constraints**, but it’s something we’d love to revisit.
+
+> **[Insert Image: Early spooky concept sketch or moodboard if available]**
+
+---
+
+### Results  
+- Functional, modular stealth and collectathon loop  
+- A satisfying build system with clear feedback  
+- A UI-driven player experience with no traditional menus  
+- **3rd place** finish out of the Full Sail Hall of Fame Game Jam entries
+
+> **[Insert Image: Completed treehouse from third-person view]**
+
+---
+
+### Final Thoughts  
+Treehouse showed that even a small backyard can be packed with systems and storytelling. Building something from scattered pieces—narratively and mechanically—was the heart of this jam. Watching players get it all built, piece by piece, was exactly the payoff we hoped for.
+
+> **[Insert Image: Final cinematic showing the player watching the treehouse finished]**

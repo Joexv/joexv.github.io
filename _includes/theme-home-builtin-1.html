@@ -1,147 +1,102 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<div style="height: 100%; margin-top: -75px" class="ui middle aligned grid">
-  <div class="column">
-    <!-- Profile Picture -->
-    <div style="position: relative; top: 75px; z-index: 1" class="ui fluid centered small circular image">
-      <img src="{{ site.data.bio.basics.picture }}" alt="Profile Picture">
+<div class="site-card">
+  <!-- Hero -->
+  <section class="hero container">
+    <img class="profile" src="{{ site.data.bio.basics.picture }}" alt="Profile">
+    <h1>{{ site.data.bio.basics.name }}</h1>
+    <h2>{{ site.data.bio.basics.summary }}</h2>
+    <blockquote>“{{ site.data.bio.basics.about_me.quote.text }}”<br><small>— {{
+        site.data.bio.basics.about_me.quote.author }}</small></blockquote>
+  </section>
+
+  <!-- Projects -->
+  {% comment %}
+  Grab all of your featured projects…
+  {% endcomment %}
+  {% assign featured = site.data.bio.projects | where: "featured", true %}
+
+  <section class="projects container">
+    {% for project in featured %}
+    {% assign is_odd = forloop.index0 | modulo: 2 %}
+    <div class="project-card {% if is_odd == 1 %}alt{% endif %}">
+      <div class="thumb-wrapper">
+        <img class="thumb" src="{{ project.thumbnail }}" alt="{{ project.title }}">
+      </div>
+      <div class="content">
+        <h3>
+          {{ project.title }}
+          {% if project.highlight %}
+          <span class="badge-inline">{{ project.highlight_label }}</span>
+          {% endif %}
+        </h3>
+        <p class="meta">
+          <strong>{{ project.role }}</strong> · {{ project.year }} · {{ project.engine }}
+        </p>
+        <p class="summary">{{ project.summary }}</p>
+        {% if project.contribution %}
+        <div class="contribution"><span class="role-label">My role:</span> {{ project.contribution }}</div>
+        {% endif %}
+        <div class="tags">
+          {% for tag in project.tags %}
+          <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        <div class="card-actions">
+          <div class="quick-links">
+            {% if project.github %}<a href="{{ project.github }}" target="_blank" title="GitHub"><i
+                class="fab fa-github"></i></a>{% endif %}
+            {% if project.itch %}<a href="{{ project.itch }}" target="_blank" title="Itch.io"><i
+                class="fa-brands fa-itch-io"></i></a>{% endif %}
+            {% if project.trailer %}<a href="{{ project.trailer }}" target="_blank" title="Trailer"><i
+                class="fas fa-film"></i></a>{% endif %}
+            {% if project.playable %}<a href="{{ project.playable }}" target="_blank" title="Playable Build"><i
+                class="fas fa-gamepad"></i></a>{% endif %}
+          </div>
+          <a class="btn" href="{{ project.permalink }}">View Case Study →</a>
+        </div>
+      </div>
     </div>
+    {% unless forloop.last %}
+    <div class="divider"></div>
+    {% endunless %}
+    {% endfor %}
+  </section>
 
-    <!-- Main Content Card with Improved Padding and Shadow for Structure -->
-    <div
-      style="max-width: 800px; padding: 30px; margin-top: 30px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 10px;"
-      class="ui fluid centered card">
-      <!-- Name and Label -->
-      <div class="center aligned content" style="margin-bottom: 20px;">
-        <h2 class="ui header" style="font-size: 2em; margin-bottom: 5px;">{{ site.data.bio.basics.name }}</h2>
-        <p style="font-size: 1.2em;">{{ site.data.bio.basics.label }}</p>
-        <blockquote class="about-quote">
-          “{{ site.data.bio.basics.about_me.quote.text }}”<br>
-          <span class="quote-author">– {{ site.data.bio.basics.about_me.quote.author }}</span>
-        </blockquote>
+
+  <!-- Core Skills -->
+  <div class="skills-group container">
+    <h2 class="section-title">Core Skills</h2>
+    <div class="skills-grid">
+      {% for cat in site.data.bio.skills %}
+      <div class="skills-col">
+        <h4>{{ cat.name }}</h4>
+        <ul>
+          {% for kw in cat.keywords %}<li>{{ kw }}</li>{% endfor %}
+        </ul>
       </div>
-       <section class="about-me">
-        <h2 class="about-heading">
-          <i class="fas fa-user-tie"></i> Professional Summary
-        </h2>
-         {{ site.data.bio.basics.summary | newline_to_br}}
-      </section>
-
-      <section class="about-me">
-        <h2 class="about-heading">
-          <i class="fas fa-user-secret"></i> About Me
-        </h2>
-        {% for paragraph in site.data.bio.basics.about_me.paragraphs %}
-        <p>{{ paragraph }}</p>
-        {% endfor %}
-      </section>
-
-
-      <h2 class="ui header"><i class="fas fa-book-skull"></i> Skills</h2>
-      <div id="skills-tabs-wrapper">
-        <!-- Tab headers -->
-        <div class="ui top attached tabular menu">
-          {% assign index = 0 %}
-          {% for category in site.data.bio.skills %}
-          <a class="item {% if forloop.first %}active{% endif %}"
-            data-tab="{{ category.name | downcase | replace: ' ', '-' }}">{{ category.name }}</a>
-          {% endfor %}
-          <a class="item" data-tab="soft-skills">Soft Skills</a>
-        </div>
-
-        <!-- Tab content -->
-        <div id="skills-tab-content">
-          {% for category in site.data.bio.skills %}
-          <div class="ui bottom attached tab segment {% if forloop.first %}active{% endif %}"
-            data-tab="{{ category.name | downcase | replace: ' ', '-' }}">
-            {% for keyword in category.keywords %}
-            <span class="pill-tag">{{ keyword }}</span>
-            {% endfor %}
-          </div>
-          {% endfor %}
-
-          <div class="ui bottom attached tab segment" data-tab="soft-skills">
-            {% for skill in site.data.bio.soft_skills %}
-            <span class="pill-tag">{{ skill }}</span>
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-
-
-      <!-- HTML: Place this where you want the Interests section -->
-      <section class="interests">
-        <h2 class="ui header"><i class="fas fa-star-of-life"></i> Interests</h2>
-        <div class="interest-wrapper">
-          {% for interest in site.data.bio.interests %}
-          <div class="interest-pill" data-description="{{ interest.description }}">
-            <i class="fas {{ interest.icon }}"></i>
-            <span>{{ interest.name }}</span>
-          </div>
-          {% endfor %}
-        </div>
-      </section>
-
-      <div class="ui center aligned segment">
-        <a class="ui teal button" href="/projects">See My Projects</a>
-        <a class="ui basic button" href="/resume/">See My Resumes</a>
-      </div>
-
-      <div class="center aligned extra content" style="margin-top: 20px;">
-        {% include home-network-links.html %}
-      </div>
+      {% endfor %}
     </div>
   </div>
+
+  <!-- Soft Skills -->
+  <div class="skills-group container">
+    <h2 class="section-title">Soft Skills</h2>
+    <div class="skills-grid">
+      {% for group in site.data.bio.soft_skills %}
+      <div class="skills-col">
+        <h4>{{ group.name }}</h4>
+        <ul>
+          {% for kw in group.keywords %}<li>{{ kw }}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Footer (unchanged) -->
+  <footer class="container">
+    <a href="mailto:{{ site.data.bio.basics.email }}"><i class="fas fa-envelope fa-2x"></i></a>
+    <a href="{{ site.data.bio.basics.profiles[1].url }}"><i class="fab fa-linkedin fa-2x"></i></a>
+    <a href="{{ site.data.bio.basics.profiles[0].url }}"><i class="fab fa-github fa-2x"></i></a>
+    <a href="{{ site.data.bio.basics.profiles[2].url }}"><i class="fa-brands fa-itch-io fa-2x"></i></a>
+  </footer>
 </div>
-
-<script>
-  $('.menu .item').tab();
-  document.addEventListener('DOMContentLoaded', () => {
-    const pills = document.querySelectorAll('.interest-pill');
-
-    function closeAllTooltips() {
-      document.querySelectorAll('.interest-tooltip').forEach(el => el.remove());
-    }
-
-    pills.forEach(pill => {
-      pill.addEventListener('mouseenter', (e) => {
-        if (window.innerWidth <= 768) return; // No hover tooltip on mobile
-        closeAllTooltips();
-        const tooltip = document.createElement('div');
-        tooltip.className = 'interest-tooltip';
-        tooltip.textContent = pill.dataset.description;
-        document.body.appendChild(tooltip);
-        const rect = pill.getBoundingClientRect();
-        tooltip.style.top = `${rect.top - tooltip.offsetHeight - 12 + window.scrollY}px`;
-        tooltip.style.left = `${rect.left + rect.width / 2 - tooltip.offsetWidth / 2}px`;
-      });
-
-      pill.addEventListener('mouseleave', () => {
-        if (window.innerWidth <= 768) return;
-        closeAllTooltips();
-      });
-
-      pill.addEventListener('click', (e) => {
-        e.stopPropagation();
-        closeAllTooltips();
-        const tooltip = document.createElement('div');
-        tooltip.className = 'interest-tooltip';
-        tooltip.textContent = pill.dataset.description;
-        document.body.appendChild(tooltip);
-        const rect = pill.getBoundingClientRect();
-        if (window.innerWidth <= 768) {
-          const spaceAbove = rect.top;
-          const tooltipHeight = 120; // estimated max height
-          if (spaceAbove > tooltipHeight + 20) {
-            tooltip.style.top = `${rect.top - tooltipHeight + window.scrollY - 8}px`;
-          } else {
-            tooltip.style.top = `${rect.bottom + 8 + window.scrollY}px`;
-          }
-          tooltip.style.left = `5%`;
-          tooltip.style.width = '90vw';
-        }
-      });
-    });
-
-    document.addEventListener('click', () => closeAllTooltips());
-  });
-</script>
