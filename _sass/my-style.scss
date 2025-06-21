@@ -1,0 +1,286 @@
+.dl-table {
+  a {
+    @supports ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
+      text-underline-offset: .8rem;
+    }
+    @supports not ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
+      padding-bottom: .45rem;
+    }
+  }
+
+  .btn, .gumroad-button  {
+    margin: 1rem 0;
+  }
+}
+/* assets/css/custom.css */
+
+/* 1) Light‐mode defaults */
+:root {
+  --accent-color:       #7E9A72;
+  --accent-color-faded: rgba(126, 154, 114, 0.15);
+  --sidebar-bg-color:   #D5B895;
+}
+
+/* 2) Dark‐mode via class */
+body.dark-mode {
+  --accent-color:       #5B8A58;
+  --accent-color-faded: rgba(91, 138, 88, 0.15);
+  --sidebar-bg-color:   #3E5237;
+}
+
+/* 3) Dark‐mode via prefers‐color‐scheme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color:       #5B8A58;
+    --accent-color-faded: rgba(91, 138, 88, 0.15);
+    --sidebar-bg-color:   #3E5237;
+  }
+}
+
+/* 4) Apply sidebar background override */
+.sidebar-bg {
+  background-image: none !important;
+  background-color: var(--sidebar-bg-color) !important;
+}
+
+/* 5) Wire your accent into links & buttons */
+a,
+a:visited {
+  color: var(--accent-color);
+}
+
+a:hover {
+  color: var(--accent-color-faded);
+}
+
+.nav-btn,
+.nav-btn-bar {
+  background-color: var(--accent-color-faded);
+}
+
+.read-more::after {
+  color: var(--accent-color) !important;
+}
+
+/* -------------------------------------------------------------------
+   Sidebar text & links
+   ------------------------------------------------------------------- */
+.sidebar,
+.sidebar .sidebar-title h2,
+.sidebar-nav-item,
+.sidebar-nav-item a {
+  /* Use your accent color for all sidebar text */
+  color: var(--accent-color) !important;
+}
+
+/* Underlines on the nav links */
+.sidebar-nav-item a {
+  border-bottom-color: var(--accent-color-faded) !important;
+}
+
+/* Hover state for better feedback */
+.sidebar-nav-item a:hover {
+  color: var(--accent-color-faded) !important;
+  border-bottom-color: var(--accent-color) !important;
+}
+
+/* -------------------------------------------------------------------
+   Social icons in sidebar
+   ------------------------------------------------------------------- */
+.sidebar-social a {
+  /* Force the icon fill to your accent color */
+  color: var(--accent-color) !important;
+}
+
+.sidebar-social a:hover {
+  color: var(--accent-color-faded) !important;
+}
+
+/* -------------------------------------------------------------------
+   Top‐bar “hamburger” & light/dark toggle
+   ------------------------------------------------------------------- */
+.nav-btn,
+.nav-btn i {
+  /* Make those icons (and their hover states) match your palette */
+  color: var(--accent-color) !important;
+}
+
+.nav-btn:hover,
+.nav-btn:hover i {
+  color: var(--accent-color-faded) !important;
+}
+
+/* force all sidebar text (headings & labels) to white for readability */
+.sidebar, 
+.sidebar-title h2,
+.sidebar-title h1, 
+.sidebar-title h2 a,
+.sidebar-about p,
+.sidebar-nav-item, {
+  color: #fff !important;
+}
+
+/* keep only the link underlines and icons in your sage accent */
+.sidebar-nav-item a {
+  border-bottom-color: var(--accent-color-faded) !important;
+}
+
+.sidebar-social a {
+  /* icons remain accent color, not white */
+  color: var(#fff) !important;
+}
+
+.sidebar-about > a.sidebar-title > h2 {
+	margin: 0;
+	padding-bottom: .5rem;
+	color: white !important;
+}
+
+/* Make sure visited links stay white, just like regular links */
+.sidebar-nav-item a:link,
+.sidebar-nav-item a:visited {
+  color: #fff !important;
+}
+
+/* Keep the underline matching your accent regardless of state */
+.sidebar-nav-item a:link,
+.sidebar-nav-item a:visited {
+  border-bottom-color: var(--accent-color-faded) !important;
+}
+
+/* On hover/focus still use the stronger accent */
+.sidebar-nav-item a:hover,
+.sidebar-nav-item a:focus {
+  color: var(--accent-color-faded) !important;
+  border-bottom-color: var(--accent-color) !important;
+}
+/* hide the Hydejack attribution in the footer */
+footer.content small{
+  display: none;
+}
+.legal small,
+.copyright{
+  display: block !important;
+}
+
+/* collapse any empty space it left behind */
+footer p:empty {
+  display: none !important;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(12rem,1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.resume-card {
+  background: var(--gray-bg);
+  padding: 1.5rem;
+  border-radius: .5rem;
+  text-align: center;
+  box-shadow: 0 0 .5rem rgba(0,0,0,.1);
+  transition: transform .2s, box-shadow .2s;
+}
+.resume-card:hover {
+  transform: translateY(-.25rem);
+  box-shadow: 0 0 1rem rgba(0,0,0,.2);
+}
+
+.resume-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.resume-card .btn,
+.resume-card .btn-outline {
+  margin: 0 .25rem;
+  padding: .5rem 1rem;
+  border-radius: .25rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.resume-card .btn {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+.resume-card .btn-outline {
+  background: transparent;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.resume-card .btn-outline:hover {
+  background: var(--accent-color);
+  color: #fff;
+}
+/* make the featured grid a single-row carousel on desktop */
+.featured-grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(20rem, 1fr);
+  gap: 2rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+/* bigger, outlined cards for featured projects */
+.project-card.featured {
+  border: 3px solid var(--accent-color);
+  transform: scale(1.05);
+}
+
+/* reset the non-featured grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem,1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* project thumb stays the same */
+.project-thumb {
+  width: 100%;
+  padding-top: 60%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* titles larger for featured */
+.project-card.featured h3 {
+  font-size: 1.3rem;
+  margin-top: .75rem;
+}
+
+/* summaries italic on featured */
+.project-card.featured p {
+  font-style: italic;
+}
+
+/* always keep titles & summaries in their normal color, even when clicked */
+.project-card a:link h3,
+.project-card a:visited h3,
+.project-card a:link p,
+.project-card a:visited p {
+  color: inherit !important;
+}
+
+/* on hover, darken the thumbnail and force white text */
+.project-card:hover .project-thumb {
+  filter: brightness(60%);
+  transition: filter .3s;
+}
+.project-card:hover h3,
+.project-card:hover p {
+  color: #fff !important;
+}
+
+/* if you want a little fade in */
+.project-card .project-thumb,
+.project-card h3,
+.project-card p {
+  transition: filter .3s, color .3s;
+}

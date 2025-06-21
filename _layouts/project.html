@@ -1,50 +1,32 @@
 ---
-layout: projects
+# /_layouts/project.html
 ---
-<div class="project-header container">
-  <div class="proj-thumb">
-    {% if page.image %}
-      <img src="{{ page.image }}" alt="{{ page.title }}">
+<article class="project-detail">
+  <header>
+    <h1>{{ page.title }}</h1>
+    {% if page.role %}<p><strong>Role:</strong> {{ page.role }}</p>{% endif %}
+    {% if page.year %}<p><strong>Year:</strong> {{ page.year }}</p>{% endif %}
+    {% if page.engine %}<p><strong>Engine:</strong> {{ page.engine }}</p>{% endif %}
+    {% if page.tags %}
+      <p><strong>Tags:</strong>
+        {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% if forloop.last == false %}, {% endif %}{% endfor %}
+      </p>
     {% endif %}
-  </div>
-  <div class="proj-main">
-    <h1>
-      {{ page.title }}
-      {% if page.highlight %}
-        <span class="badge-inline">{{ page.highlight_label }}</span>
-      {% endif %}
-    </h1>
-    <p class="meta">
-      {% if page.role %}{{ page.role }}{% endif %}
-      {% if page.year %} · {{ page.year }}{% endif %}
-      {% if page.engine %} · {{ page.engine }}{% endif %}
-    </p>
-    {% if page.contribution %}
-      <div class="contribution"><span class="role-label">My role:</span> {{ page.contribution }}</div>
-    {% endif %}
-    <div class="card-actions">
-      <div class="quick-links">
-        {% if page.github %}<a href="{{ page.github }}" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>{% endif %}
-        {% if page.itch %}<a href="{{ page.itch }}" target="_blank" title="Itch.io"><i class="fa-brands fa-itch-io"></i></a>{% endif %}
-        {% if page.trailer %}<a href="{{ page.trailer }}" target="_blank" title="Trailer"><i class="fas fa-film"></i></a>{% endif %}
-        {% if page.playable %}<a href="{{ page.playable }}" target="_blank" title="Playable Build"><i class="fas fa-gamepad"></i></a>{% endif %}
-      </div>
-    </div>
-    {% if page.labels or page.tags %}
-      <div class="tags">
-        {% assign taglist = page.labels | default: page.tags %}
-        {% for tag in taglist %}
-          <span class="tag">{{ tag }}</span>
-        {% endfor %}
-      </div>
-    {% endif %}
-  </div>
-</div>
-<div class="project-body-card">
-    {{ content }}
-  {% if page.screenshots %}
-    <section class="gallery">
-      <!-- your gallery code here -->
-    </section>
+  </header>
+
+  {% if page.thumbnail %}
+    <img src="{{ page.thumbnail }}" alt="{{ page.title }} screenshot" class="project-image">
   {% endif %}
-</div>
+
+  <section class="project-summary">
+    <p>{{ page.summary }}</p>
+  </section>
+
+  <section class="project-body">
+    {{ content }}
+  </section>
+
+  {% if page.itch %}
+    <p><a href="{{ page.itch }}" class="btn">Play on itch.io</a></p>
+  {% endif %}
+</article>
