@@ -40,6 +40,7 @@ gem "webrick"
 
 # Uncomment when using the `--lsi` option for `jekyll build`
 # gem "classifier-reborn"
+gem "github-pages", group: :jekyll_plugins
 
 group :jekyll_plugins do
   gem "jekyll-default-layout"
