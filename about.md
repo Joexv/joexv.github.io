@@ -1,6 +1,7 @@
 ---
 layout: page
 description: >
+permalink: /about/
 hide_description: true
 sidebar: true
 ---
