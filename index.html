@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title:
 permalink: /
 description: >
@@ -7,26 +7,119 @@ last_modified_at: 2025-03-25
 no_link_title: true
 no_excerpt: true
 hide_image: false
-cover: true
+cover: false
 ---
 
-<!-- HERO SECTION -->
-<section class="relative bg-gradient-to-b from-green-900 to-gray-900 py-16 px-8 text-center">
-  <img src="..." alt="Profile pic" class="mx-auto rounded-full shadow-lg w-36 h-36 object-cover mb-4 border-4 border-white">
-  <h1 class="text-5xl font-bold mb-2">Hi, I’m Joe Oliveira.</h1>
-  <p class="text-lg text-gray-100 mb-6 max-w-2xl mx-auto">Gameplay-focused designer & programmer, specializing in combat systems, analytics, and rapid prototyping. Ex-Full Sail. Let's build something fun.</p>
-  <a href="#projects" class="inline-block px-8 py-3 mt-2 bg-green-600 hover:bg-green-500 text-white rounded-full font-semibold shadow transition">See My Work</a>
+<!-- HERO -->
+<section id="hero">
+  <canvas id="bgCanvas"></canvas>
+  <div class="container">
+    <h1 id="typewriter"></h1>
+    <p>Game designer with a systems brain and a builder’s mindset.</p>
+    <p>Game-design meets 10+ yrs IT/dev.</p>
+    <a href="#projects" class="btn-accent">Featured Projects ↓</a>
+  </div>
 </section>
 
-<!-- OVERLAPPING PROJECT CARDS -->
-<section id="projects" class="relative z-10 -mt-16 flex justify-center">
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-5xl px-4">
-    {% for proj in featured limit:3 %}
-      <div class="bg-gray-800 text-white rounded-2xl shadow-xl p-6 flex flex-col items-center">
-        <img src="{{ proj.image | relative_url }}" class="rounded-lg w-full h-40 object-cover mb-4 shadow">
-        <h3 class="text-lg font-bold mb-1">{{ proj.title }}</h3>
-        <p class="text-sm text-gray-300">{{ proj.summary }}</p>
+<!-- FEATURED WORK -->
+<section id="projects" class="home-featured">
+  <h2 class="home-featured__title">Featured Work</h2>
+  <div class="home-featured__grid">
+    {% assign featured = site.projects | where_exp:"p","p.featured" %}
+    {% for proj in featured %}
+      <div class="home-featured__item">
+        <a href="{{ proj.url | relative_url }}" class="home-featured__item-link">
+          {% if proj.image %}
+            <div
+              class="home-featured__item__thumb"
+              style="background-image:url('{{ proj.image | relative_url }}')"
+              aria-label="{{ proj.title }}"
+            ></div>
+          {% endif %}
+          <div class="home-featured__item__body">
+            <h3 class="home-featured__item__title">{{ proj.title }}</h3>
+            <p class="home-featured__item__summary">{{ proj.short_description }}</p>
+          </div>
+        </a>
       </div>
     {% endfor %}
   </div>
 </section>
+
+<!-- STATS -->
+<section id="stats" class="container">
+  <div class="stats-container">
+    <div class="stat">
+      <h3 id="cheeseCount">0</h3>
+      <p>Cheese Blocks Consumed While Developing</p>
+    </div>
+  </div>
+</section>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.11.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.11.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  let cheeseInterval, typeitInstance, threeRAF, threeRenderer, threeCamera, threeScene;
+
+  function initPage() {
+    if (cheeseInterval) clearInterval(cheeseInterval);
+    if (typeitInstance) typeitInstance.destroy();
+    if (threeRAF) cancelAnimationFrame(threeRAF);
+
+    // THREE.js background
+    const canvas = document.getElementById('bgCanvas');
+    if (!threeRenderer) {
+      threeRenderer = new THREE.WebGLRenderer({ canvas, alpha: true });
+      threeCamera  = new THREE.PerspectiveCamera(75, innerWidth/innerHeight, .1, 1000);
+      threeCamera.position.z = 5;
+      threeScene   = new THREE.Scene();
+      const geo  = new THREE.BufferGeometry(),
+            pts = 5000,
+            arr = new Float32Array(pts*3);
+      for (let i=0;i<arr.length;i++) arr[i] = (Math.random()-.5)*20;
+      geo.setAttribute('position', new THREE.BufferAttribute(arr,3));
+      threeScene.add(new THREE.Points(
+        geo,
+        new THREE.PointsMaterial({ color: 0x00ff00, size: 0.05 })
+      ));
+      window.addEventListener('resize', onResize);
+    }
+    threeRenderer.setSize(innerWidth, innerHeight);
+    function renderLoop(){
+      threeRAF = requestAnimationFrame(renderLoop);
+      threeScene.children[0].rotation.y += .0005;
+      threeRenderer.render(threeScene, threeCamera);
+    }
+    renderLoop();
+    function onResize() {
+      threeRenderer.setSize(innerWidth, innerHeight);
+      threeCamera.aspect = innerWidth/innerHeight;
+      threeCamera.updateProjectionMatrix();
+    }
+
+    // TypeIt headline
+    document.getElementById('typewriter').textContent = '';
+    typeitInstance = new TypeIt('#typewriter',{
+      strings: ['Game Designer','Systems Designer','Rapid Prototyper','Level Designer','Combat Systems Architect','Prototype Developer'],
+      speed: 100, breakLines: false, loop: true
+    }).go();
+
+    // Cheese counter
+    const cheeseEl = document.getElementById('cheeseCount');
+    let cheese = Math.floor(Date.now() * 0.000001);
+    cheeseEl.textContent = cheese;
+    cheeseInterval = setInterval(()=> cheeseEl.textContent = ++cheese, 2000);
+
+    // AOS
+    AOS.init({ duration: 800, offset: 100 });
+  }
+
+  document.addEventListener('DOMContentLoaded', initPage);
+  window.addEventListener('load',         initPage);
+  window.addEventListener('pageshow',     initPage);
+</script>

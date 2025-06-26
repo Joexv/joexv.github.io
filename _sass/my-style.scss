@@ -3,37 +3,40 @@
     @supports ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
       text-underline-offset: .8rem;
     }
+
     @supports not ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
       padding-bottom: .45rem;
     }
   }
 
-  .btn, .gumroad-button  {
+  .btn,
+  .gumroad-button {
     margin: 1rem 0;
   }
 }
-/* assets/css/custom.css */
 
 /* 1) Light‐mode defaults */
 :root {
-  --accent-color:       #7E9A72;
+  --accent-color: #7E9A72;
   --accent-color-faded: rgba(126, 154, 114, 0.15);
-  --sidebar-bg-color:   #D5B895;
+  --sidebar-bg-color: #D5B895;
+  --text-primary: rgb(126, 154, 114);
 }
 
 /* 2) Dark‐mode via class */
 body.dark-mode {
-  --accent-color:       #5B8A58;
+  --accent-color: #5B8A58;
   --accent-color-faded: rgba(91, 138, 88, 0.15);
-  --sidebar-bg-color:   #3E5237;
+  --sidebar-bg-color: #3E5237;
+  --text-primary: #ffffff;
 }
 
 /* 3) Dark‐mode via prefers‐color‐scheme */
 @media (prefers-color-scheme: dark) {
   :root {
-    --accent-color:       #5B8A58;
+    --accent-color: #5B8A58;
     --accent-color-faded: rgba(91, 138, 88, 0.15);
-    --sidebar-bg-color:   #3E5237;
+    --sidebar-bg-color: #3E5237;
   }
 }
 
@@ -46,7 +49,7 @@ body.dark-mode {
 /* 5) Wire your accent into links & buttons */
 a,
 a:visited {
-  color: var(--accent-color);
+  // color: var(--accent-color);
 }
 
 a:hover {
@@ -111,13 +114,14 @@ a:hover {
 }
 
 /* force all sidebar text (headings & labels) to white for readability */
-.sidebar, 
+.sidebar,
 .sidebar-title h2,
-.sidebar-title h1, 
+.sidebar-title h1,
 .sidebar-title h2 a,
 .sidebar-about p,
-.sidebar-nav-item, {
-  color: #fff !important;
+.sidebar-nav-item,
+{
+color: #fff !important;
 }
 
 /* keep only the link underlines and icons in your sage accent */
@@ -130,10 +134,10 @@ a:hover {
   color: var(#fff) !important;
 }
 
-.sidebar-about > a.sidebar-title > h2 {
-	margin: 0;
-	padding-bottom: .5rem;
-	color: white !important;
+.sidebar-about>a.sidebar-title>h2 {
+  margin: 0;
+  padding-bottom: .5rem;
+  color: white !important;
 }
 
 /* Make sure visited links stay white, just like regular links */
@@ -154,12 +158,14 @@ a:hover {
   color: var(--accent-color-faded) !important;
   border-bottom-color: var(--accent-color) !important;
 }
+
 /* hide the Hydejack attribution in the footer */
-footer.content small{
+footer.content small {
   display: none;
 }
+
 .legal small,
-.copyright{
+.copyright {
   display: block !important;
 }
 
@@ -170,7 +176,7 @@ footer p:empty {
 
 .resume-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(12rem,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
@@ -180,12 +186,13 @@ footer p:empty {
   padding: 1.5rem;
   border-radius: .5rem;
   text-align: center;
-  box-shadow: 0 0 .5rem rgba(0,0,0,.1);
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, .1);
   transition: transform .2s, box-shadow .2s;
 }
+
 .resume-card:hover {
   transform: translateY(-.25rem);
-  box-shadow: 0 0 1rem rgba(0,0,0,.2);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .2);
 }
 
 .resume-card h3 {
@@ -217,6 +224,7 @@ footer p:empty {
   background: var(--accent-color);
   color: #fff;
 }
+
 /* make the featured grid a single-row carousel on desktop */
 .featured-grid {
   display: grid;
@@ -236,7 +244,7 @@ footer p:empty {
 /* reset the non-featured grid */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(14rem,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
   gap: 1.5rem;
   margin-top: 1rem;
 }
@@ -273,6 +281,7 @@ footer p:empty {
   filter: brightness(60%);
   transition: filter .3s;
 }
+
 .project-card:hover h3,
 .project-card:hover p {
   color: #fff !important;
@@ -284,15 +293,18 @@ footer p:empty {
 .project-card p {
   transition: filter .3s, color .3s;
 }
+
 .resume-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
+
 @media (min-width: 768px) {
   .resume-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 /*–– Home Hero → Featured Projects gap ––*/
 .home-hero {
   margin-bottom: 2rem;
@@ -301,27 +313,33 @@ footer p:empty {
 /*–– Card background in light & dark ––*/
 .project-card {
   background-color: #f9f9f9;
+
   @media (prefers-color-scheme: dark) {
     background-color: #2b2b2b;
   }
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  transition: transform 0.2s ease,
+  box-shadow 0.2s ease;
 
   &::before {
     content: "";
     display: block;
-    padding-top: 56.25%; /* 16:9 aspect ratio placeholder */
+    padding-top: 56.25%;
+    /* 16:9 aspect ratio placeholder */
   }
 
-  a > .h-56 {
+  a>.h-56 {
     position: absolute;
-    top: 0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
   }
 }
 
 /*–– Hover pop ––*/
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 /*–– Light mode border cleanup ––*/
@@ -330,6 +348,7 @@ footer p:empty {
     border: 1px solid #e5e5e5;
   }
 }
+
 /* container for home page featured projects */
 .home-project-row {
   display: flex;
@@ -347,14 +366,732 @@ footer p:empty {
 .project-thumb-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 aspect ratio */
+  padding-top: 56.25%;
+  /* 16:9 aspect ratio */
   overflow: hidden;
 }
 
 .project-thumb {
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* --- force the same “flush to the top” thumbnail style everywhere --- */
+.project-card {
+  padding: 0 !important; // kill any top padding
+}
+
+.project-thumb,
+.thumb {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 140px; // or whichever fixed height you want
+  background-size: cover;
+  background-position: center;
+}
+
+/* --- stomp on whatever default layout Jekyll is giving you --- */
+.project-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+  gap: 1rem !important;
+  align-items: start !important; // keeps every card top-aligned
+}
+
+/* 1) Kill that built-in “padding” block that’s pushing everything down */
+.project-card::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* 2) Force homepage thumbnails (the .thumb div) up against the top edge */
+#projects .project-card {
+  padding: 0 !important;
+  /* no more top padding */
+}
+
+#projects .project-card .thumb {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  /* use an aspect-ratio so it’ll size uniformly */
+  aspect-ratio: 16 / 9;
+  background-size: cover !important;
+  background-position: center !important;
+  display: block !important;
+}
+
+/* 3) Clean up the “All Projects” page grid & cards */
+/* ditch whatever weird page-level background is bleeding through */
+.page #projects,
+.page #projects .container {
+  background: transparent !important;
+}
+
+/* rebuild your grid for consistent card heights */
+.page .project-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)) !important;
+  gap: 1rem !important;
+  align-items: stretch !important;
+  /* stretch all cards to same row-height */
+  grid-auto-rows: minmax(0, auto) !important;
+}
+
+/* make each card fill its “cell” and stack thumbnail + content */
+.page .project-card {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* fixed-ratio thumbnail up top */
+.page .project-card .project-thumb {
+  aspect-ratio: 16 / 9;
+  background-size: cover !important;
+  background-position: center !important;
+  flex: 0 0 auto;
+  opacity: 1 !important;
+  /* always visible */
+}
+
+/* text block flex-grows to fill remainder */
+.page .project-card h3,
+.page .project-card p {
+  flex: 1 1 auto;
+  margin: .5rem;
+}
+
+/* if your overlay is stealing the show, hide it by default */
+.page .project-card .overlay {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity .2s ease;
+}
+
+.page .project-card:hover .overlay {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+  /* darken behind your text */
+}
+
+// You can add CSS rules here that will be inlined into each document.
+// .sidebar a {
+//   text-shadow: rgba(0, 0, 0, 0.25) 0.1rem 0.1rem 0.15rem;
+// }
+.project-card a,
+.project-card a h3,
+.project-card a p,
+.project-detail a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+/* in assets/css/custom.css, inside your .project-card block: */
+.project-card {
+  background: var(--body-bg)
+    /* or a slightly off-white: #f8f8f2 */
+  ;
+  border-radius: .5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform .2s, box-shadow .2s, background .2s;
+}
+
+.project-card:hover {
+  background: var(--gray-bg);
+}
+
+/* project-detail tweaks */
+.project-detail {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background: var(--body-bg);
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-meta,
+.project-tags {
+  color: var(--gray-text);
+  font-size: .9rem;
+  margin: .5rem 0;
+}
+
+.project-tags .tag {
+  display: inline-block;
+  margin: 0 .25rem;
+  padding: .2rem .6rem;
+  background: var(--gray-bg);
+  border-radius: .25rem;
+}
+
+.project-hero {
+  width: 100%;
+  height: 0;
+  padding-top: 56%;
+  background-size: cover;
+  background-position: center;
+  border-radius: .5rem;
+  margin-bottom: 2rem;
+}
+
+.project-summary {
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.project-body {
+  line-height: 1.6;
+}
+
+.project-detail .btn {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.project-detail .project-body blockquote {
+  display: none !important;
+}
+
+.related,
+.hr-bottom,
+.related-posts {
+  display: none !important;
+  margin: 0px;
+}
+
+/* Hide only Jekyll’s auto-title & any pb0 rows */
+.page-title,
+.pb0 {
+  display: none !important;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* HERO */
+#hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--body-bg);
+}
+
+#hero canvas {
+  position: absolute;
+  inset: 0;
+}
+
+#hero .container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  color: var(--text-secondary);
+}
+
+.btn-accent {
+  padding: .8rem 1.6rem;
+  border: 2px solid var(--bg-color);
+  border-radius: 4px;
+  color: white;
+  box-shadow: 0 0 10px var(--accent-color);
+  transition: box-shadow .2s;
+  text-decoration: none;
+  background-color: var(--accent-color-faded);
+}
+
+.btn-accent:hover {
+  box-shadow: 0 0 20px var(--accent-color);
+}
+
+/* PROJECT GRID */
+#projects {
+  padding: 4rem 0;
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+  opacity: .95;
+}
+
+.project-card {
+  position: relative;
+  background: var(--surface-alt);
+  border-radius: var(--radius, 8px);
+  overflow: hidden;
+  transition: transform .2s;
+  padding: 0 1rem 1rem !important;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+.project-card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--accent-color-faded);
+  color: var(--surface-text);
+  padding: .75rem 1rem;
+  transform: translateY(100%);
+  transition: transform .3s;
+}
+
+.project-card:hover .overlay {
+  transform: translateY(0);
+}
+
+.overlay h3 {
+  margin: 0 0 .5rem;
+  font-size: 1.1rem;
+  color: var(--text-primary) !important;
+}
+
+.overlay p {
+  margin: 0 0 .75rem;
+  font-size: .9rem;
+  color: var(--text-secondary);
+}
+
+.overlay a {
+  color: var(--surface-text);
+  text-decoration: underline;
+}
+
+/* STATS */
+#stats {
+  padding: 4rem 0;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 2.5rem;
+  margin-bottom: .5rem;
+  color: var(--accent-color);
+}
+
+.stat p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+/* TIMELINE */
+#about-timeline {
+  padding: 4rem 0;
+}
+
+#about-timeline h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+.timeline {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  border-left: 2px solid var(--accent-color);
+}
+
+.entry {
+  position: relative;
+  opacity: 0;
+  transform: translateX(-20px);
+  margin-bottom: 2rem;
+}
+
+.entry .marker {
+  position: absolute;
+  left: -7px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background: var(--accent-color);
+  border-radius: 50%;
+}
+
+.entry .details {
+  padding-left: 1rem;
+}
+
+.entry .details h4 {
+  margin-bottom: .5rem;
+  color: var(--text-primary);
+}
+
+.entry .details p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  align-items: start;
+  /* force items to hug the top of each cell */
+}
+
+.project-card .thumb {
+  display: block;
+  /* ensure it’s not getting treated like inline-block */
+  margin: 0;
+  /* kill any default spacing */
+  padding: 0;
+  height: 140px;
+  background-size: cover;
+  background-position: center;
+}
+/* -------------------------------------------------------------------
+   Alternate Projects Grid & Cards
+------------------------------------------------------------------- */
+.alt-projects {
+  padding: 2rem 1rem;
+
+  .alt-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .alt-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--sidebar-bg-color);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    &__link {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    &__thumb {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &__body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+
+    &__title {
+      margin: 0 0 0.5rem;
+      font-size: 1.125rem;
+      color: white;
+    }
+
+    &__summary {
+      margin: 0;
+      margin-top: auto;
+      color: white;
+      line-height: 1.4;
+    }
+  }
+}
+/* ---------------------------------------------------
+   Home Page: Featured Work – Fresh Styles
+--------------------------------------------------- */
+.home-featured {
+  padding: 4rem 1rem;
+
+  &__title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--accent-color);
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--card-bg-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease,
+      border-color 0.3s ease;
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      /* you can override this var if you want a different hover color */
+      border-color: var(--accent-color);
+    }
+
+    &-link {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    &__thumb {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &__body {
+      position: relative;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      background: var(--card-bg-color);
+
+      // gradient overlay on the bottom half of the body
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(0deg, var(--accent-color) 0%, transparent 100%);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        pointer-events: none;
+      }
+    }
+
+    // show the gradient when you hover the card
+    &:hover &__body::before {
+      opacity: 0.2;
+    }
+
+    &__title {
+      margin: 0 0 0.75rem;
+      font-size: 1.5rem;
+      line-height: 1.2;
+      color: var(--accent-color);
+    }
+
+    &__summary {
+      margin: 0;
+      margin-top: auto;
+      line-height: 1.5;
+      color: var(--text-secondary);
+    }
+
+    // click indicator
+    &::after {
+      content: "→";
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      width: 2.4rem;
+      height: 2.4rem;
+      background-color: var(--accent-color);
+      color: var(--bg-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 1.6rem;
+      line-height: 1;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      pointer-events: none;
+    }
+
+    &:hover::after {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* hero wrapper + canvas */
+#bgCanvas {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* ===== Reset hero sizing & lift typewriter ===== */
+#hero {
+  height: auto !important;
+  min-height: auto !important;
+}
+
+#hero .container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8rem 1rem 1rem !important;  /* tweak top/bottom as needed */
+  max-height: 700px !important;
+  height: 650px !important;
+  min-height: 250px !important;
+}
+
+#typewriter {
+  margin: 0 !important;
+}
+
+
+/* /assets/css/my-style.scss (or wherever your last import is) */
+#about-timeline {
+  .journey-line {
+    position: relative;
+    padding-left: 2rem;
+    color: var(--text-primary);
+  }
+  .journey-line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    bottom: 0;
+    width: 2px;
+    background: var(--accent-color);
+  }
+  .journey-line .entry {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  .journey-line .entry .marker {
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    background: var(--accent-color);
+    border-radius: 50%;
+  }
+  .journey-line .entry .details h4 {
+    margin: 0 0 0.25rem;
+    color: var(--accent-color);
+    font-weight: bold;
+  }
+  .journey-line .entry .details p {
+    margin: 0;
+    color: var(--text-secondary);
+    line-height: 1.4;
+  }
+}
+#about-timeline {
+  .journey-list {
+    position: relative;
+    list-style: none;     // kill default bullets
+    margin: 2rem 0;
+    padding: 0 1rem;      // 1rem space on left/right
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 1rem;          // vertical line 1rem in
+      height: 100%;
+      width: 2px;
+      background: var(--accent-color);
+    }
+  }
+
+  .journey-entry {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;    // indent content past the line+dot
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0.25rem;        // tweak to vertically center
+      left: 1rem;          // dot directly on the line
+      width: 0.75rem;
+      height: 0.75rem;
+      background: var(--accent-color);
+      border-radius: 50%;
+    }
+
+    .journey-date {
+      margin: 0 0 0.25rem;
+      font-weight: bold;
+      color: var(--accent-color);
+    }
+
+    .journey-text {
+      margin: 0;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+  }
 }
