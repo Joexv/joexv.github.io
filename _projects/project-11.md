@@ -5,6 +5,7 @@ image: images/FSU.png
 title: Japanese Garden Level – School Assignment
 permalink: projects/School_PP2
 date: 2024-03-01
+featured: true
 labels:
   - Unreal Engine 5.3
   - School

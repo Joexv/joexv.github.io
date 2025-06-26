@@ -8,10 +8,11 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.3"
+gem "jekyll"
 
-gem "jekyll-theme-hydejack", "~> 9.1"
-
+gem "jekyll-theme-hydejack"
+gem 'github-pages', group: :jekyll_plugins
+gem 'jekyll-remote-theme', group: :jekyll_plugins
 # If you are part of the ["Customers" team](https://github.com/orgs/hydecorp/teams/pro-customers), 
 # you can fetch the theme from a private repository. 
 # See [Deploy in the Hydejack Docs](https://hydejack.com/docs/deploy) for details.
@@ -40,7 +41,7 @@ gem "webrick"
 
 # Uncomment when using the `--lsi` option for `jekyll build`
 # gem "classifier-reborn"
-gem "github-pages", group: :jekyll_plugins
+# gem "github-pages", group: :jekyll_plugins
 
 group :jekyll_plugins do
   gem "jekyll-default-layout"
