@@ -1,11 +1,32 @@
 ---
-layout: blog
-title: 
+layout: page
+title:
+permalink: /
 description: >
-  The official Hydejack blog. Version updates, example content and how-to guides on how to blog with Jekyll.
-last_modified_at: 2018-08-03
-no_link_title: false 
-no_excerpt: false 
+last_modified_at: 2025-03-25
+no_link_title: true
+no_excerpt: true
 hide_image: false
 cover: true
 ---
+
+<!-- HERO SECTION -->
+<section class="relative bg-gradient-to-b from-green-900 to-gray-900 py-16 px-8 text-center">
+  <img src="..." alt="Profile pic" class="mx-auto rounded-full shadow-lg w-36 h-36 object-cover mb-4 border-4 border-white">
+  <h1 class="text-5xl font-bold mb-2">Hi, I’m Joe Oliveira.</h1>
+  <p class="text-lg text-gray-100 mb-6 max-w-2xl mx-auto">Gameplay-focused designer & programmer, specializing in combat systems, analytics, and rapid prototyping. Ex-Full Sail. Let's build something fun.</p>
+  <a href="#projects" class="inline-block px-8 py-3 mt-2 bg-green-600 hover:bg-green-500 text-white rounded-full font-semibold shadow transition">See My Work</a>
+</section>
+
+<!-- OVERLAPPING PROJECT CARDS -->
+<section id="projects" class="relative z-10 -mt-16 flex justify-center">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-5xl px-4">
+    {% for proj in featured limit:3 %}
+      <div class="bg-gray-800 text-white rounded-2xl shadow-xl p-6 flex flex-col items-center">
+        <img src="{{ proj.image | relative_url }}" class="rounded-lg w-full h-40 object-cover mb-4 shadow">
+        <h3 class="text-lg font-bold mb-1">{{ proj.title }}</h3>
+        <p class="text-sm text-gray-300">{{ proj.summary }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>

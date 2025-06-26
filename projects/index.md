@@ -16,10 +16,8 @@ sidebar: true
   {% for project in featured %}
     <div class="project-card featured">
       <a href="{{ project.url }}">
-        {% if project.thumbnail %}
-       <div class="project-thumb" style="background-image:url('{{ project.thumbnail | relative_url }}')"></div>
-      {% if project.image %}
-        <div class="project-thumb" style="background-image:url('{{ project.image | relative_url }}')"></div>
+        {% if project.image %}
+          <div class="project-thumb" style="background-image:url('{{ project.image | relative_url }}')"></div>
         {% endif %}
         <h3>{{ project.title }}</h3>
         <p>{{ project.summary }}</p>
@@ -40,10 +38,8 @@ sidebar: true
   {% for project in others %}
     <div class="project-card">
       <a href="{{ project.url }}">
-        {% if project.thumbnail %}
-       <div class="project-thumb" style="background-image:url('{{ project.thumbnail | relative_url }}')"></div>
-      {% if project.image %}
-        <div class="project-thumb" style="background-image:url('{{ project.image | relative_url }}')"></div>
+        {% if project.image %}
+          <div class="project-thumb" style="background-image:url('{{ project.image | relative_url }}')"></div>
         {% endif %}
         <h3>{{ project.title }}</h3>
         <p>{{ project.summary }}</p>

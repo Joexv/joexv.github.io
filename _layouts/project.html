@@ -1,32 +1,60 @@
 ---
-# /_layouts/project.html
+layout: default
 ---
-<article class="project-detail">
-  <header>
-    <h1>{{ page.title }}</h1>
-    {% if page.role %}<p><strong>Role:</strong> {{ page.role }}</p>{% endif %}
-    {% if page.year %}<p><strong>Year:</strong> {{ page.year }}</p>{% endif %}
-    {% if page.engine %}<p><strong>Engine:</strong> {{ page.engine }}</p>{% endif %}
-    {% if page.tags %}
-      <p><strong>Tags:</strong>
-        {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% if forloop.last == false %}, {% endif %}{% endfor %}
-      </p>
+
+<style>
+/* hide placeholder blockquotes in project pages */
+.project-detail .prose blockquote { display: none !important; }
+/* remove extra padding on project container and content */
+.project-layout.content { padding-top: 0 !important; }
+/* remove default content padding above title */
+.content h1 { margin-top: 0 !important; padding-top: 0 !important; }
+/* tighten up spacing above summary and hero */
+.project-summary { margin-top: 0 !important; }
+figure { margin-top: 1rem !important; }
+</style>
+<main id="_main" class="content project-layout" role="main">
+  <article class="project-detail max-w-3xl mx-auto px-4 py-4">
+
+    <!-- Summary (no title) -->
+    {% if page.summary %}
+      <div class="project-summary text-center mb-4 max-w-prose mx-auto">
+        <p>{{ page.summary }}</p>
+      </div>
     {% endif %}
-  </header>
 
-  {% if page.thumbnail %}
-    <img src="{{ page.thumbnail }}" alt="{{ page.title }} screenshot" class="project-image">
-  {% endif %}
+    <!-- Hero Image -->
+    {% if page.image %}
+      <figure class="mb-6">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.title }} screenshot" class="w-full rounded-lg shadow-lg">
+      </figure>
+    {% endif %}
 
-  <section class="project-summary">
-    <p>{{ page.summary }}</p>
-  </section>
+    <!-- Meta & Tags -->
+    <div class="mb-6 flex flex-wrap justify-center space-x-4 text-sm text-gray">
+      {% if page.role %}<span><strong>Role:</strong> {{ page.role }}</span>{% endif %}
+      {% if page.year %}<span><strong>Year:</strong> {{ page.year }}</span>{% endif %}
+      {% if page.engine %}<span><strong>Engine:</strong> {{ page.engine }}</span>{% endif %}
+    </div>
+    {% if page.tags %}
+      <div class="mb-6 flex flex-wrap justify-center space-x-2">
+        {% for tag in page.tags %}
+          <span class="tag bg-gray-bg text-gray-text px-3 py-1 rounded-full text-sm">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
 
-  <section class="project-body">
-    {{ content }}
-  </section>
+    <!-- Body Content -->
+    <section class="prose prose-invert max-w-prose mx-auto mb-12">
+      {{ content }}
+    </section>
 
-  {% if page.itch %}
-    <p><a href="{{ page.itch }}" class="btn">Play on itch.io</a></p>
-  {% endif %}
-</article>
+    <!-- Call To Action -->
+    {% if page.itch %}
+      <div class="text-center">
+        <a href="{{ page.itch }}" class="btn standout px-6 py-3">Play on itch.io</a>
+      </div>
+    {% endif %}
+
+  </article>
+</main>

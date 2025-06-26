@@ -2,3 +2,83 @@
 // .sidebar a {
 //   text-shadow: rgba(0, 0, 0, 0.25) 0.1rem 0.1rem 0.15rem;
 // }
+.project-card a,
+.project-card a h3,
+.project-card a p,
+.project-detail a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+/* in assets/css/custom.css, inside your .project-card block: */
+.project-card {
+  background: var(--body-bg) /* or a slightly off-white: #f8f8f2 */;
+  border-radius: .5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform .2s, box-shadow .2s, background .2s;
+}
+
+.project-card:hover {
+  background: var(--gray-bg);
+}
+/* project-detail tweaks */
+.project-detail {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background: var(--body-bg);
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-meta,
+.project-tags {
+  color: var(--gray-text);
+  font-size: .9rem;
+  margin: .5rem 0;
+}
+
+.project-tags .tag {
+  display: inline-block;
+  margin: 0 .25rem;
+  padding: .2rem .6rem;
+  background: var(--gray-bg);
+  border-radius: .25rem;
+}
+
+.project-hero {
+  width: 100%;
+  height: 0;
+  padding-top: 56%;
+  background-size: cover;
+  background-position: center;
+  border-radius: .5rem;
+  margin-bottom: 2rem;
+}
+
+.project-summary {
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.project-body {
+  line-height: 1.6;
+}
+
+.project-detail .btn {
+  display: inline-block;
+  margin-top: 2rem;
+}
+/* hide any placeholder blockquotes like “[Insert Image: …]” */
+.project-detail .project-body blockquote {
+  display: none !important;
+}
+.related,
+.hr-bottom,
+.related-posts {
+  display: none !important;
+  margin: 0px;
+}

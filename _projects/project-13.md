@@ -5,6 +5,7 @@ image: images/treehouse.png
 title: Treehouse
 permalink: projects/Treehouse
 date: 2025-03-09
+featured: true
 labels:
   - Game Jam
   - UE5

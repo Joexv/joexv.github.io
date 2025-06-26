@@ -5,6 +5,7 @@ image: images/MI_End.png
 title: Mechanics Inferno
 permalink: projects/MechanicsInferno
 date: 2024-11-03
+featured: true
 labels:
   - Game Design
   - Level Design
