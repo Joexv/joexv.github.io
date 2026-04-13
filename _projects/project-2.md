@@ -13,15 +13,17 @@ labels:
 summary: The Official FlorkOfCows Sticker Pack!
 ---
 
-The only officially licensed FlorkOfCows sticker pack! This project brought the beloved, quirky sock puppet comics from MS Paint to life on iOS, Android, and LINE, transforming iconic characters into a versatile sticker pack with over 300 unique options. Designed to amplify any conversation, FlorkOfStickers combines humor, creativity, and a touch of the absurd, bringing out the playful side of digital messaging.
+I’d been following FlorkOfCows for years — the MS Paint sock puppet comics with their weird mix of nihilism and chaos were exactly my kind of humor. I built a sticker pack for myself and my friends, and it worked well enough that I reached out to Flork directly to license it properly so I could actually sell it. He agreed, and it became the only officially licensed FlorkOfCows sticker pack.
 
-### Project Highlights
-- **Diverse Sticker Selection**: With over 300 stickers, FlorkOfStickers captures a range of moods and personalities—whether it's a sock in existential crisis, an anime-loving character, or a crusading sock hero, there’s something for everyone. This variety encourages users to express themselves in fun, unexpected ways.
-- **True-to-Source Artwork**: Every sticker retains the original charm of Flork’s MS Paint style, faithfully preserving the hand-drawn aesthetic that fans adore. Each character was reimagined in sticker format, ensuring that users feel connected to the authentic, quirky humor of FlorkOfCows.
-- **Fan-Centric Design**: Made with fans in mind, FlorkOfStickers is an homage to the original characters, thoughtfully curated to maintain the wit and whimsy that defines the Flork universe. The user-friendly interface and seamless integration across platforms make it easy for fans to find and share their favorite stickers.
-- **Licensed Collaboration with Flork**: Partnered with Flork himself to deliver an officially approved and fan-endorsed product. The collaboration involved close communication to ensure the stickers met Flork’s standards, preserving the humor, subtlety, and occasional absurdity of the source material.
+The app shipped on iOS and Android with 340 stickers. The artwork stays true to the original MS Paint style — no cleanup, no polish, exactly how Flork draws them.
 
-FlorkOfStickers was an exciting challenge, letting me bring a beloved internet comic into the world of digital messaging. From collaborating with Flork himself to translating the humor and style of these characters into a sticker format, this project was all about creating something fans would genuinely enjoy using every day.
+### iOS
+
+Built around Apple's native sticker pack extension framework. Each sticker lives in an `.xcstickers` asset catalog as a 408x408 PNG with a `Contents.json` metadata file. The iMessage extension uses `StickerBrowserViewController` and the Messages framework — Apple handles the sticker browsing UI, so there's no custom display code. Minimum deployment target is iOS 10.
+
+### Android
+
+The Android version is Kotlin and more involved. It runs as a full IME (Input Method Editor) — a custom keyboard service — so stickers are available in any app that accepts rich content input. On send, it checks whether the target app supports the sticker's MIME type via `EditorInfoCompat.getContentMimeTypes()`, then uses `InputConnectionCompat.commitContent()` with a `FileProvider` URI to deliver it. If the target app doesn't support the format directly (Signal being a common case), it silently converts to PNG using the Coil image library and retries. Ships with 5 bundled sticker packs extracted to internal storage on first run, with support for user-imported packs up to 4096 stickers.
 
 Download: 
 <a href="https://apple.co/3nKVxpy">Apple App Store</a>

@@ -14,26 +14,25 @@ labels:
 summary: Two incredibly useful programs for making FX420's menus
 ---
 
-The **MenuCreators** are two custom-built tools designed to simplify the creation, editing, and uploading of digital menus for Screenly OSE displays. Initially developed for FX420 dispensary’s in-house use, these tools are open-source and adaptable for any business looking to streamline their signage management process.
+Built for a single-location dispensary running 10 screens. When I started, menus were Excel files manually converted to images, loaded onto flash drives, and physically swapped on each screen — which meant menus going dark while you updated them, in front of customers.
 
-### The Problem
-During my time contracted for a dispensary, I found myself constantly updating menus on multiple TVs. The initial process involved manually converting Excel files to images, loading them onto flash drives, and physically updating each screen. Not only was this repetitive and time-consuming, but it also disrupted staff and customers whenever menus were temporarily down.
+### How It Evolved
 
-### Early Solutions and Evolution
-To address this, I first created a local website to display menus, allowing for remote updates. However, the smart TVs’ caching issues prevented smooth, real-time updates. After researching alternatives, I discovered **Screenly OSE**, a digital signage solution that runs on Raspberry Pi devices. The $15 Raspberry Pi Zero made it an affordable choice, and I integrated it into our setup, allowing for remote content management.
+First I built a local website to display menus so updates could be pushed remotely. That hit a wall with smart TV caching — updates wouldn’t reflect cleanly in real time. I switched to Raspberry Pi Zeros running Screenly OSE, a $15-per-screen solution I physically set up and configured for each of the 10 displays. That gave me proper remote content management.
 
-Initially, I handled the setup by linking each Pi to a centralized website with a menu creator tool. This setup worked for a while but had limitations in scalability and ease of access, especially when a new business partner required a more accessible system for all staff members, including those unfamiliar with Excel.
+The menu creation tools automated the formatting work — colors, borders, images, layout — so staff with minimal Excel knowledge could generate consistent branded menus. Two separate tools handled different content types: one for general menus, one specifically for strain menus with flower names, costs, and THC/CBD percentages.
 
-### Developing the MenuCreators
-To make the system more foolproof and accessible, I developed the **MenuCreators**—two tools that automated much of the menu creation process:
-1. **Automated Formatting**: The tools handled colors, borders, and images, making it simple for anyone to create consistent, branded menus with minimal Excel knowledge.
-2. **Remote Functionality**: With command-line capabilities and integration with a Slack bot, the MenuCreators allowed remote updates, minimizing on-site maintenance.
-3. **Enhanced Accessibility**: Trained staff could now update menus with fewer errors, while the tools’ automation features prevented accidental formatting mishaps.
+### How It Works
 
-### Long-Term Benefits and Adaptability
-Even as management structures changed, the MenuCreators tools continued to simplify daily operations, reducing downtime and ensuring menus stayed accurate and updated. Now, almost every step of the menu creation and update process is automated, allowing the dispensary to manage their signage effectively with minimal IT oversight.
+The tools read Excel files and extract the relevant cell ranges, convert them to bitmaps using clipboard capture (`CopyPicture()`), then resize to 4K (3840x2160) or 1080p depending on the screen. For daily specials, ImageMagick composites additional images on top of the menu template at specified X/Y offsets. Finished images are uploaded to each Pi via SFTP into `/home/pi/screenly_assets/`, then registered or updated through Screenly’s REST API at `/api/v1.1/assets`. Asset names follow an `AUTOMATED_[timestamp]` convention so the tools can find and replace them on subsequent updates.
 
-The experience of developing MenuCreators taught me the value of adaptable, user-friendly design in creating tools that make complex tasks manageable for all skill levels. While I continue to support the dispensary, these tools have given me the confidence that even if I were to step away, my work would remain impactful, streamlining operations for the team.
+### Slack Integration
+
+The Slack integration uses incoming webhooks. The bot monitors a channel and parses plain-language commands — something like `change price item $50` — feeds that into the menu creator, and pushes the result to the screens. No interface to learn, no files to manage.
+
+### Current Status
+
+They licensed the software. It’s still running without me — I don’t maintain it anymore.
 
 Source:  
 [Menu Creator](https://github.com/Joexv/FX420_MenuCreator)  

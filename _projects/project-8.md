@@ -15,24 +15,14 @@ labels:
 summary: A streamlined solution for automating downloads from YogaAnytime.com
 ---
 
-The **Yoga AnyTime Downloader** is a custom-built utility created to simplify the download process for videos from YogaAnytime.com. Developed upon request, this tool automates the retrieval of video segments and compiles them for offline viewing, making it a helpful resource for users seeking convenient access to their favorite yoga content without relying on continuous internet connectivity.
+A commissioned tool to download videos from YogaAnytime.com for offline viewing. Compared to Headripper this one was straightforward — YogaAnytime serves unencrypted HLS streams, so there was no protocol reverse engineering involved.
 
-### Purpose and Request
-This project was designed to address a specific need: enabling users to easily download and organize videos from YogaAnytime.com. By focusing on accessibility and ease of use, the Yoga AnyTime Downloader transforms what would typically be a time-consuming process into a simple, automated task. This tool is especially useful for users with limited internet access who still want a reliable way to access yoga sessions offline.
+Generic browser extensions can see the video files but choke on the auth requirements. This tool handles it by pulling your existing browser cookie, then you paste the video URL into the GUI and hit download.
 
-### Key Features
-- **Automated TS File Retrieval**: Yoga AnyTime Downloader functions as an enhanced TS (Transport Stream) grabber, automatically fetching video segments from YogaAnytime.com and assembling them into complete videos.
-- **Built for Convenience**: Rather than requiring users to download videos manually, this tool simplifies the entire process. Users can set it up once and let the program manage the download and compilation of video segments, ensuring a seamless offline experience.
-- **Custom-Built for Yoga Content**: Designed with YogaAnytime’s specific video format and structure in mind, the downloader efficiently handles the site’s media files, eliminating the hassle of navigating through various links or file types.
+### How It Works
 
-### Technical Details
-- **C# and REST API Integration**: The tool leverages REST API calls to retrieve and organize TS files, streamlining the process of accessing and assembling content from YogaAnytime.
-- **Transport Stream Handling**: By automatically recognizing and managing TS files, the downloader minimizes user intervention, offering a straightforward solution to a niche problem.
+The tool parses the M3U8 playlist to extract the segment list, filtering out metadata lines (anything prefixed with `#EXT`). Segments are downloaded in parallel via a `BetterWebClient` class that maintains the authenticated cookie session and tracks per-segment progress. Filenames are zero-padded during download (e.g. `p-1.ts` → `p-0001.ts`) to ensure correct sequential ordering before FFmpeg concatenates everything into a final MP4.
 
-### Development Insight
-Creating this downloader required attention to the specific media handling needs of YogaAnytime. The project involved understanding the site’s file structure and authentication requirements, resulting in a tool that feels intuitive for users and efficiently processes video content. This project further honed my skills in REST API integration, file handling, and custom request-based tool development.
-
-### Final Note
-Yoga AnyTime Downloader represents my commitment to creating targeted solutions for unique user requests. By automating and simplifying access to a popular wellness resource, this tool highlights my ability to develop responsive, user-centered software that meets specific needs with efficiency.
+Honestly it could have been a browser extension. It’s a simple tool that solves a simple problem.
 
 Source: [YogaAnytimeDownloader](https://github.com/Joexv/YogaAnytimeDownloader)

@@ -25,9 +25,7 @@ screenshots:
 ---
 
 ### Overview  
-Built during a brutal month of balancing school and development, Mystic Fishing aimed to blend mythological storytelling with systemic gameplay. You play as a lone fisherman in icy Nordic waters, hunting ancient creatures of legend. We didn’t have time for full boss fights or lore progression—but we built a polished vertical slice showcasing atmosphere, fishing mechanics, and exploration.
-
-> **[Insert Image: Key promo art or logo with misty ocean setting]**
+Built during a brutal month of balancing school and development, Mystic Fishing aimed to blend mythological storytelling with systemic gameplay. You play as a lone fisherman in icy Nordic waters, hunting ancient creatures of legend. We didn't have time for full boss fights or lore progression—but we built a polished vertical slice showcasing atmosphere, fishing mechanics, and exploration.
 
 ---
 
@@ -36,8 +34,6 @@ We originally pitched a myth-tracking, world-exploring fishing epic:
 - Discover scattered lore about ancient mythic fish
 - Prepare with bait, tools, and environmental knowledge
 - Engage in boss-level showdowns à la *Moby Dick*
-
-> **[Insert Image: Early pitch slide or whiteboard showing original gameplay loop]**
 
 ---
 
@@ -55,22 +51,16 @@ With 30 days and school deadlines, we narrowed focus:
 #### Week 1 – Pitch to Pivot  
 We immediately realized the scope was too large. Instead of cutting features later, we trimmed upfront and focused on a strong vertical slice.
 
-> **[Insert Image: Scope reduction diagram or notes from planning doc]**
-
 #### Week 2 – Systems First  
 - Designed spline-based ocean layout  
 - Procedural fish spawns tied to bait type  
 - Physics-driven boat controls tuned for immersion
-
-> **[Insert Image: Ocean layout or UE viewport showing spawn logic]**
 
 #### Week 3 – Combat Prototype  
 Combat went through multiple prototypes:
 - Click-to-time throws  
 - Directional mouse QTEs  
 - A drift-lock harpoon throw that added tension (final version)
-
-> **[Insert Image: Screenshot of harpoon combat, maybe debug or UI overlay]**
 
 #### Week 4 – Final Pass  
 We focused on environmental polish:
@@ -85,8 +75,6 @@ We focused on environmental polish:
 - Responsive boat movement and fishing QTE  
 - Atmospheric exploration in a compact but immersive world
 
-> **[Insert Image: In-game moment or player-focused cinematic shot]**
-
 ---
 
 ### Lessons Learned
@@ -96,7 +84,7 @@ We focused on environmental polish:
 - Scope control early kept us focused  
 - Emphasis on vibe and pacing helped it stand out
 
-**What Didn’t**  
+**What Didn't**  
 - No time for the big boss-style fish fights  
 - Tutorial elements were light, players felt a bit lost  
 - Audio and UI were functional but not final quality
@@ -104,8 +92,6 @@ We focused on environmental polish:
 ---
 
 ### Summary  
-Mystic Fishing is a lesson in disciplined scoping and modular design. While the game didn’t fully realize the myth-hunting fantasy, it nailed the tone, loop, and pacing we set out to test—under heavy constraints.
-
-> **[Insert Image: Final polish moment or clean screenshot of gameplay UI]**
+Mystic Fishing is a lesson in disciplined scoping and modular design. While the game didn't fully realize the myth-hunting fantasy, it nailed the tone, loop, and pacing we set out to test—under heavy constraints.
 
 👉 [Download Mystic Fishing on Itch.io](https://manmadeofgouda.itch.io/mysticfishing)

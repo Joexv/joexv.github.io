@@ -11,23 +11,22 @@ labels:
 summary: A basic inventory/customer management tool
 ---
 
-The **Inventory Manager** was born out of necessity when I worked for a computer repair company. At that time, customer records were tracked through Excel files, but the system was inefficient and rarely updated beyond basic information like names and phone numbers. Wanting to improve the organization and accuracy of our customer data, I developed the Inventory Manager to create a more reliable, structured system for customer and order tracking.
+Built out of necessity at the computer repair shop I eventually ended up owning. When I started there, customer records lived in Excel files — usually just a name and phone number, rarely anything more. I built Inventory Manager to actually track repair history, transactions, and customer details in a way that was usable.
 
-### Project Background and Initial Challenges
-Initially, customer information was often incomplete or inaccurate, leading to frustration among both employees and customers. My goal was to implement a tool that would:
-- **Organize Customer Data**: Provide a single, accessible place to record detailed information about each customer’s repair history, contact details, and transactions.
-- **Improve Customer Satisfaction**: By adding more detail to printed invoices, customers had greater transparency and confidence in the services provided.
+The name is a bit misleading — we never really used it for inventory. It became a customer and order management tool. Once I moved it off flat files to LiteDB (an embedded file-based NoSQL database) it held up much better, and that transition was also where I picked up the fundamentals of database design.
 
-### Core Features and Functionality
-Inventory Manager became an essential tool for the business, and while we didn’t end up using it for inventory tracking, it transformed how customer information was managed:
-- **Enhanced Record-Keeping**: Allowed staff to easily record and retrieve detailed customer data, making follow-up and service history tracking much smoother.
-- **Insurance Tracking**: When the company introduced an insurance program, I added a system to track customer payments, claims, and profitability, ensuring better financial oversight.
+### How It Works
 
-### Development Journey and Lessons Learned
-The initial file-based storage system became cluttered quickly, which pushed me to learn how to implement a database for better organization and scalability. This transition not only improved the tool’s performance but also gave me hands-on experience in database management—skills that have been valuable in my later roles.
+Customer IDs are generated from first initial + last name + last 4 digits of phone (e.g. `JSmith1234`). Each customer record holds contact details, an array of devices, and a list of repair tickets per device. Tickets track issues with timestamped notes, parts used with quantities and costs, and flags like whether an adapter came in with the machine. The UI is WinForms with a sortable DataGridView for the customer list. Reports and job tickets export to Excel using COM interop against embedded `.xlsx` templates, then print or save to PDF. There’s also TextMagic API integration for SMS notifications to customers.
 
-Even after leaving the company (and then later becoming its owner and operator), I maintained a good relationship with the owner, who continued using the program. Although some of the latest source code was lost, I have preserved partial versions on GitHub, along with a rewritten customer handling system to address bugs in the original.
+### Protection Plan Tracking
 
-Developing Inventory Manager taught me the importance of scalable, organized data storage and instilled practical skills that I’ve applied in subsequent projects and positions.
+I designed a protection plan for the business — customers paid a small recurring fee in exchange for heavily discounted tune-ups, maintenance, and labor. The tracking in Inventory Manager flags enrolled customers and tracks whether the plan was net positive per account. I designed the plan itself, not just the software for it.
+
+### The Lost Code
+
+The other owner physically dropped my external hard drive — the only copy of the latest source at the time. I don’t fully remember why it wasn’t on GitHub yet, probably just an oversight. What survived is on GitHub, along with a rewritten customer handling module to fix bugs in the original.
+
+I became part owner ten years ago and full owner last year. The other owner had moved states years before that, so in practice I’d been running it alone long before the paperwork caught up.
 
 Source: [Inventory Manager](https://github.com/Joexv/InventoryManager)

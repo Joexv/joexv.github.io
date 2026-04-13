@@ -12,21 +12,12 @@ labels:
 summary: Make your desktop shortcuts visually pop with icons from the web
 ---
 
-Tired of seeing that same generic browser icon for every website shortcut on your desktop? **ICO Enumerator 5000** is here to help. This straightforward command-line utility grabs a fitting icon for each website directly from [icon.horse](https://icon.horse/) and sets it up for you—no need to search, download, and apply icons manually. 
-
-Whether you're aiming for a more organized, visually appealing desktop or just want a touch of personality for your shortcuts, ICO Enumerator 5000 makes it easy.
-
-### Key Features
-- **Automated Icon Retrieval**: Pulls website-specific icons automatically from icon.horse, saving you the hassle of hunting for icons yourself.
-- **Easy Command-Line Usage**: With a simple command-line interface, ICO Enumerator 5000 is lightweight, fast, and easy to use.
-- **Streamlines Desktop Organization**: Transforms the look of your desktop by giving each shortcut a unique, relevant icon instead of the standard browser image.
+A small CLI utility built for my computer repair customers. After a data transfer, desktop shortcuts lose their icons and everything ends up with the generic browser placeholder. This tool walks through the shortcuts, pulls the correct icon for each site from [icon.horse](https://icon.horse/), and applies it — so the desktop looks right without anyone having to manually hunt down icons.
 
 ### How It Works
-ICO Enumerator 5000 connects to icon.horse, a web service that provides high-quality icons for thousands of websites. By specifying the URL of a website, this tool downloads the appropriate PNG and applies it as the icon for the corresponding shortcut on your desktop. Built in C#, it’s designed for speed and simplicity—making desktop customization easier than ever.
 
-### Why I Built It
-The project started as a fun way to avoid the visual monotony of generic browser icons, especially for people who rely heavily on website shortcuts. This utility streamlines the whole process, offering a quick and convenient way to personalize your desktop without manually managing icons.
+Windows `.url` shortcut files are plain text INI-style files, so there's no Shell API needed — the tool reads each one, extracts the URL, hits `icon.horse/icon?uri={domain}` to fetch a PNG, then manually constructs an ICO binary (writing the header and embedding the PNG data directly using `BinaryWriter`) and saves it to `%AppData%\ICO_Enumerator5000\`. It then writes the `IconFile=` path back into the `.url` file. Originals are backed up before any changes.
 
-ICO Enumerator 5000 is a simple tool, but one that makes a big difference for those who appreciate a cleaner, more visually distinctive workspace.
+Because Windows caches icons aggressively, the `-f 1` flag kills `explorer.exe`, deletes `IconCache.db`, and restarts Explorer so the new icons actually show up.
 
 Source: [GitHub](https://github.com/Joexv/ICO_Enumerator5000)

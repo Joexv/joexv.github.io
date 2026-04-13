@@ -7,7 +7,7 @@
     "email": "joeoliveira89+github@gmail.com",
     "phone": "",
     "website": "https://cheesiest.dev/",
-    "summary": "I am a generalist designer and developer that loves to take ideas and turn them into working systems. I can pick up new tools and workflows fast, I can solve any problem handed to me as logically as possible, and I've got more game concepts in my notebooks than I'll ever be able to build. My background spans years of IT and software engineering into a new path of game design, which means I bring full technical follow-through into the most creative workspaces.",
+    "summary": "I am a mixed designer and developer. I have spent the majority of my life programming and getting to love the art that it truely is. But I want to take it a step farther with my Game Design degree, I want to truely be able ot design and create unique worlds and experiances. I have a long standing IT background as well, I have thrived in this enviroment, I believe, thanks to a very logical way of thinking about problems and solutions. I can fix anything and everything!",
     "location": {
       "address": "",
       "postalCode": "",
@@ -17,7 +17,7 @@
     },
     "about_me": {
       "paragraphs": [
-        "I am a generalist designer and developer that loves to take ideas and turn them into working systems. I can pick up new tools and workflows fast, I can solve any problem handed to me as logically as possible, and I've got more game concepts in my notebooks than I'll ever be able to build. My background spans years of IT and software engineering into a new path of game design, which means I bring full technical follow-through into the most creative workspaces."
+        "I am a mixed designer and developer. I have spent the majority of my life programming and getting to love the art that it truely is. But I want to take it a step farther with my Game Design degree, I want to truely be able ot design and create unique worlds and experiances. I have a long standing IT background as well, I have thrived in this enviroment, I believe, thanks to a very logical way of thinking about problems and solutions. I can fix anything and everything!"
       ],
       "quote": {
         "text": "Art is chaos taking shape.",
@@ -50,17 +50,17 @@
     },
     {
       "name": "Rock Climbing",
-      "description": "Testing limits and building resilience, one climb at a time. (Ask me about my back!)",
+      "description": "Testing my limits and building strength, one climb at a time. I don't rock climb anywhere near as much as I used to, but its still a deep passion.(Ask me about my back!)",
       "icon": "fa-person-hiking"
     },
     {
       "name": "Music",
-      "description": "Whether it’s feeling every beat or discovering new genres, music fuels my creativity.",
+      "description": "Long time basist, I come from a very musically gifted family. I am not one of them, hella tone deaf. But I still love it!",
       "icon": "fa-music"
     },
     {
       "name": "Culinary Adventures",
-      "description": "Cooking and baking are my outlets for creativity, and I’m always experimenting with new recipes.",
+      "description": "Fun fact, I got accepted into one of the top culinary institutes in the country when I was 14! I love to cook food represetative of my heritage and meals that just generally look good.",
       "icon": "fa-utensils"
     },
     {
@@ -70,18 +70,8 @@
     },
     {
       "name": "Cinema",
-      "description": "I’m a movie buff at heart, always ready to dive into everything from indie films to big blockbusters.",
+      "description": "I’m a movie buff at heart, favorite movies of all time are 'Monty Python's Holy Grail', 'Kung Pow!: Enter The Fist', and the 'Chainsaw Man Movie'. I wish TikTok would stop playing the piano tracks all the time, its too depressing.",
       "icon": "fa-film"
-    },
-    {
-      "name": "Foodie",
-      "description": "Exploring new cuisines and flavors is my kind of adventure.",
-      "icon": "fa-bowl-food"
-    },
-    {
-      "name": "New Challenges",
-      "description": "Life’s too short not to push the boundaries—whether it’s learning, creating, or exploring.",
-      "icon": "fa-lightbulb"
     }
   ],
   "skills": [
@@ -114,7 +104,9 @@
         "Jira",
         "Confluence",
         "Perforce",
-        "Git"
+        "Git",
+        "Godot (GScript and Mono)",
+        "Mobile Development with Java, Swift and Obj-C"
       ]
     },
     {
@@ -364,5 +356,5 @@
       "docx": "/resume/JoeOliveira_Shokumukeirekisho.docx",
       "pdf": "/resume/JoeOliveira_Shokumukeirekisho.pdf"
     }
-  ],
+  ]
 }

@@ -39,9 +39,7 @@ Mechanics Inferno explores how to teach environmental systems through layout and
 ---
 
 ## Pitch & Loop  
-You’re dropped into a vertical factory on the brink of meltdown. Every room pulses with danger. Systems that seem simple—conveyors, steam, lifts—build into layered hazards. You climb, reroute power, dodge timing traps, and learn as you go.
-
-> **[Insert Image: Gif or image pair of safe conveyor setup → later compound version with steam or gear overlays]**
+You're dropped into a vertical factory on the brink of meltdown. Every room pulses with danger. Systems that seem simple—conveyors, steam, lifts—build into layered hazards. You climb, reroute power, dodge timing traps, and learn as you go.
 
 ---
 
@@ -50,8 +48,6 @@ The entire level is stacked vertically and split into three interconnected paths
 
 <img src="../images/MI_BubbleDiagram.png" alt="Bubble Diagram" width="90%">
 <img src="images/MI_Blockmesh.png" alt="Blockout View" width="80%">
-
-> **[Insert Image: Top-down or vertical blockout with route highlights]**
 
 ---
 
@@ -73,8 +69,6 @@ Each system started simple, then evolved into challenge and remix.
 - Tuned for readable arcs and jump timing  
 <img src="./images/MI_Mood2.png" alt="Gear lifts" width="80%">
 
-> **[Insert Image: Annotated hazard timing rhythm or safe vs unsafe window]**
-
 ---
 
 ## Relay Stations – Systems In Motion  
@@ -84,8 +78,7 @@ The Power Relay mechanic adds soft puzzle gating and forces movement decisions.
 - Encourages scanning the space for clues before activating  
 - Created a feedback loop: hit → race → recover
 
-<img src="./images/MI_MechanicSB.png" alt="Relay Storyboard" width="90%">  
-> **[Insert Image: Shot of activated relay powering down a hazard temporarily]**
+<img src="./images/MI_MechanicSB.png" alt="Relay Storyboard" width="90%">
 
 ---
 
@@ -100,12 +93,10 @@ Everything is handled with lighting tone, emissive flicker, and layered audio lo
 <img src="./images/MI_Mood1.png" alt="Mid tone" width="80%">
 <img src="./images/MI_MoodEnd.png" alt="End tone" width="80%">
 
-> **[Insert Image: Comparison gif of early-floor lighting vs late-floor red glow]**
-
 ---
 
 ## Communicating Systems (With & Without UI)  
-There are dialog and UI prompts where needed—this wasn’t a UI-free experiment. But the level was built to teach using environment first.
+There are dialog and UI prompts where needed—this wasn't a UI-free experiment. But the level was built to teach using environment first.
 
 Examples:
 - **Steam vent audio builds tension before danger**  
@@ -118,7 +109,7 @@ Examples:
 ---
 
 ## Tester Feedback  
-Relays were originally unclear—timing and payoff weren’t visible. I added clear pulses and red/green emissives. Playtesters adjusted fast after that. Most players understood hazard rhythms within one full loop of each route.
+Relays were originally unclear—timing and payoff weren't visible. I added clear pulses and red/green emissives. Playtesters adjusted fast after that. Most players understood hazard rhythms within one full loop of each route.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qZTmgnhKmmA" title="Tester Playthrough" frameborder="0" allowfullscreen></iframe>
 
@@ -153,11 +144,9 @@ Relays were originally unclear—timing and payoff weren’t visible. I added cl
 4. **Figure 4** – Plexi. (2023). *Sci-fi vent shafts.* Steam Workshop  
 5. **Figures 5–8** – OpenAI. (2024). *Generated environment concept art.*  
 6. **Figure 9** – Sweet Home 3D. *3D layout mockup for factory.*  
-7. **Figure 10–11** – Deepnight’s RPG Map Maker 2  
+7. **Figure 10–11** – Deepnight's RPG Map Maker 2  
 
 ---
 
 ## Final Thoughts  
-This project wasn’t about polish—it was about **communication**. Could I make a level that teaches, escalates, and challenges without overwhelming the player? Mechanics Inferno proved that with enough visual rhythm and smart layout, players can learn and adapt fast—even with rough edges.
-
-> **[Insert Image: Final platform with player reaching Core Control Room]**
+This project wasn't about polish—it was about **communication**. Could I make a level that teaches, escalates, and challenges without overwhelming the player? Mechanics Inferno proved that with enough visual rhythm and smart layout, players can learn and adapt fast—even with rough edges.

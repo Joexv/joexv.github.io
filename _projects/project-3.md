@@ -12,24 +12,21 @@ labels:
 summary: A toolkit for end users to fix their mistakes
 ---
 
-Ever feel like you’re a magnet for every printer and tech issue in the office? I did, which led me to develop the **MayDay Button**: a toolkit that gives end users the power to troubleshoot common IT issues on their own and lets IT staff focus on more pressing problems.
+I was the in-house IT guy at a retail operation that ran Surface Pro tablets as registers. The printers were constantly breaking down — not hardware failures, just the Adobe print driver and Windows spooler needing to be reset over and over. I wasn’t given the budget or approval to replace the setup or push proper policy through Group Policy / Active Directory, so MayDay Button was the patch.
 
-MayDay Button is designed to address the types of interruptions IT professionals face daily, empowering users to solve their own problems with just a single click.
+It started as a big MAYDAY button that staff could hit to reset the spooler and clear the print queue themselves without calling me. From there it kept growing as I added every fix I found myself doing repeatedly — Adobe resets, software restarts, whatever kept coming up. Three additional customizable buttons let me adapt it to different stations.
 
-### Core Functionality
-- **One-Click Fixes**: With a large, unmistakable "MAYDAY!" button, users can reset devices, clear printer spools, and get back to work without needing assistance. This instantly solves common issues like frozen printers or unresponsive software, saving time for everyone.
-- **Self-Reliance through Simplicity**: The interface is straightforward, allowing even those with minimal tech experience to troubleshoot confidently. Alongside the main button, there are three customizable buttons for adapting to specific software environments, making MayDay Button as versatile as it is easy to use.
-  
-### Advanced Features for IT Professionals
-For IT teams, MayDay Button isn’t just about reducing interruptions—it’s a tool that streamlines support:
-- **Remote Command Execution**: IT can send commands directly to workstations over a secure TCP connection, offering quick fixes without leaving their desks.
-- **Real-Time Alerts**: Receive instant notifications for critical events, enabling proactive response to potential issues before they escalate.
-- **Slack Integration**: Built-in communication tools let IT chat privately with users directly from their workstations, making problem-solving even faster.
+### Remote Access
 
-### Why It’s Effective
-MayDay Button encourages a culture of self-sufficiency in the workplace, helping users address minor problems themselves while allowing IT to concentrate on complex tasks. This tool cuts down on repetitive tasks and frees up time for meaningful work. 
+The core logic lives in `MD_Core.cs`. Each workstation runs a TCP listener — preset commands are sent by ID and executed locally. Custom commands come through as an encrypted, password-protected string from my hub, which the client decrypts and runs. Not the most elegant architecture, but it worked reliably and I could push a fix or remote in with one click without leaving my desk.
 
-Developing the MayDay Button taught me the value of intuitive design paired with powerful functionality. It’s a solution that not only addresses immediate issues but also reduces the need for constant IT support, creating a smoother, more efficient workplace.
+The GSM modem integration meant I got a text any time something triggered — paper low, hardware failure, or if someone tried to close the app. Slack integration handled off-hours communication, letting me message users directly from their workstation context. Or to let users adjust pricing on the fly by sending commands in slack.
+
+The WinForms UI has three configurable action buttons alongside the main MAYDAY button, adaptable per station depending on what software it was running.
+
+### What I Wanted To Do
+
+The right solution would have been Group Policy and Active Directory — push fixes centrally, manage everything properly. I had the plan, but didn’t get the go-ahead. MayDay was the workaround.
 <hr>
 
 Source: <a href="https://github.com/Joexv/MayDay-Button"><i class="large github icon "></i>Github</a>
