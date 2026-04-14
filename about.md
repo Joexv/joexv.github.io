@@ -6,8 +6,10 @@ hide_description: true
 sidebar: true
 ---
 
-*record scratch* *freeze frame* Yep, that's me. You're probably wondering how I got here. Yeah me too.
-Anyways, my name is Joe Oliveira, I am aan aspiring Game Designer/Developer thats looking to make an impact in the world with my games.
+-record scratch- -freeze frame- Yep, that's me. You're probably wondering how I got here. Yeah me too.
+
+
+Anyways, my name is Joe Oliveira, I am an aspiring Game Designer/Developer thats looking to make an impact in the world with my games.
 I want to create something unique, something that I would be proud of, and proud to show my son. I am following in my own dad's footsteps,
 before he passed, he had gotten a degree in Game Development, and he too spent many years working in IT and software engineering. I want to continue his
 dream of making games.

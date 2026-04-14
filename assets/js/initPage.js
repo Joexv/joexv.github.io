@@ -1,5 +1,25 @@
   console.log("JS running!");
   let cheeseInterval, typeitInstance, threeRAF, threeRenderer, threeCamera, threeScene;
+  let cheese = Math.floor(Date.now() * 0.000001); // init once, never reset
+
+  function updateCheese() {
+    const main = document.getElementById('cheeseCount');
+    const sidebar = document.getElementById('sidebarCheeseCount');
+    if (main) main.textContent = cheese;
+    if (sidebar) sidebar.textContent = cheese;
+  }
+
+  function injectSidebarCheese() {
+    const nav = document.querySelector('.sidebar-nav');
+    if (!nav) return;
+    const existing = document.getElementById('sidebar-cheese');
+    if (existing) existing.remove();
+    const el = document.createElement('div');
+    el.id = 'sidebar-cheese';
+    el.style.cssText = 'padding: 0.75rem 1.5rem 0.5rem; text-align: center; color: white; opacity: 0.85;';
+    el.innerHTML = '<div id="sidebarCheeseCount" style="font-size:1.4rem;font-weight:bold;color:inherit">' + cheese + '</div><div style="font-size:0.75rem;margin-top:0.25rem">🧀 cheese blocks consumed while developing</div>';
+    nav.after(el);
+  }
 
   function initPage() {
     console.log("InitPage Triggered");
@@ -57,11 +77,32 @@
       loop: true
     }).go();
 
-    // Cheese counter
-    const cheeseEl = document.getElementById('cheeseCount');
-    let cheese = Math.floor(Date.now() * 0.000001);
-    cheeseEl.textContent = cheese;
-    cheeseInterval = setInterval(() => cheeseEl.textContent = ++cheese, 2000);
+    // Sidebar cheese injection + counter
+    injectSidebarCheese();
+    updateCheese();
+    cheeseInterval = setInterval(() => { ++cheese; updateCheese(); }, 2000);
+
+    // Sticky navbar — add .scrolled class when user scrolls past hero
+    const navbar = document.getElementById('_navbar');
+    if (navbar) {
+      const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 60);
+      window.removeEventListener('scroll', onScroll);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
+
+    // About blurb scroll reveal — reset then observe
+    const aboutBlurb = document.getElementById('about-blurb');
+    if (aboutBlurb) {
+      aboutBlurb.classList.remove('visible');
+      const observer = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+          aboutBlurb.classList.add('visible');
+          observer.disconnect();
+        }
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      observer.observe(aboutBlurb);
+    }
 
     // AOS
     AOS.init({ duration: 800, offset: 100 });

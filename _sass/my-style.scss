@@ -47,10 +47,6 @@ body.dark-mode {
 }
 
 /* 5) Wire your accent into links & buttons */
-a,
-a:visited {
-  // color: var(--accent-color);
-}
 
 a:hover {
   color: var(--accent-color-faded);
@@ -119,9 +115,8 @@ a:hover {
 .sidebar-title h1,
 .sidebar-title h2 a,
 .sidebar-about p,
-.sidebar-nav-item,
-{
-color: #fff !important;
+.sidebar-nav-item {
+  color: #fff !important;
 }
 
 /* keep only the link underlines and icons in your sage accent */
@@ -308,6 +303,28 @@ footer p:empty {
 /*–– Home Hero → Featured Projects gap ––*/
 .home-hero {
   margin-bottom: 2rem;
+}
+
+/* About blurb — slides up from beneath the hero gradient on scroll */
+#about-blurb {
+  padding: 3rem 2rem 2rem;
+  opacity: 0 !important;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+
+  &.visible {
+    opacity: 1 !important;
+    transform: translateY(0);
+  }
+
+  p {
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    text-align: center;
+    color: var(--text-secondary);
+  }
 }
 
 /*–– Card background in light & dark ––*/
@@ -584,12 +601,56 @@ footer p:empty {
   padding: 0 1rem;
 }
 
+// Always keep navbar visible — override Hydejack's scroll-hide transform
+#_navbar {
+  position: fixed !important;
+  top: 0 !important;
+  transform: translateY(0) !important;
+  z-index: 100;
+  transition: box-shadow 0.3s ease !important;
+
+  &.scrolled {
+    box-shadow: 0 2px 12px rgba(0,0,0,0.35);
+  }
+}
+
+// Pull hero up to sit flush under the navbar (compensates for .content padding-top)
+#hero {
+  margin-top: -8rem;
+}
+
 /* HERO */
 #hero {
   position: relative;
   height: 100vh;
+  min-height: 500px;
   overflow: hidden;
   background: var(--body-bg);
+
+  // Encapsulating border — leans into the isolated window look
+  border: 2px solid var(--accent-color);
+  border-radius: 6px;
+  box-shadow: 0 0 32px rgba(91, 138, 88, 0.25), inset 0 0 60px rgba(0,0,0,0.4);
+
+  // Gradient fade — light mode
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 280px;
+    background: linear-gradient(to bottom, transparent 0%, #fff 100%);
+    pointer-events: none;
+    z-index: 1;
+  }
+}
+
+// Dark mode gradient
+@media (prefers-color-scheme: dark) {
+  #hero::after {
+    background: linear-gradient(to bottom, transparent 0%, #2c2c2b 100%);
+  }
 }
 
 #hero canvas {
@@ -984,23 +1045,16 @@ footer p:empty {
   z-index: 0;
 }
 
-/* ===== Reset hero sizing & lift typewriter ===== */
-#hero {
-  height: auto !important;
-  min-height: auto !important;
-}
-
+/* ===== Hero container — centred content, full viewport height ===== */
 #hero .container {
   position: relative;
   z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  padding: 8rem 1rem 1rem !important;  /* tweak top/bottom as needed */
-  max-height: 700px !important;
-  height: 650px !important;
-  min-height: 250px !important;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem 1rem !important;
 }
 
 #typewriter {
