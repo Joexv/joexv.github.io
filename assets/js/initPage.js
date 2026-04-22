@@ -65,6 +65,7 @@
     document.getElementById('typewriter').textContent = '';
     typeitInstance = new TypeIt('#typewriter', {
       strings: [
+        'Who am I?',
         'Game Designer',
         'Systems Designer',
         'Prototyper',
