@@ -67,12 +67,10 @@
       strings: [
         'Game Designer',
         'Systems Designer',
-        'Rapid Prototyper',
+        'Prototyper',
+        'Your Friendly Neighborhood Spiderman',
         'Cheese Lover',
-        'Level Designer',
-        'Combat System',
-        'Prototype Developer',
-        'Ojama Enjoyer',
+        'Developer',
         'I\'m Joe'
       ],
       speed: 85,
