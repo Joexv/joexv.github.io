@@ -68,13 +68,16 @@
         'Game Designer',
         'Systems Designer',
         'Rapid Prototyper',
+        'Cheese Lover',
         'Level Designer',
-        'Combat Systems Architect',
-        'Prototype Developer'
+        'Combat System',
+        'Prototype Developer',
+        'Ojama Enjoyer',
+        'I\'m Joe'
       ],
-      speed: 100,
+      speed: 85,
       breakLines: false,
-      loop: true
+      loop: false
     }).go();
 
     // Sidebar cheese injection + counter
