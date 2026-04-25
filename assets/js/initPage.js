@@ -64,20 +64,32 @@
     // TypeIt headline
     document.getElementById('typewriter').textContent = '';
     typeitInstance = new TypeIt('#typewriter', {
-      strings: [
-        'Who am I?',
-        'Game Designer',
-        'Systems Designer',
-        'Prototyper',
-        'Your Friendly Neighborhood Spiderman',
-        'Cheese Lover',
-        'Developer',
-        'I\'m Joe'
-      ],
       speed: 85,
-      breakLines: false,
       loop: false
-    }).go();
+    })
+      .type('Who am I?')
+      .pause(3500)
+      .delete()
+      .type('I am a Game Designer')
+      .pause(800)
+      .delete()
+      .type('I am a Systems Designer')
+      .pause(800)
+      .delete()
+      .type('I am a Prototyper')
+      .pause(800)
+      .delete()
+      .type('I am Your Friendly<br>Neighborhood Spiderman')
+      .pause(800)
+      .delete()
+      .type('I am a Cheese Lover')
+      .pause(800)
+      .delete()
+      .type('I am a Developer')
+      .pause(800)
+      .delete()
+      .type('I am Joe')
+      .go();
 
     // Sidebar cheese injection + counter
     injectSidebarCheese();
