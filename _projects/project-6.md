@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/inventory.png
+image: /assets/images/inventory.png
 title: Inventory Manager
 permalink: projects/IM
 date: 2017-01-01

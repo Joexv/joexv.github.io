@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/MayDay.jpg
+image: /assets/images/MayDay.jpg
 title: MayDay Button
 permalink: projects/cotton
 date: 2014-04-12

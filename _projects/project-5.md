@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/Menu.png
+image: /assets/images/Menu.png
 title: FX420 Menu Creators
 permalink: projects/MenuCreators
 date: 2019-01-01

@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/headripper.gif
+image: /assets/images/headripper.gif
 title: Headripper
 permalink: projects/Headripper
 date: 2020-01-01

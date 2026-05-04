@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/Flork.png
+image: /assets/images/Flork.png
 title: FlorkOfStickers
 permalink: projects/Flork
 date: 2017-10-04

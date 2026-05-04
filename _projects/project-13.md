@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/treehouse.png
+image: /assets/images/treehouse.png
 title: Treehouse
 permalink: projects/Treehouse
 date: 2025-03-09

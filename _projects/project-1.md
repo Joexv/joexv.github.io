@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/AuraScreen.png
+image: /assets/images/AuraScreen.png
 title: AuraScreen
 permalink: projects/Aura
 date: 2022-01-01

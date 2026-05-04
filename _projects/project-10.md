@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/iconhorse.png
+image: /assets/images/iconhorse.png
 title: ICO Enumerator 5000
 permalink: projects/ICO_Enumerator5000
 date: 2023-06-07

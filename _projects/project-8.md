@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/yoga.png
+image: /assets/images/yoga.png
 title: Yoga AnyTime Downloader
 permalink: projects/YAD
 date: 2021-08-05

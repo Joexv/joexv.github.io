@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/MI_End.png
+image: /assets/images/MI_End.png
 title: Mechanics Inferno
 permalink: projects/MechanicsInferno
 date: 2024-11-03
@@ -46,8 +46,8 @@ You're dropped into a vertical factory on the brink of meltdown. Every room puls
 ## Blockmesh & Planning  
 The entire level is stacked vertically and split into three interconnected paths. Each route teaches different mechanical rhythms, before converging into a final layered run. I used a bubble diagram to map flow, backtracking, and sightlines.
 
-<img src="../images/MI_BubbleDiagram.png" alt="Bubble Diagram" width="90%">
-<img src="images/MI_Blockmesh.png" alt="Blockout View" width="80%">
+<img src="/assets/images/MI_BubbleDiagram.png" alt="Bubble Diagram" width="90%">
+<img src="/assets/images/MI_Blockmesh.png" alt="Blockout View" width="80%">
 
 ---
 
@@ -57,17 +57,17 @@ Each system started simple, then evolved into challenge and remix.
 ### 🔁 Conveyors  
 - Movement-altering floors  
 - Added lighting strips and audio clunks for clarity  
-<img src="./images/MI/MovingBelt.png" alt="Conveyor belt" width="80%">
+<img src="/assets/images/MovingBelt.png" alt="Conveyor belt" width="80%">
 
 ### 💨 Steam Vents  
 - Timed barriers  
 - Early versions too subtle—reworked with buildup hissing and stutter-light  
-<img src="./images/MI/SteamVents.png" alt="Steam vents" width="80%">
+<img src="/assets/images/SteamVents.png" alt="Steam vents" width="80%">
 
 ### 🕰️ Gear Lifts  
 - Rotating elevators  
 - Tuned for readable arcs and jump timing  
-<img src="./images/MI_Mood2.png" alt="Gear lifts" width="80%">
+<img src="/assets/images/MI_Mood2.png" alt="Gear lifts" width="80%">
 
 ---
 
@@ -78,7 +78,7 @@ The Power Relay mechanic adds soft puzzle gating and forces movement decisions.
 - Encourages scanning the space for clues before activating  
 - Created a feedback loop: hit → race → recover
 
-<img src="./images/MI_MechanicSB.png" alt="Relay Storyboard" width="90%">
+<img src="/assets/images/MI_MechanicSB.png" alt="Relay Storyboard" width="90%">
 
 ---
 
@@ -89,9 +89,9 @@ Everything is handled with lighting tone, emissive flicker, and layered audio lo
 - Mid level grinds and pulses with hazard lights  
 - Final section is overloaded with heat, energy, and pressure
 
-<img src="./images/MI_MoodStart.png" alt="Start mood" width="80%">
-<img src="./images/MI_Mood1.png" alt="Mid tone" width="80%">
-<img src="./images/MI_MoodEnd.png" alt="End tone" width="80%">
+<img src="/assets/images/MI_MoodStart.png" alt="Start mood" width="80%">
+<img src="/assets/images/MI_Mood1.png" alt="Mid tone" width="80%">
+<img src="/assets/images/MI_MoodEnd.png" alt="End tone" width="80%">
 
 ---
 
@@ -103,8 +103,8 @@ Examples:
 - **Safe relays pulse light on countdown**  
 - **Line-of-sight gives early warning to most dangers**
 
-<img src="./images/MI/Doros.png" alt="Hallway cues" width="80%">
-<img src="./images/MI/Computers.png" alt="Environment storytelling" width="80%">
+<img src="/assets/images/Doors.png" alt="Hallway cues" width="80%">
+<img src="/assets/images/Computers.png" alt="Environment storytelling" width="80%">
 
 ---
 

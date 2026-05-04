@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/Pokeball.jpg
+image: /assets/images/Pokeball.jpg
 title: Pokemon ROM Hacks And Tools
 permalink: projects/PRHT
 date: 2012-10-15

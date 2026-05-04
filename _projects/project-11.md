@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/FSU.png
+image: /assets/images/FSU.png
 title: Japanese Garden Level – School Assignment
 permalink: projects/School_PP2
 date: 2024-03-01

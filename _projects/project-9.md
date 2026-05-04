@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/owoer.jpg
+image: /assets/images/owoer.jpg
 title: OwOer
 permalink: projects/owoer
 date: 2020-07-01
