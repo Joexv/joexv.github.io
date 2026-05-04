@@ -11,7 +11,7 @@ source "https://rubygems.org"
 gem "jekyll"
 
 gem "jekyll-theme-hydejack"
-gem 'github-pages', group: :jekyll_plugins
+# gem 'github-pages', group: :jekyll_plugins  # incompatible with Ruby 4.0+ (public_suffix constraint)
 gem 'jekyll-remote-theme', group: :jekyll_plugins
 # If you are part of the ["Customers" team](https://github.com/orgs/hydecorp/teams/pro-customers), 
 # you can fetch the theme from a private repository. 
@@ -31,10 +31,10 @@ gem 'jekyll-remote-theme', group: :jekyll_plugins
 #    For details, see <https://github.com/kramdown/math-katex#documentation>
 #
 # If you're using the MathJax math engine instead, free to remove the line below:
-gem "kramdown-math-katex"
+# gem "kramdown-math-katex"  # requires commonmarker ~> 0.22 which only supports Ruby < 4.0
 
 # A JavaScript runtime for Ruby that helps with running the katex gem above.
-gem "duktape"
+# gem "duktape"
 
 # Required for `jekyll serve` in Ruby 3
 gem "webrick"
